@@ -71,7 +71,7 @@ export async function DetailPage({ frontmatter, content, contentType, language, 
 
 				<div className="container mx-auto max-w-4xl relative z-10 text-center">
 					{/* Breadcrumb */}
-					<div className="flex items-center justify-center gap-2 text-sm text-muted-foreground mb-4">
+					<nav aria-label="breadcrumb" className="flex items-center justify-center gap-2 text-sm text-muted-foreground mb-4">
 						<Link href="/" className="hover:text-foreground transition">
 							{t('common.home')}
 						</Link>
@@ -79,7 +79,7 @@ export async function DetailPage({ frontmatter, content, contentType, language, 
 						<Link href={`/${contentType}`} className="hover:text-foreground transition">
 							{contentTypeLabels[contentType] || contentType}
 						</Link>
-					</div>
+					</nav>
 
 					<h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">{extractPrimaryKeyword(frontmatter.title)}</h1>
 

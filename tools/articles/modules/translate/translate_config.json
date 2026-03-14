@@ -9,29 +9,29 @@
   "retry_attempts": 2,
   "retry_delay": 5,
 
-  "languages": ["es", "pt", "fr", "de", "it", "ja", "ko"],
+  "languages": ["ru", "pt", "de", "es", "ja", "ko", "fr"],
   "default_language": "en",
   "output_dir": "content/",
 
   "game_names": {
-    "en": "Anime Tactical Simulator",
-    "es": "Anime Tactical Simulator",
-    "pt": "Anime Tactical Simulator",
-    "fr": "Anime Tactical Simulator",
-    "de": "Anime Tactical Simulator",
-    "it": "Anime Tactical Simulator",
-    "ja": "Anime Tactical Simulator",
-    "ko": "Anime Tactical Simulator"
+    "en": "Lucid Blocks",
+    "ru": "Lucid Blocks",
+    "pt": "Lucid Blocks",
+    "de": "Lucid Blocks",
+    "es": "Lucid Blocks",
+    "ja": "Lucid Blocks",
+    "ko": "Lucid Blocks",
+    "fr": "Lucid Blocks"
   },
 
   "lang_names": {
-    "es": "Spanish",
+    "ru": "Russian",
     "pt": "Portuguese (Brazil)",
-    "fr": "French",
     "de": "German",
-    "it": "Italian",
+    "es": "Spanish (Latin America)",
     "ja": "Japanese",
-    "ko": "Korean"
+    "ko": "Korean",
+    "fr": "French"
   },
 
   "batch_size": 20,

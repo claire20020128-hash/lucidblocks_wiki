@@ -62,12 +62,12 @@ bun dev
 ### 2. Rich Results Test
 部署后访问：https://search.google.com/test/rich-results
 
-输入：`https://www.slayerbound.wiki`
+输入：`https://www.lucidblocks.wiki`
 
 **预期结果**：
 - ✅ 检测到 Organization schema
 - ✅ 检测到 image 字段
-- ✅ 图片 URL 为 `https://www.slayerbound.wiki/images/hero.webp`
+- ✅ 图片 URL 为 `https://www.lucidblocks.wiki/images/hero.webp`
 - ✅ 无错误或警告
 
 ### 3. Schema Markup Validator

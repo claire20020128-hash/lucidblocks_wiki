@@ -1,11 +1,11 @@
 {
-  "name": "Burglin' Gnomes Wiki - Guides, Jobs, Crafting & Tips",
-  "short_name": "Burglin' Gnomes",
-  "description": "Your hub for Burglin' Gnomes: how the heists work, High-Gnome jobs, crafting & upgrades, enemies, controls, and the fastest ways to survive each run.",
+  "name": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
+  "short_name": "Lucid Blocks",
+  "description": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, endings, and survival tips for the surreal voxel sandbox adventure on Steam.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "any",
-  "theme_color": "#d93b49",
+  "theme_color": "#1a7a7a",
   "background_color": "#0a0a0a",
   "icons": [
     {

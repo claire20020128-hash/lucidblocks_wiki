@@ -33,7 +33,7 @@ export function generateStaticParams() {
 // 生成元数据
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const { locale } = await params
-	const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.burglingnomes.wiki'
+	const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.lucidblocks.wiki'
 
 	// 获取 SEO 翻译
 	const t = await getTranslations('seo.home')
@@ -61,15 +61,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 			type: 'website',
 			locale: locale,
 			url: locale === 'en' ? siteUrl : `${siteUrl}/${locale}`,
-			siteName: 'Burglin\' Gnomes Wiki',
+			siteName: 'Lucid Blocks Wiki',
 			title: t('ogTitle'),
 			description: t('ogDescription'),
 			images: [
 				{
-					url: `${siteUrl}/og-image.jpg`,
-					width: 1200,
-					height: 630,
-					alt: 'Burglin\' Gnomes - Stealth Heist Game',
+					url: `${siteUrl}/images/hero.webp`,
+					width: 1920,
+					height: 1080,
+					alt: 'Lucid Blocks - Surreal Voxel Sandbox',
 				},
 			],
 		},
@@ -77,8 +77,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 			card: 'summary_large_image',
 			title: t('twitterTitle'),
 			description: t('twitterDescription'),
-			images: [`${siteUrl}/og-image.jpg`],
-			creator: '@itsfobri',
+			images: [`${siteUrl}/images/hero.webp`],
+			creator: '@lucidblocks',
 		},
 		icons: {
 			icon: [

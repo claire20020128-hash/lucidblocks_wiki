@@ -1,6 +1,7 @@
 ---
+name: content-reset
 description: 清理旧游戏内容，准备新内容
-trigger: 当用户说"清理内容"、"content reset"、"重置内容"时触发
+trigger: 当用户说"清理内容"、"content reset"、"重置内容"或输入 /content-reset 时触发
 ---
 
 # content-reset
