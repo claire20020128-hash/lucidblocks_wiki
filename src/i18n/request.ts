@@ -17,17 +17,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
 		return { locale, messages: baseMessages }
 	}
 
-	// 其他语言：深度合并，缺失的 key 自动 fallback 到英文
-	try {
-		const localeMessages = (await import(`../locales/${locale}.json`)).default
-		return {
-			locale,
-			messages: deepMerge(baseMessages, localeMessages, {
-				arrayMerge: (destinationArray, sourceArray) => sourceArray,
-			}),
-		}
-	} catch {
-		// 翻译文件不存在时完全 fallback 到英文
-		return { locale, messages: baseMessages }
-	}
+	// 临时：所有非英文语言直接使用英文内容
+	return { locale, messages: baseMessages }
 })
