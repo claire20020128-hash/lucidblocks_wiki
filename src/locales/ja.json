@@ -1,13 +1,13 @@
 {
   "seo": {
     "home": {
-      "title": "Burglin' Gnomes Wiki - デモダウンロード、協力プレイガイド、クラフト＆MOD",
-      "description": "Burglin' Gnomes の完全リソースハブ！Steam のステルス強盗ゲームのデモダウンロード情報、初心者向けガイド、協力プレイ戦略、クラフトのヒント、操作方法、MOD、コミュニティリンクを入手しましょう。",
-      "keywords": "Burglin' Gnomes Wiki, Burglin' Gnomes, デモダウンロード, 初心者向けガイド, 協力プレイガイド, クラフト, 装備, MOD, BepInEx, Steam ゲーム, ステルスゲーム",
-      "ogTitle": "Burglin' Gnomes Wiki - デモダウンロード、協力プレイガイド、クラフト＆MOD",
-      "ogDescription": "Burglin' Gnomes の完全リソースハブ！Steam のステルス強盗ゲームのデモダウンロード情報、初心者向けガイド、協力プレイ戦略、クラフトのヒント、MODを入手しましょう。",
-      "twitterTitle": "Burglin' Gnomes Wiki - デモダウンロード、協力プレイガイド、クラフト＆MOD",
-      "twitterDescription": "Burglin' Gnomes の完全リソースハブ！デモダウンロード情報、初心者向けガイド、協力プレイ戦略、クラフトのヒントを入手しましょう。"
+      "title": "Lucid Blocks Wiki - デモダウンロード、協力プレイガイド、クラフト＆MOD",
+      "description": "Lucid Blocks の完全リソースハブ！Steam のステルス強盗ゲームのデモダウンロード情報、初心者向けガイド、協力プレイ戦略、クラフトのヒント、操作方法、MOD、コミュニティリンクを入手しましょう。",
+      "keywords": "Lucid Blocks Wiki, Lucid Blocks, デモダウンロード, 初心者向けガイド, 協力プレイガイド, クラフト, 装備, MOD, BepInEx, Steam ゲーム, ステルスゲーム",
+      "ogTitle": "Lucid Blocks Wiki - デモダウンロード、協力プレイガイド、クラフト＆MOD",
+      "ogDescription": "Lucid Blocks の完全リソースハブ！Steam のステルス強盗ゲームのデモダウンロード情報、初心者向けガイド、協力プレイ戦略、クラフトのヒント、MODを入手しましょう。",
+      "twitterTitle": "Lucid Blocks Wiki - デモダウンロード、協力プレイガイド、クラフト＆MOD",
+      "twitterDescription": "Lucid Blocks の完全リソースハブ！デモダウンロード情報、初心者向けガイド、協力プレイ戦略、クラフトのヒントを入手しましょう。"
     }
   },
   "nav": {},
@@ -27,10 +27,10 @@
   },
   "hero": {
     "badge": "小さなノーム。大きな家。友達とのステルス強盗。",
-    "title": "Burglin' Gnomes wiki",
-    "description": "Burglin' Gnomes のハブ：強盗の仕組み、ハイノームの仕事、クラフトとアップグレード、敵、操作方法、各ランを生き残るための最速の方法。",
+    "title": "Lucid Blocks wiki",
+    "description": "Lucid Blocks のハブ：強盗の仕組み、ハイノームの仕事、クラフトとアップグレード、敵、操作方法、各ランを生き残るための最速の方法。",
     "getFreeCodesCTA": "デモをダウンロード",
-    "playOnRobloxCTA": "Steam でウィッシュリストに追加",
+    "playOnSteamCTA": "Steam でウィッシュリストに追加",
     "stats": {
       "stat1": {
         "value": "1.5万",
@@ -51,11 +51,11 @@
     }
   },
   "gameFeature": {
-    "title": "Burglin' Gnomes ゲームプレイ",
+    "title": "Lucid Blocks ゲームプレイ",
     "description": "小さなノームたちが、混沌とした6人協力プレイのステルスミッションで、大胆な強盗を成功させるのを見てみよう！"
   },
   "tools": {
-    "title": "Burglin' Gnomes",
+    "title": "Lucid Blocks",
     "titleHighlight": "リソース",
     "subtitle": "強盗と協力プレイのステルスをマスターするために必要なものすべて",
     "cards": [
@@ -143,7 +143,7 @@
   },
   "modules": {
     "demoDownload": {
-      "title": "Burglin' Gnomes デモダウンロード",
+      "title": "Lucid Blocks デモダウンロード",
       "subtitle": "Steam で無料デモを入手",
       "downloadSize": "2.62 GiB",
       "diskSize": "4.88 GiB",
@@ -153,7 +153,7 @@
       "engine": "Unity",
       "primaryCTA": "デモをダウンロード",
       "secondaryCTA": "技術情報を表示",
-      "installPath": "Steam\\steamapps\\common\\Burglin Gnomes Demo",
+      "installPath": "Steam\\steamapps\\common\\Lucid Blocks Demo",
       "sections": [
         {
           "heading": "ダウンロード場所",
@@ -172,7 +172,7 @@
       ]
     },
     "beginnerGuide": {
-      "title": "Burglin' Gnomes 初心者向けガイド",
+      "title": "Lucid Blocks 初心者向けガイド",
       "subtitle": "コアループをマスターし、よくある間違いを避ける",
       "steps": [
         {
@@ -220,7 +220,7 @@
       ]
     },
     "coopGuide": {
-      "title": "Burglin' Gnomes 協力プレイガイド",
+      "title": "Lucid Blocks 協力プレイガイド",
       "subtitle": "最大6人のプレイヤーと連携して、最大限の混沌を",
       "maxPlayers": 6,
       "roles": [
@@ -254,7 +254,7 @@
       "communication": "ボイスチャット (V キー) を使用して、タスクと救助を調整します。「発見」、「ルート」、「救助が必要」、「すぐに脱出」と呼びかける。"
     },
     "tasksObjectives": {
-      "title": "Burglin' Gnomes タスクと目標",
+      "title": "Lucid Blocks タスクと目標",
       "subtitle": "ハイノームが望むもの：タスクの例",
       "taskTypes": [
         {
@@ -285,7 +285,7 @@
       ]
     },
     "controlsKeybinds": {
-      "title": "Burglin' Gnomes 操作方法とキーバインド",
+      "title": "Lucid Blocks 操作方法とキーバインド",
       "subtitle": "デフォルトのキーボード操作 (および変更場所)",
       "keybinds": [
         {
@@ -364,7 +364,7 @@
       "changePath": "タイトルメニューから：[設定]を開き、キーボード設定を確認します。検索フィールドを使用してキーバインドの行をフィルタリングします。"
     },
     "contentSettings": {
-      "title": "Burglin' Gnomes コンテンツ設定",
+      "title": "Lucid Blocks コンテンツ設定",
       "subtitle": "成人向けコンテンツ、ヌードの切り替え、Steam の設定",
       "descriptors": [
         "一部のヌードまたは性的なコンテンツ",
@@ -389,7 +389,7 @@
       ]
     },
     "craftingEquipment": {
-      "title": "Burglin' Gnomes クラフトと装備",
+      "title": "Lucid Blocks クラフトと装備",
       "subtitle": "装備：クラフトの例と各ツールの機能",
       "equipment": [
         {
@@ -426,7 +426,7 @@
       ]
     },
     "lootItems": {
-      "title": "Burglin' Gnomes 戦利品とアイテム",
+      "title": "Lucid Blocks 戦利品とアイテム",
       "subtitle": "何を盗むか：アイテムの種類、リスク、持ち運びのヒント",
       "categories": [
         {
@@ -469,7 +469,7 @@
       ]
     },
     "enemiesHazards": {
-      "title": "Burglin' Gnomes 敵と危険",
+      "title": "Lucid Blocks 敵と危険",
       "subtitle": "何があなたを捕まえることができるかを知る",
       "threats": [
         {
@@ -511,7 +511,7 @@
       ]
     },
     "stealthEscape": {
-      "title": "Burglin' Gnomes ステルスと脱出のヒント",
+      "title": "Lucid Blocks ステルスと脱出のヒント",
       "subtitle": "より多く盗み、より少なく死ぬ",
       "do": [
         "ステルスを保ち、オブジェクトと対話する前に隠れる",
@@ -541,7 +541,7 @@
       ]
     },
     "homeUpgrades": {
-      "title": "Burglin' Gnomes ホームアップグレード",
+      "title": "Lucid Blocks ホームアップグレード",
       "subtitle": "クラフト、構築、アップグレード",
       "branches": [
         {
@@ -599,33 +599,33 @@
       ]
     },
     "community": {
-      "title": "Burglin' Gnomes コミュニティと Discord",
+      "title": "Lucid Blocks コミュニティと Discord",
       "subtitle": "分隊、アップデート、ディスカッションを見つける",
       "links": [
         {
           "title": "公式 Discord",
           "subtitle": "お知らせ • フィードバック • LFG",
-          "url": "https://discord.gg/rbeW4bpsqY"
+          "url": "https://discord.com/invite/lucidblocks"
         },
         {
           "title": "公式 X (Twitter)",
           "subtitle": "アップデートと開発投稿",
-          "url": "https://x.com/itsfobri"
+          "url": "https://x.com/lucidblocks"
         },
         {
           "title": "Steam コミュニティハブ",
           "subtitle": "ディスカッション • スクリーンショット • ガイド",
-          "url": "https://steamcommunity.com/app/3844970"
+          "url": "https://steamcommunity.com/app/3495730"
         },
         {
           "title": "Steam ストアページ",
           "subtitle": "ウィッシュリスト • デモ • 公式説明",
-          "url": "https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+          "url": "https://store.steampowered.com/app/3495730/Lucid_Blocks/"
         }
       ]
     },
     "modsBepInEx": {
-      "title": "Burglin' Gnomes MOD と BepInEx のセットアップ",
+      "title": "Lucid Blocks MOD と BepInEx のセットアップ",
       "subtitle": "クリーンな方法で MOD をインストールする",
       "steps": [
         {
@@ -652,17 +652,17 @@
       "paths": [
         {
           "label": "一般的な Steam インストール",
-          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\"
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\"
         },
         {
           "label": "Plugins フォルダ",
-          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\BepInEx\\plugins\\"
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\BepInEx\\plugins\\"
         }
       ],
       "multiplayerNote": "MOD された協力プレイ機能については、全員が BepInEx と同じゲームプレイ MOD をインストールする必要があります。"
     },
     "popularMods": {
-      "title": "Burglin' Gnomes 人気 MOD",
+      "title": "Lucid Blocks 人気 MOD",
       "subtitle": "トップコミュニティのピック",
       "mods": [
         {
@@ -729,7 +729,7 @@
       ]
     },
     "controllerSupport": {
-      "title": "Burglin' Gnomes コントローラーサポート",
+      "title": "Lucid Blocks コントローラーサポート",
       "subtitle": "フルゲームパッドプレイ",
       "native": {
         "title": "ゲーム内設定",
@@ -749,7 +749,7 @@
       ]
     },
     "playerCount": {
-      "title": "Burglin' Gnomes プレイヤー数とトレンド",
+      "title": "Lucid Blocks プレイヤー数とトレンド",
       "subtitle": "ライブの人気スナップショット",
       "stats": {
         "now": {
@@ -781,43 +781,43 @@
   },
   "faq": {
     "title": "よくある質問",
-    "titleHighlight": "Burglin' Gnomes について知っておくべきことすべて",
-    "subtitle": "Burglin' Gnomes のデモをダウンロードするにはどうすればよいですか？",
+    "titleHighlight": "Lucid Blocks について知っておくべきことすべて",
+    "subtitle": "Lucid Blocks のデモをダウンロードするにはどうすればよいですか？",
     "questions": [
       {
         "question": "Steam ストアページにアクセスし、「デモをダウンロード」をクリックしてください。デモは無料で、ダウンロードには 2.62 GiB、ディスクスペースには 4.88 GiB が必要です。",
-        "answer": "Burglin' Gnomes はソロでプレイできますか？それとも友達が必要ですか？"
+        "answer": "Lucid Blocks はソロでプレイできますか？それとも友達が必要ですか？"
       },
       {
-        "question": "Burglin' Gnomes は、ソロプレイと最大 6 人までの協力プレイの両方をサポートしています。ソロは難しいですが可能です。",
-        "answer": "Burglin' Gnomes のハイノームタスクとは何ですか？"
+        "question": "Lucid Blocks は、ソロプレイと最大 6 人までの協力プレイの両方をサポートしています。ソロは難しいですが可能です。",
+        "answer": "Lucid Blocks のハイノームタスクとは何ですか？"
       },
       {
         "question": "ハイノームは、'テレビを壊す'、'トイレを溢れさせる'、または '特定のアイテムを盗む' などの目標を割り当てるあなたの上司です。追加の報酬のためにそれらを完了してください。",
-        "answer": "Burglin' Gnomes の MOD をインストールするにはどうすればよいですか？"
+        "answer": "Lucid Blocks の MOD をインストールするにはどうすればよいですか？"
       },
       {
         "question": "BepInEx 5 をインストールし、ゲームを一度起動し、MOD DLL を BepInEx/plugins/ フォルダに配置します。すべてのプレイヤーは、マルチプレイヤーのために同じ MOD が必要です。",
-        "answer": "Burglin' Gnomes はコントローラーをサポートしていますか？"
+        "answer": "Lucid Blocks はコントローラーをサポートしていますか？"
       },
       {
         "question": "はい！基本的なコントローラーサポートにはゲーム内設定を使用するか、完全な UI ナビゲーションのために Nexus Mods からコントローラー MOD をインストールしてください。",
-        "answer": "Burglin' Gnomes のプレイヤー数は？"
+        "answer": "Lucid Blocks のプレイヤー数は？"
       },
       {
-        "question": "2026 年 2 月の時点で、Burglin' Gnomes は平均 6,000 人以上の同時プレイヤーがおり、2026 年 2 月 8 日には 15,272 人のピークに達しました。",
+        "question": "2026 年 2 月の時点で、Lucid Blocks は平均 6,000 人以上の同時プレイヤーがおり、2026 年 2 月 8 日には 15,272 人のピークに達しました。",
         "answer": "強盗を開始する準備はできましたか？"
       }
     ]
   },
   "cta": {
-    "title": "Discord で Burglin' Gnomes コミュニティに参加して、協力グループ、アップデート、および MOD のディスカッションに参加しましょう！",
+    "title": "Discord で Lucid Blocks コミュニティに参加して、協力グループ、アップデート、および MOD のディスカッションに参加しましょう！",
     "description": "Discord に参加",
     "joinCommunity": "Steam でデモを入手",
-    "joinGame": "Burglin' Gnomes Wiki"
+    "joinGame": "Lucid Blocks Wiki"
   },
   "footer": {
-    "title": "Burglin' Gnomes のステルス強盗、協力戦略、MOD、およびコミュニティガイドのための完全なリソースハブ。",
+    "title": "Lucid Blocks のステルス強盗、協力戦略、MOD、およびコミュニティガイドのための完全なリソースハブ。",
     "description": "リソース",
     "resources": "コミュニティ",
     "community": "リーガル",
@@ -829,7 +829,7 @@
     "about": "プライバシーポリシー",
     "privacy": "利用規約",
     "terms": "著作権",
-    "copyrightNotice": "© 2026 Burglin' Gnomes Wiki. Burglin' Gnomes の開発者とは提携していません。",
+    "copyrightNotice": "© 2026 Lucid Blocks Wiki. Lucid Blocks の開発者とは提携していません。",
     "copyright": "非公式のファンメイドリソースウェブサイト。",
     "disclaimer": "Unofficial fan-made resource website."
   }

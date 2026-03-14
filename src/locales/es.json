@@ -30,7 +30,7 @@
     "title": "Wiki de Duendes Ladrones",
     "description": "Tu centro para Duendes Ladrones: cómo funcionan los atracos, trabajos de Alto-Duende, fabricación y mejoras, enemigos, controles y las formas más rápidas de sobrevivir a cada partida.",
     "getFreeCodesCTA": "Descargar Demo",
-    "playOnRobloxCTA": "Añadir a la lista de deseos en Steam",
+    "playOnSteamCTA": "Añadir a la lista de deseos en Steam",
     "stats": {
       "stat1": {
         "value": "15K",
@@ -153,7 +153,7 @@
       "engine": "Unity",
       "primaryCTA": "Descargar Demo",
       "secondaryCTA": "Ver Información Técnica",
-      "installPath": "Steam\\steamapps\\common\\Burglin Gnomes Demo",
+      "installPath": "Steam\\steamapps\\common\\Lucid Blocks Demo",
       "sections": [
         {
           "heading": "Dónde descargar",
@@ -605,22 +605,22 @@
         {
           "title": "Discord Oficial",
           "subtitle": "Anuncios • Comentarios • LFG",
-          "url": "https://discord.gg/rbeW4bpsqY"
+          "url": "https://discord.com/invite/lucidblocks"
         },
         {
           "title": "X (Twitter) Oficial",
           "subtitle": "Actualizaciones y publicaciones de desarrolladores",
-          "url": "https://x.com/itsfobri"
+          "url": "https://x.com/lucidblocks"
         },
         {
           "title": "Centro de la Comunidad de Steam",
           "subtitle": "Discusiones • Capturas de pantalla • Guías",
-          "url": "https://steamcommunity.com/app/3844970"
+          "url": "https://steamcommunity.com/app/3495730"
         },
         {
           "title": "Página de la Tienda de Steam",
           "subtitle": "Lista de deseos • Demo • Descripción oficial",
-          "url": "https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+          "url": "https://store.steampowered.com/app/3495730/Lucid_Blocks/"
         }
       ]
     },
@@ -652,11 +652,11 @@
       "paths": [
         {
           "label": "Instalación típica de Steam",
-          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\"
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\"
         },
         {
           "label": "Carpeta Plugins",
-          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\BepInEx\\plugins\\"
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\BepInEx\\plugins\\"
         }
       ],
       "multiplayerNote": "Para las funciones de juego co-op modificadas, todos deben instalar BepInEx y los mismos mods de juego."

@@ -30,7 +30,7 @@
     "title": "Wiki по Гномы-воришки",
     "description": "Ваш центр для Гномы-воришки: как работают ограбления, работа на Высоко-гнома, крафт и улучшения, враги, элементы управления и самые быстрые способы выжить в каждом забеге.",
     "getFreeCodesCTA": "Скачать демоверсию",
-    "playOnRobloxCTA": "В список желаемого в Steam",
+    "playOnSteamCTA": "В список желаемого в Steam",
     "stats": {
       "stat1": {
         "value": "15 тыс.",
@@ -153,7 +153,7 @@
       "engine": "Unity",
       "primaryCTA": "Скачать демоверсию",
       "secondaryCTA": "Посмотреть техническую информацию",
-      "installPath": "Steam\\steamapps\\common\\Burglin Gnomes Demo",
+      "installPath": "Steam\\steamapps\\common\\Lucid Blocks Demo",
       "sections": [
         {
           "heading": "Где скачать",
@@ -605,22 +605,22 @@
         {
           "title": "Официальный Discord",
           "subtitle": "Объявления • Отзывы • LFG",
-          "url": "https://discord.gg/rbeW4bpsqY"
+          "url": "https://discord.com/invite/lucidblocks"
         },
         {
           "title": "Официальный X (Twitter)",
           "subtitle": "Обновления и сообщения разработчиков",
-          "url": "https://x.com/itsfobri"
+          "url": "https://x.com/lucidblocks"
         },
         {
           "title": "Центр сообщества Steam",
           "subtitle": "Обсуждения • Скриншоты • Руководства",
-          "url": "https://steamcommunity.com/app/3844970"
+          "url": "https://steamcommunity.com/app/3495730"
         },
         {
           "title": "Страница магазина Steam",
           "subtitle": "Список желаемого • Демоверсия • Официальное описание",
-          "url": "https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+          "url": "https://store.steampowered.com/app/3495730/Lucid_Blocks/"
         }
       ]
     },
@@ -652,11 +652,11 @@
       "paths": [
         {
           "label": "Типичная установка Steam",
-          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\"
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\"
         },
         {
           "label": "Папка Plugins",
-          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\BepInEx\\plugins\\"
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\BepInEx\\plugins\\"
         }
       ],
       "multiplayerNote": "Для использования игровых функций совместной игры с модами каждый должен установить BepInEx и одни и те же игровые моды."

@@ -1,13 +1,13 @@
 {
   "seo": {
     "home": {
-      "title": "Burglin' Gnomes Wiki - Demo-Download, Koop-Leitfaden, Crafting & Mods",
-      "description": "Vollständige Burglin' Gnomes Ressourcenzentrale! Hol dir Infos zum Demo-Download, Anfängerleitfäden, Koop-Strategien, Crafting-Tipps, Steuerung, Mods und Community-Links für das Steam-Stealth-Heist-Spiel.",
-      "keywords": "Burglin' Gnomes Wiki, Burglin' Gnomes, Demo-Download, Anfängerleitfaden, Koop-Leitfaden, Crafting, Ausrüstung, Mods, BepInEx, Steam-Spiel, Stealth-Spiel",
-      "ogTitle": "Burglin' Gnomes Wiki - Demo-Download, Koop-Leitfaden, Crafting & Mods",
-      "ogDescription": "Vollständige Burglin' Gnomes Ressourcenzentrale! Hol dir Infos zum Demo-Download, Anfängerleitfäden, Koop-Strategien, Crafting-Tipps und Mods für das Steam-Stealth-Heist-Spiel.",
-      "twitterTitle": "Burglin' Gnomes Wiki - Demo-Download, Koop-Leitfaden, Crafting & Mods",
-      "twitterDescription": "Vollständige Burglin' Gnomes Ressourcenzentrale! Hol dir Infos zum Demo-Download, Anfängerleitfäden, Koop-Strategien und Crafting-Tipps."
+      "title": "Lucid Blocks Wiki - Demo-Download, Koop-Leitfaden, Crafting & Mods",
+      "description": "Vollständige Lucid Blocks Ressourcenzentrale! Hol dir Infos zum Demo-Download, Anfängerleitfäden, Koop-Strategien, Crafting-Tipps, Steuerung, Mods und Community-Links für das Steam-Stealth-Heist-Spiel.",
+      "keywords": "Lucid Blocks Wiki, Lucid Blocks, Demo-Download, Anfängerleitfaden, Koop-Leitfaden, Crafting, Ausrüstung, Mods, BepInEx, Steam-Spiel, Stealth-Spiel",
+      "ogTitle": "Lucid Blocks Wiki - Demo-Download, Koop-Leitfaden, Crafting & Mods",
+      "ogDescription": "Vollständige Lucid Blocks Ressourcenzentrale! Hol dir Infos zum Demo-Download, Anfängerleitfäden, Koop-Strategien, Crafting-Tipps und Mods für das Steam-Stealth-Heist-Spiel.",
+      "twitterTitle": "Lucid Blocks Wiki - Demo-Download, Koop-Leitfaden, Crafting & Mods",
+      "twitterDescription": "Vollständige Lucid Blocks Ressourcenzentrale! Hol dir Infos zum Demo-Download, Anfängerleitfäden, Koop-Strategien und Crafting-Tipps."
     }
   },
   "nav": {},
@@ -27,10 +27,10 @@
   },
   "hero": {
     "badge": "Winzige Gnome. Große Häuser. Stealth-Raubzüge mit Freunden.",
-    "title": "Burglin' Gnomes Wiki",
-    "description": "Deine zentrale Anlaufstelle für Burglin' Gnomes: wie die Raubzüge funktionieren, High-Gnome-Aufträge, Crafting & Upgrades, Gegner, Steuerung und die schnellsten Wege, um jeden Durchgang zu überleben.",
+    "title": "Lucid Blocks Wiki",
+    "description": "Deine zentrale Anlaufstelle für Lucid Blocks: wie die Raubzüge funktionieren, High-Gnome-Aufträge, Crafting & Upgrades, Gegner, Steuerung und die schnellsten Wege, um jeden Durchgang zu überleben.",
     "getFreeCodesCTA": "Demo herunterladen",
-    "playOnRobloxCTA": "Auf die Wunschliste bei Steam",
+    "playOnSteamCTA": "Auf die Wunschliste bei Steam",
     "stats": {
       "stat1": {
         "value": "15.000",
@@ -51,11 +51,11 @@
     }
   },
   "gameFeature": {
-    "title": "Burglin' Gnomes Gameplay",
+    "title": "Lucid Blocks Gameplay",
     "description": "Sieh dir an, wie winzige Gnome in chaotischen 6-Spieler-Koop-Stealth-Missionen große Raubzüge durchführen!"
   },
   "tools": {
-    "title": "Burglin' Gnomes",
+    "title": "Lucid Blocks",
     "titleHighlight": "Ressourcen",
     "subtitle": "Alles, was du brauchst, um Raubzüge und Koop-Stealth zu meistern",
     "cards": [
@@ -143,7 +143,7 @@
   },
   "modules": {
     "demoDownload": {
-      "title": "Burglin' Gnomes Demo-Download",
+      "title": "Lucid Blocks Demo-Download",
       "subtitle": "Hol dir die kostenlose Demo auf Steam",
       "downloadSize": "2,62 GiB",
       "diskSize": "4,88 GiB",
@@ -153,7 +153,7 @@
       "engine": "Unity",
       "primaryCTA": "Demo herunterladen",
       "secondaryCTA": "Technische Infos ansehen",
-      "installPath": "Steam\\steamapps\\common\\Burglin Gnomes Demo",
+      "installPath": "Steam\\steamapps\\common\\Lucid Blocks Demo",
       "sections": [
         {
           "heading": "Wo man es herunterladen kann",
@@ -172,7 +172,7 @@
       ]
     },
     "beginnerGuide": {
-      "title": "Burglin' Gnomes Anfängerleitfaden",
+      "title": "Lucid Blocks Anfängerleitfaden",
       "subtitle": "Meistere die Kernschleife und vermeide häufige Fehler",
       "steps": [
         {
@@ -220,7 +220,7 @@
       ]
     },
     "coopGuide": {
-      "title": "Burglin' Gnomes Koop-Leitfaden",
+      "title": "Lucid Blocks Koop-Leitfaden",
       "subtitle": "Koordiniere dich mit bis zu 6 Spielern für maximales Chaos",
       "maxPlayers": 6,
       "roles": [
@@ -254,7 +254,7 @@
       "communication": "Verwende Voice-Chat (V-Taste), um Aufgaben und Rettungen zu koordinieren. Rufe: \"Entdeckt\", \"Route\", \"Brauche Rettung\", \"Bald extrahieren\"."
     },
     "tasksObjectives": {
-      "title": "Burglin' Gnomes Aufgaben & Ziele",
+      "title": "Lucid Blocks Aufgaben & Ziele",
       "subtitle": "Was der High-Gnome will: Aufgabenbeispiele",
       "taskTypes": [
         {
@@ -285,7 +285,7 @@
       ]
     },
     "controlsKeybinds": {
-      "title": "Burglin' Gnomes Steuerung & Tastenbelegung",
+      "title": "Lucid Blocks Steuerung & Tastenbelegung",
       "subtitle": "Standard-Tastatursteuerung (und wo man sie ändern kann)",
       "keybinds": [
         {
@@ -364,7 +364,7 @@
       "changePath": "Vom Titelmenü aus: öffne EINSTELLUNGEN und überprüfe dann die Tastatureinstellungen. Verwende das Suchfeld, um die Tastenbelegungszeilen zu filtern."
     },
     "contentSettings": {
-      "title": "Burglin' Gnomes Inhaltseinstellungen",
+      "title": "Lucid Blocks Inhaltseinstellungen",
       "subtitle": "Inhalte für Erwachsene, Nacktheit-Umschaltung und Steam-Einstellungen",
       "descriptors": [
         "Etwas Nacktheit oder sexuelle Inhalte",
@@ -389,7 +389,7 @@
       ]
     },
     "craftingEquipment": {
-      "title": "Burglin' Gnomes Crafting & Ausrüstung",
+      "title": "Lucid Blocks Crafting & Ausrüstung",
       "subtitle": "Ausrüsten: Crafting-Beispiele und was jedes Werkzeug bewirkt",
       "equipment": [
         {
@@ -426,7 +426,7 @@
       ]
     },
     "lootItems": {
-      "title": "Burglin' Gnomes Beute & Gegenstände",
+      "title": "Lucid Blocks Beute & Gegenstände",
       "subtitle": "Was man stehlen sollte: Gegenstandstypen, Risiko und Trage-Tipps",
       "categories": [
         {
@@ -469,7 +469,7 @@
       ]
     },
     "enemiesHazards": {
-      "title": "Burglin' Gnomes Gegner & Gefahren",
+      "title": "Lucid Blocks Gegner & Gefahren",
       "subtitle": "Wisse, was dich erwischen kann",
       "threats": [
         {
@@ -511,7 +511,7 @@
       ]
     },
     "stealthEscape": {
-      "title": "Burglin' Gnomes Stealth & Flucht Tipps",
+      "title": "Lucid Blocks Stealth & Flucht Tipps",
       "subtitle": "Stehle mehr, stirb weniger",
       "do": [
         "Bleib heimlich und gehe in Deckung, bevor du mit Objekten interagierst",
@@ -541,7 +541,7 @@
       ]
     },
     "homeUpgrades": {
-      "title": "Burglin' Gnomes Haus-Upgrades",
+      "title": "Lucid Blocks Haus-Upgrades",
       "subtitle": "Craften, bauen, verbessern",
       "branches": [
         {
@@ -599,33 +599,33 @@
       ]
     },
     "community": {
-      "title": "Burglin' Gnomes Community & Discord",
+      "title": "Lucid Blocks Community & Discord",
       "subtitle": "Finde Trupps, Updates, Diskussionen",
       "links": [
         {
           "title": "Offizieller Discord",
           "subtitle": "Ankündigungen • Feedback • LFG",
-          "url": "https://discord.gg/rbeW4bpsqY"
+          "url": "https://discord.com/invite/lucidblocks"
         },
         {
           "title": "Offizielles X (Twitter)",
           "subtitle": "Updates & Entwicklerbeiträge",
-          "url": "https://x.com/itsfobri"
+          "url": "https://x.com/lucidblocks"
         },
         {
           "title": "Steam Community Hub",
           "subtitle": "Diskussionen • Screenshots • Leitfäden",
-          "url": "https://steamcommunity.com/app/3844970"
+          "url": "https://steamcommunity.com/app/3495730"
         },
         {
           "title": "Steam Store Seite",
           "subtitle": "Wunschliste • Demo • Offizielle Beschreibung",
-          "url": "https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+          "url": "https://store.steampowered.com/app/3495730/Lucid_Blocks/"
         }
       ]
     },
     "modsBepInEx": {
-      "title": "Burglin' Gnomes Mods & BepInEx Setup",
+      "title": "Lucid Blocks Mods & BepInEx Setup",
       "subtitle": "Installiere Mods auf saubere Weise",
       "steps": [
         {
@@ -652,17 +652,17 @@
       "paths": [
         {
           "label": "Typische Steam-Installation",
-          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\"
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\"
         },
         {
           "label": "Plugins-Ordner",
-          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\BepInEx\\plugins\\"
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\BepInEx\\plugins\\"
         }
       ],
       "multiplayerNote": "Für modifizierte Koop-Gameplay-Funktionen sollte jeder BepInEx und dieselben Gameplay-Mods installieren."
     },
     "popularMods": {
-      "title": "Burglin' Gnomes Beliebte Mods",
+      "title": "Lucid Blocks Beliebte Mods",
       "subtitle": "Top-Community-Auswahlen",
       "mods": [
         {
@@ -729,7 +729,7 @@
       ]
     },
     "controllerSupport": {
-      "title": "Burglin' Gnomes Controller-Unterstützung",
+      "title": "Lucid Blocks Controller-Unterstützung",
       "subtitle": "Volle Gamepad-Steuerung",
       "native": {
         "title": "In-Game-Einstellungen",
@@ -749,7 +749,7 @@
       ]
     },
     "playerCount": {
-      "title": "Burglin' Gnomes Spielerzahl & Trend",
+      "title": "Lucid Blocks Spielerzahl & Trend",
       "subtitle": "Live-Popularitäts-Schnappschuss",
       "stats": {
         "now": {
@@ -782,43 +782,43 @@
   "faq": {
     "title": "Häufig gestellte",
     "titleHighlight": "Fragen",
-    "subtitle": "Alles, was du über Burglin' Gnomes wissen musst",
+    "subtitle": "Alles, was du über Lucid Blocks wissen musst",
     "questions": [
       {
-        "question": "Wie lade ich die Burglin' Gnomes Demo herunter?",
+        "question": "Wie lade ich die Lucid Blocks Demo herunter?",
         "answer": "Besuche die Steam Store Seite und klicke auf \"Demo herunterladen\". Die Demo ist kostenlos und erfordert 2,62 GiB zum Herunterladen, 4,88 GiB Festplattenspeicher."
       },
       {
-        "question": "Kann ich Burglin' Gnomes solo spielen oder brauche ich Freunde?",
-        "answer": "Burglin' Gnomes unterstützt sowohl Solo-Spiel als auch Koop mit bis zu 6 Spielern. Solo ist schwieriger, aber möglich."
+        "question": "Kann ich Lucid Blocks solo spielen oder brauche ich Freunde?",
+        "answer": "Lucid Blocks unterstützt sowohl Solo-Spiel als auch Koop mit bis zu 6 Spielern. Solo ist schwieriger, aber möglich."
       },
       {
-        "question": "Was sind High-Gnome-Aufgaben in Burglin' Gnomes?",
+        "question": "Was sind High-Gnome-Aufgaben in Lucid Blocks?",
         "answer": "High-Gnome ist dein Boss, der Ziele wie \"zerstöre den Fernseher\", \"überflute die Toilette\" oder \"stehle bestimmte Gegenstände\" vergibt. Erledige sie für zusätzliche Belohnungen."
       },
       {
-        "question": "Wie installiere ich Mods für Burglin' Gnomes?",
+        "question": "Wie installiere ich Mods für Lucid Blocks?",
         "answer": "Installiere BepInEx 5, starte das Spiel einmal und platziere dann Mod-DLLs im Ordner BepInEx/plugins/. Alle Spieler benötigen die gleichen Mods für den Mehrspieler."
       },
       {
-        "question": "Unterstützt Burglin' Gnomes Controller?",
+        "question": "Unterstützt Lucid Blocks Controller?",
         "answer": "Ja! Verwende die In-Game-Einstellungen für grundlegende Controller-Unterstützung oder installiere den Controller Mod von Nexus Mods für vollständige UI-Navigation."
       },
       {
-        "question": "Wie hoch ist die Spielerzahl für Burglin' Gnomes?",
-        "answer": "Stand Februar 2026 verzeichnet Burglin' Gnomes durchschnittlich 6.000+ gleichzeitige Spieler, mit einem Peak von 15.272 am 8. Februar 2026."
+        "question": "Wie hoch ist die Spielerzahl für Lucid Blocks?",
+        "answer": "Stand Februar 2026 verzeichnet Lucid Blocks durchschnittlich 6.000+ gleichzeitige Spieler, mit einem Peak von 15.272 am 8. Februar 2026."
       }
     ]
   },
   "cta": {
     "title": "Bereit, mit dem Raub zu beginnen?",
-    "description": "Tritt der Burglin' Gnomes Community auf Discord bei, um Koop-Gruppen, Updates und Mod-Diskussionen zu erhalten!",
+    "description": "Tritt der Lucid Blocks Community auf Discord bei, um Koop-Gruppen, Updates und Mod-Diskussionen zu erhalten!",
     "joinCommunity": "Discord beitreten",
     "joinGame": "Demo auf Steam herunterladen"
   },
   "footer": {
-    "title": "Burglin' Gnomes Wiki",
-    "description": "Dein komplettes Ressourcenzentrum für Burglin' Gnomes Stealth-Raubzüge, Koop-Strategien, Mods und Community-Leitfäden.",
+    "title": "Lucid Blocks Wiki",
+    "description": "Dein komplettes Ressourcenzentrum für Lucid Blocks Stealth-Raubzüge, Koop-Strategien, Mods und Community-Leitfäden.",
     "resources": "Ressourcen",
     "community": "Community",
     "legal": "Rechtliches",
@@ -830,7 +830,7 @@
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
     "copyrightNotice": "Urheberrecht",
-    "copyright": "© 2026 Burglin' Gnomes Wiki. Nicht mit den Entwicklern von Burglin' Gnomes verbunden.",
+    "copyright": "© 2026 Lucid Blocks Wiki. Nicht mit den Entwicklern von Lucid Blocks verbunden.",
     "disclaimer": "Inoffizielle von Fans erstellte Ressourcen-Website."
   }
 }

@@ -1,30 +1,27 @@
 'use client'
 
 import { useEffect, useState, Suspense, lazy } from 'react'
-import Link from 'next/link'
 import {
   AlertTriangle,
   ArrowRight,
+  BookOpen,
   Check,
   ChevronDown,
   ClipboardCheck,
   Clock,
-  Copy,
-  Download,
+  Eye,
   ExternalLink,
   Gamepad2,
   Hammer,
   Home,
-  Keyboard,
   MessageCircle,
   Package,
-  Shield,
+  Settings,
   Sparkles,
   Star,
   TrendingUp,
-  Users,
-  X
 } from 'lucide-react'
+import Link from 'next/link'
 import { useMessages } from 'next-intl'
 import { VideoFeature } from '@/components/home/VideoFeature'
 import { NativeBannerAd, AdBanner } from '@/components/ads'
@@ -38,9 +35,7 @@ const CTASection = lazy(() => import('@/components/home/CTASection'))
 
 // Loading placeholder
 const LoadingPlaceholder = ({ height = 'h-64' }: { height?: string }) => (
-  <div className={`${height} bg-white/5 border border-border rounded-xl animate-pulse flex items-center justify-center`}>
-    <div className="text-muted-foreground">Loading...</div>
-  </div>
+  <div className={`${height} bg-white/5 border border-border rounded-xl animate-pulse`} />
 )
 
 export default function HomePage() {
@@ -117,18 +112,9 @@ export default function HomePage() {
     ],
   }
 
-  // Copy state
-  const [copiedPath, setCopiedPath] = useState<string | null>(null)
-
-  const copyToClipboard = async (text: string) => {
-    try {
-      await navigator.clipboard.writeText(text)
-      setCopiedPath(text)
-      setTimeout(() => setCopiedPath(null), 2000)
-    } catch (err) {
-      console.error('Copy failed:', err)
-    }
-  }
+  // FAQ accordion states
+  const [faqExpanded, setFaqExpanded] = useState<number | null>(null)
+  const [deckExpanded, setDeckExpanded] = useState<number | null>(null)
 
   // Scroll reveal animation
   useEffect(() => {
@@ -158,6 +144,11 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
+      {/* 广告位 1: 移动端横幅 Sticky */}
+      <div className="sticky top-20 z-20 border-b border-border py-2">
+        <AdBanner type="banner-320x50" adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50} />
+      </div>
+
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
         <div className="container mx-auto max-w-6xl">
@@ -180,19 +171,17 @@ export default function HomePage() {
               {t.hero.description}
             </p>
 
-            {/* CTA Buttons - External links only */}
+            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <a
-                href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => scrollToSection('beginner-guide')}
                 className="inline-flex items-center justify-center gap-2 px-8 py-4
                            bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)]
                            text-white rounded-lg font-semibold text-lg transition-colors"
               >
-                <Download className="w-5 h-5" />
+                <BookOpen className="w-5 h-5" />
                 {t.hero.getFreeCodesCTA}
-              </a>
+              </button>
               <a
                 href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
                 target="_blank"
@@ -201,7 +190,7 @@ export default function HomePage() {
                            border border-border hover:bg-white/10 rounded-lg
                            font-semibold text-lg transition-colors"
               >
-                {t.hero.playOnRobloxCTA}
+                {t.hero.playOnSteamCTA}
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
@@ -214,7 +203,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Ad Banner 1 */}
+      {/* 广告位 2: 原生横幅 */}
       <NativeBannerAd adKey={process.env.NEXT_PUBLIC_AD_NATIVE_BANNER || ''} />
 
       {/* Video Section */}
@@ -229,6 +218,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* 广告位 3: 标准横幅 728×90 */}
+      <AdBanner type="banner-728x90" adKey={process.env.NEXT_PUBLIC_AD_BANNER_728X90} />
 
       {/* Tools Grid - 16 Navigation Cards */}
       <section className="px-4 py-20 bg-white/[0.02]">
@@ -249,10 +241,10 @@ export default function HomePage() {
             {t.tools.cards.map((card: any, index: number) => {
               // 映射卡片索引到 section ID
               const sectionIds = [
-                'demo-download', 'beginner-guide', 'coop-guide', 'tasks-objectives',
-                'controls-keybinds', 'content-settings', 'crafting-equipment', 'loot-items',
-                'enemies-hazards', 'stealth-escape', 'home-upgrades', 'community-discord',
-                'mods-bepinex', 'popular-mods', 'controller-support', 'player-count'
+                'beginner-guide', 'apotheosis-crafting', 'tools-weapons', 'storage-inventory',
+                'qualia-base-building', 'world-regions', 'creatures-enemies', 'mobility-gear',
+                'farming-growth', 'best-early-unlocks', 'achievement-tracker', 'singleplayer-faq',
+                'steam-deck-controller', 'settings-accessibility', 'updates-patch-notes', 'crash-fix'
               ]
               const sectionId = sectionIds[index]
 
@@ -285,883 +277,461 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Module 1: Demo Download */}
-      <section id="demo-download" className="scroll-mt-24 px-4 py-20">
+      {/* 广告位 4: 方形广告 300×250 */}
+      <AdBanner type="banner-300x250" adKey={process.env.NEXT_PUBLIC_AD_BANNER_300X250} />
+
+      {/* Module 1: Beginner Guide */}
+      <section id="beginner-guide" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.demoDownload.title}
+              {t.modules.lucidBlocksBeginnerGuide.title}
             </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.demoDownload.subtitle}
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+              {t.modules.lucidBlocksBeginnerGuide.intro}
             </p>
           </div>
 
-          {/* Quick Facts Grid */}
-          <div className="scroll-reveal grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            {[
-              { label: 'Download Size', value: t.modules.demoDownload.downloadSize },
-              { label: 'Disk Size', value: t.modules.demoDownload.diskSize },
-              { label: 'Release Date', value: t.modules.demoDownload.releaseDate },
-              { label: 'Price', value: t.modules.demoDownload.price },
-            ].map((fact, index) => (
-              <div key={index} className="p-4 bg-white/5 border border-border rounded-xl text-center">
-                <div className="text-2xl font-bold text-[hsl(var(--nav-theme-light))] mb-1">
-                  {fact.value}
+          {/* Steps */}
+          <div className="scroll-reveal space-y-4 mb-10">
+            {t.modules.lucidBlocksBeginnerGuide.steps.map((step: any, index: number) => (
+              <div key={index} className="flex gap-4 p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[hsl(var(--nav-theme)/0.2)] border-2 border-[hsl(var(--nav-theme)/0.5)] flex items-center justify-center">
+                  <span className="text-xl font-bold text-[hsl(var(--nav-theme-light))]">{index + 1}</span>
                 </div>
-                <div className="text-sm text-muted-foreground">{fact.label}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* Sections */}
-          <div className="scroll-reveal space-y-6 mb-8">
-            {t.modules.demoDownload.sections.map((section: any, index: number) => (
-              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl">
-                <h3 className="text-xl font-bold mb-4 text-[hsl(var(--nav-theme-light))]">
-                  {section.heading}
-                </h3>
-                <ul className="space-y-2">
-                  {section.items.map((item: string, idx: number) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="scroll-reveal flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4
-                         bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)]
-                         text-white rounded-lg font-semibold transition-colors"
-            >
-              <Download className="w-5 h-5" />
-              {t.modules.demoDownload.primaryCTA}
-            </a>
-            <a
-              href="https://steamdb.info/app/4356080/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4
-                         border border-border hover:bg-white/10 rounded-lg
-                         font-semibold transition-colors"
-            >
-              {t.modules.demoDownload.secondaryCTA}
-              <ExternalLink className="w-4 h-4" />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Module 2: Beginner Guide */}
-      <section id="beginner-guide" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.beginnerGuide.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.beginnerGuide.subtitle}
-            </p>
-          </div>
-
-          {/* 5-Step Flow */}
-          <div className="scroll-reveal mb-12">
-            <div className="space-y-4">
-              {t.modules.beginnerGuide.steps.map((step: any, index: number) => (
-                <div key={index} className="flex gap-4 p-6 bg-white/5 border border-border rounded-xl
-                                            hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full
-                                  bg-[hsl(var(--nav-theme)/0.2)]
-                                  border-2 border-[hsl(var(--nav-theme)/0.5)]
-                                  flex items-center justify-center">
-                    <span className="text-xl font-bold text-[hsl(var(--nav-theme-light))]">
-                      {step.number}
-                    </span>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">{step.title}</h3>
-                    <p className="text-muted-foreground">{step.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* 3 Pitfall Cards */}
-          <div className="scroll-reveal">
-            <h3 className="text-2xl font-bold mb-6 text-center">Common Pitfalls</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {t.modules.beginnerGuide.pitfalls.map((pitfall: any, index: number) => (
-                <div key={index} className="p-6 bg-yellow-500/10 border border-yellow-500/30 rounded-xl">
-                  <AlertTriangle className="w-8 h-8 text-yellow-400 mb-4" />
-                  <h4 className="font-bold mb-2 text-yellow-400">{pitfall.title}</h4>
-                  <p className="text-sm text-muted-foreground">{pitfall.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Module 3: Co-op Guide */}
-      <section id="coop-guide" className="scroll-mt-24 px-4 py-20">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.coopGuide.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.coopGuide.subtitle}
-            </p>
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full
-                            bg-[hsl(var(--nav-theme)/0.1)]
-                            border border-[hsl(var(--nav-theme)/0.3)] mt-4">
-              <Users className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />
-              <span className="text-sm font-semibold">Up to {t.modules.coopGuide.maxPlayers} Players</span>
-            </div>
-          </div>
-
-          {/* Role Cards */}
-          <div className="scroll-reveal mb-12">
-            <h3 className="text-2xl font-bold mb-6">Team Roles</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {t.modules.coopGuide.roles.map((role: any, index: number) => (
-                <div key={index} className="p-6 bg-white/5 border border-border rounded-xl
-                                            hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                  <div className="flex items-center gap-3 mb-3">
-                    <DynamicIcon
-                      name={role.icon}
-                      className="w-6 h-6 text-[hsl(var(--nav-theme-light))]"
-                    />
-                    <h4 className="text-lg font-bold">{role.name}</h4>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{role.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Threats List */}
-          <div className="scroll-reveal mb-8">
-            <h3 className="text-2xl font-bold mb-6">Threats to Plan Around</h3>
-            <div className="p-6 bg-white/5 border border-border rounded-xl">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {t.modules.coopGuide.threats.map((threat: string, index: number) => (
-                  <div key={index} className="flex items-center gap-2">
-                    <AlertTriangle className="w-4 h-4 text-yellow-400 flex-shrink-0" />
-                    <span className="text-sm">{threat}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Communication */}
-          <div className="scroll-reveal">
-            <div className="p-6 bg-[hsl(var(--nav-theme)/0.05)] border border-[hsl(var(--nav-theme)/0.3)] rounded-xl">
-              <div className="flex items-start gap-3">
-                <MessageCircle className="w-6 h-6 text-[hsl(var(--nav-theme-light))] flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="font-bold mb-2">Communication</h4>
-                  <p className="text-sm text-muted-foreground">{t.modules.coopGuide.communication}</p>
+                  <h3 className="text-xl font-bold mb-2">{step.title}</h3>
+                  <p className="text-muted-foreground">{step.description}</p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Module 4: Tasks & Objectives */}
-      <section id="tasks-objectives" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.tasksObjectives.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.tasksObjectives.subtitle}
-            </p>
-          </div>
-
-          {/* Task Type Cards */}
-          <div className="scroll-reveal mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {t.modules.tasksObjectives.taskTypes.map((taskType: any, index: number) => (
-                <div key={index} className="p-6 bg-white/5 border border-border rounded-xl">
-                  <ClipboardCheck className="w-8 h-8 text-[hsl(var(--nav-theme-light))] mb-4" />
-                  <h3 className="text-lg font-bold mb-3">{taskType.type}</h3>
-                  <ul className="space-y-2">
-                    {taskType.examples.map((example: string, idx: number) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm">
-                        <span className="text-[hsl(var(--nav-theme-light))]">•</span>
-                        <span className="text-muted-foreground">{example}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Efficiency Tips */}
-          <div className="scroll-reveal">
-            <h3 className="text-2xl font-bold mb-6">Efficiency Tips</h3>
-            <div className="p-6 bg-white/5 border border-border rounded-xl">
-              <ul className="space-y-3">
-                {t.modules.tasksObjectives.efficiency.map((tip: string, index: number) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                    <span>{tip}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Module 5: Controls & Keybinds */}
-      <section id="controls-keybinds" className="scroll-mt-24 px-4 py-20">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.controlsKeybinds.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.controlsKeybinds.subtitle}
-            </p>
-          </div>
-
-          {/* Keybind Table */}
-          <div className="scroll-reveal mb-8">
-            <div className="bg-white/5 border border-border rounded-xl overflow-hidden">
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-px bg-border">
-                {t.modules.controlsKeybinds.keybinds.map((bind: any, index: number) => (
-                  <div key={index} className="p-4 bg-card">
-                    <div className="font-mono font-bold text-[hsl(var(--nav-theme-light))] mb-1">
-                      {bind.key}
-                    </div>
-                    <div className="text-sm text-muted-foreground">{bind.action}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Settings Path */}
-          <div className="scroll-reveal">
-            <div className="p-6 bg-[hsl(var(--nav-theme)/0.05)] border border-[hsl(var(--nav-theme)/0.3)] rounded-xl">
-              <div className="flex items-start gap-3">
-                <Keyboard className="w-6 h-6 text-[hsl(var(--nav-theme-light))] flex-shrink-0 mt-1" />
-                <div>
-                  <h4 className="font-bold mb-2">How to Change Controls</h4>
-                  <p className="text-sm text-muted-foreground">{t.modules.controlsKeybinds.changePath}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Module 6: Content Settings */}
-      <section id="content-settings" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.contentSettings.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.contentSettings.subtitle}
-            </p>
-          </div>
-
-          {/* Content Descriptors */}
-          <div className="scroll-reveal mb-8">
-            <div className="flex flex-wrap gap-3 justify-center">
-              {t.modules.contentSettings.descriptors.map((descriptor: string, index: number) => (
-                <div key={index} className="px-4 py-2 bg-yellow-500/10 border border-yellow-500/30 rounded-lg">
-                  <span className="text-sm font-semibold text-yellow-400">{descriptor}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Detail Sections */}
-          <div className="scroll-reveal space-y-6">
-            {t.modules.contentSettings.details.map((detail: any, index: number) => (
-              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl">
-                <h3 className="text-xl font-bold mb-4 text-[hsl(var(--nav-theme-light))]">
-                  {detail.heading}
-                </h3>
-                <ul className="space-y-2">
-                  {detail.items.map((item: string, idx: number) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <Shield className="w-5 h-5 text-[hsl(var(--nav-theme-light))] mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Module 7: Crafting & Equipment */}
-      <section id="crafting-equipment" className="scroll-mt-24 px-4 py-20">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.craftingEquipment.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.craftingEquipment.subtitle}
-            </p>
-          </div>
-
-          {/* Equipment Grid */}
-          <div className="scroll-reveal mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {t.modules.craftingEquipment.equipment.map((equip: any, index: number) => (
-                <div key={index} className="p-6 bg-white/5 border border-border rounded-xl
-                                            hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                  <div className="flex items-center gap-3 mb-3">
-                    <Hammer className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
-                    <h3 className="text-lg font-bold">{equip.item}</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{equip.benefit}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Sections */}
-          <div className="scroll-reveal space-y-6">
-            {t.modules.craftingEquipment.sections.map((section: any, index: number) => (
-              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl">
-                <h3 className="text-xl font-bold mb-4 text-[hsl(var(--nav-theme-light))]">
-                  {section.heading}
-                </h3>
-                <ul className="space-y-2">
-                  {section.items.map((item: string, idx: number) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Module 8: Loot & Items */}
-      <section id="loot-items" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.lootItems.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.lootItems.subtitle}
-            </p>
-          </div>
-
-          {/* Category Cards */}
-          <div className="scroll-reveal mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {t.modules.lootItems.categories.map((category: any, index: number) => (
-                <div key={index} className="p-6 bg-white/5 border border-border rounded-xl">
-                  <Package className="w-8 h-8 text-[hsl(var(--nav-theme-light))] mb-4" />
-                  <h3 className="text-lg font-bold mb-3">{category.type}</h3>
-                  <ul className="space-y-2">
-                    {category.examples.map((example: string, idx: number) => (
-                      <li key={idx} className="text-sm text-muted-foreground">
-                        {example}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Carry Tips */}
-          <div className="scroll-reveal mb-8">
-            <h3 className="text-2xl font-bold mb-6">Carry Tips</h3>
-            <div className="p-6 bg-white/5 border border-border rounded-xl">
-              <ul className="space-y-3">
-                {t.modules.lootItems.carryTips.map((tip: string, index: number) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                    <span>{tip}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* Risk Levels */}
-          <div className="scroll-reveal">
-            <h3 className="text-2xl font-bold mb-6">Risk Levels</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {t.modules.lootItems.riskLevels.map((risk: any, index: number) => (
-                <div key={index} className={`p-6 border rounded-xl ${
-                  risk.level === 'Low' ? 'bg-green-500/10 border-green-500/30' :
-                  risk.level === 'Medium' ? 'bg-yellow-500/10 border-yellow-500/30' :
-                  'bg-red-500/10 border-red-500/30'
-                }`}>
-                  <h4 className={`font-bold mb-2 ${
-                    risk.level === 'Low' ? 'text-green-400' :
-                    risk.level === 'Medium' ? 'text-yellow-400' :
-                    'text-red-400'
-                  }`}>{risk.level} Risk</h4>
-                  <p className="text-sm text-muted-foreground">{risk.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Module 9: Enemies & Hazards */}
-      <section id="enemies-hazards" className="scroll-mt-24 px-4 py-20">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.enemiesHazards.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.enemiesHazards.subtitle}
-            </p>
-          </div>
-
-          {/* Threat Cards */}
-          <div className="scroll-reveal">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {t.modules.enemiesHazards.threats.map((threat: any, index: number) => (
-                <div key={index} className="p-6 bg-white/5 border border-border rounded-xl
-                                            hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                  <div className="flex items-center gap-3 mb-4">
-                    <AlertTriangle className="w-6 h-6 text-yellow-400" />
-                    <h3 className="text-lg font-bold">{threat.name}</h3>
-                  </div>
-                  <div className="space-y-3 text-sm">
-                    <div>
-                      <span className="text-muted-foreground">Trigger:</span>
-                      <p className="mt-1">{threat.trigger}</p>
-                    </div>
-                    <div>
-                      <span className="text-muted-foreground">What Happens:</span>
-                      <p className="mt-1">{threat.behavior}</p>
-                    </div>
-                    <div>
-                      <span className="text-muted-foreground">Counter:</span>
-                      <p className="mt-1 text-[hsl(var(--nav-theme-light))]">{threat.counter}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Module 10: Stealth & Escape */}
-      <section id="stealth-escape" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.stealthEscape.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.stealthEscape.subtitle}
-            </p>
-          </div>
-
-          {/* Do/Don't Cards */}
-          <div className="scroll-reveal mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-6 bg-green-500/10 border border-green-500/30 rounded-xl">
-                <div className="flex items-center gap-2 mb-4">
-                  <Check className="w-6 h-6 text-green-400" />
-                  <h3 className="text-xl font-bold text-green-400">DO</h3>
-                </div>
-                <ul className="space-y-2">
-                  {t.modules.stealthEscape.do.map((item: string, index: number) => (
-                    <li key={index} className="flex items-start gap-2 text-sm">
-                      <span className="text-green-400 mt-1">✓</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className="p-6 bg-red-500/10 border border-red-500/30 rounded-xl">
-                <div className="flex items-center gap-2 mb-4">
-                  <X className="w-6 h-6 text-red-400" />
-                  <h3 className="text-xl font-bold text-red-400">DON'T</h3>
-                </div>
-                <ul className="space-y-2">
-                  {t.modules.stealthEscape.dont.map((item: string, index: number) => (
-                    <li key={index} className="flex items-start gap-2 text-sm">
-                      <span className="text-red-400 mt-1">✗</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
           </div>
 
           {/* Quick Tips */}
-          <div className="scroll-reveal">
-            <h3 className="text-2xl font-bold mb-6 text-center">Quick Tips</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {t.modules.stealthEscape.quickTips.map((tip: any, index: number) => (
-                <div key={index} className="p-6 bg-[hsl(var(--nav-theme)/0.05)] border border-[hsl(var(--nav-theme)/0.3)] rounded-xl">
-                  <h4 className="font-bold mb-2 text-[hsl(var(--nav-theme-light))]">{tip.title}</h4>
-                  <p className="text-sm text-muted-foreground">{tip.text}</p>
-                </div>
-              ))}
+          <div className="scroll-reveal p-6 bg-[hsl(var(--nav-theme)/0.05)] border border-[hsl(var(--nav-theme)/0.3)] rounded-xl">
+            <div className="flex items-center gap-2 mb-4">
+              <BookOpen className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+              <h3 className="font-bold text-lg">Quick Tips</h3>
             </div>
+            <ul className="space-y-2">
+              {t.modules.lucidBlocksBeginnerGuide.quickTips.map((tip: string, index: number) => (
+                <li key={index} className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-[hsl(var(--nav-theme-light))] mt-1 flex-shrink-0" />
+                  <span className="text-muted-foreground text-sm">{tip}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
 
-      {/* Module 11: Home Upgrades */}
-      <section id="home-upgrades" className="scroll-mt-24 px-4 py-20">
+      {/* 广告位 5: 中型横幅 468×60 */}
+      <AdBanner type="banner-468x60" adKey={process.env.NEXT_PUBLIC_AD_BANNER_468X60} />
+
+      {/* Module 2: Apotheosis Crafting */}
+      <section id="apotheosis-crafting" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.homeUpgrades.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.homeUpgrades.subtitle}
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksApotheosisCrafting.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksApotheosisCrafting.intro}</p>
           </div>
-
-          {/* Branch Cards */}
-          <div className="scroll-reveal mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {t.modules.homeUpgrades.branches.map((branch: any, index: number) => (
-                <div key={index} className="p-6 bg-white/5 border border-border rounded-xl
-                                            hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                  <Home className="w-8 h-8 text-[hsl(var(--nav-theme-light))] mb-4" />
-                  <h3 className="text-lg font-bold mb-2">{branch.branch}</h3>
-                  <p className="text-sm text-muted-foreground mb-3">{branch.summary}</p>
-                  <ul className="space-y-1">
-                    {branch.items.map((item: string, idx: number) => (
-                      <li key={idx} className="text-xs text-muted-foreground">• {item}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {t.modules.lucidBlocksApotheosisCrafting.cards.map((card: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <h3 className="font-bold text-lg mb-2 text-[hsl(var(--nav-theme-light))]">{card.name}</h3>
+                <p className="text-muted-foreground text-sm">{card.description}</p>
+              </div>
+            ))}
           </div>
-
-          {/* Priority Ranking */}
-          <div className="scroll-reveal">
-            <h3 className="text-2xl font-bold mb-6">Recommended Priority</h3>
-            <div className="space-y-4">
-              {t.modules.homeUpgrades.priority.map((priority: any, index: number) => (
-                <div key={index} className="p-6 bg-white/5 border border-border rounded-xl flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full
-                                  bg-[hsl(var(--nav-theme)/0.2)]
-                                  border-2 border-[hsl(var(--nav-theme)/0.5)]
-                                  flex items-center justify-center">
-                    <span className="font-bold text-[hsl(var(--nav-theme-light))]">#{priority.rank}</span>
-                  </div>
-                  <div>
-                    <h4 className="font-bold mb-1">{priority.title}</h4>
-                    <p className="text-sm text-muted-foreground">{priority.reason}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+          <div className="scroll-reveal flex flex-wrap gap-3 justify-center">
+            {t.modules.lucidBlocksApotheosisCrafting.milestones.map((m: string, i: number) => (
+              <span key={i} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm">
+                <Check className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />{m}
+              </span>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Module 12: Community & Discord */}
-      <section id="community-discord" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+      {/* Module 3: Tools and Weapons */}
+      <section id="tools-weapons" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.community.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.community.subtitle}
-            </p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksToolsAndWeapons.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksToolsAndWeapons.intro}</p>
           </div>
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {t.modules.lucidBlocksToolsAndWeapons.items.map((item: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="flex items-center gap-3 mb-3">
+                  <Hammer className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{item.type}</span>
+                </div>
+                <h3 className="font-bold mb-2">{item.name}</h3>
+                <p className="text-muted-foreground text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          {/* Community Link Cards */}
-          <div className="scroll-reveal">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {t.modules.community.links.map((link: any, index: number) => (
-                <a
-                  key={index}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group p-6 bg-white/5 border border-border rounded-xl
-                             hover:border-[hsl(var(--nav-theme)/0.5)]
-                             hover:shadow-lg hover:shadow-[hsl(var(--nav-theme)/0.1)]
-                             transition-all duration-300"
+      {/* Module 4: Storage and Inventory */}
+      <section id="storage-inventory" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksStorageAndInventory.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksStorageAndInventory.intro}</p>
+          </div>
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {t.modules.lucidBlocksStorageAndInventory.solutions.map((s: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="flex items-center gap-2 mb-3">
+                  <h3 className="font-bold">{s.name}</h3>
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{s.role}</span>
+                </div>
+                <p className="text-muted-foreground text-sm">{s.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="scroll-reveal p-6 bg-[hsl(var(--nav-theme)/0.05)] border border-[hsl(var(--nav-theme)/0.3)] rounded-xl">
+            <div className="flex items-center gap-2 mb-4">
+              <Package className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+              <h3 className="font-bold">Management Tips</h3>
+            </div>
+            <ul className="space-y-2">
+              {t.modules.lucidBlocksStorageAndInventory.managementTips.map((tip: string, i: number) => (
+                <li key={i} className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-[hsl(var(--nav-theme-light))] mt-1 flex-shrink-0" />
+                  <span className="text-muted-foreground text-sm">{tip}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Module 5: Qualia and Base Building */}
+      <section id="qualia-base-building" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksQualiaAndBaseBuilding.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksQualiaAndBaseBuilding.intro}</p>
+          </div>
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {t.modules.lucidBlocksQualiaAndBaseBuilding.cards.map((card: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <h3 className="font-bold text-lg mb-2 text-[hsl(var(--nav-theme-light))]">{card.name}</h3>
+                <p className="text-muted-foreground text-sm">{card.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="scroll-reveal grid grid-cols-2 md:grid-cols-4 gap-4">
+            {t.modules.lucidBlocksQualiaAndBaseBuilding.highlights.map((h: string, i: number) => (
+              <div key={i} className="p-4 bg-white/5 border border-border rounded-xl text-center hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <Home className="w-6 h-6 text-[hsl(var(--nav-theme-light))] mx-auto mb-2" />
+                <p className="text-sm">{h}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Module 6: World Regions */}
+      <section id="world-regions" className="scroll-mt-24 px-4 py-20">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksWorldRegions.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksWorldRegions.intro}</p>
+          </div>
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4">
+            {t.modules.lucidBlocksWorldRegions.regions.map((region: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="flex items-center gap-3 mb-3">
+                  <Eye className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                  <h3 className="font-bold">{region.name}</h3>
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{region.type}</span>
+                </div>
+                <p className="text-muted-foreground text-sm">{region.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Module 7: Creatures and Enemies */}
+      <section id="creatures-enemies" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksCreaturesAndEnemies.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksCreaturesAndEnemies.intro}</p>
+          </div>
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {t.modules.lucidBlocksCreaturesAndEnemies.creatures.map((c: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="mb-3">
+                  <span className={`text-xs px-2 py-1 rounded-full border ${["Hostile Enemy","Major Threat","Elite Threat"].includes(c.role) ? "bg-red-500/10 border-red-500/30 text-red-400" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}>{c.role}</span>
+                </div>
+                <h3 className="font-bold mb-2">{c.name}</h3>
+                <p className="text-muted-foreground text-sm">{c.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Module 8: Mobility Gear */}
+      <section id="mobility-gear" className="scroll-mt-24 px-4 py-20">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksMobilityGear.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksMobilityGear.intro}</p>
+          </div>
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+            {t.modules.lucidBlocksMobilityGear.items.map((item: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="flex items-center gap-2 mb-3">
+                  <ArrowRight className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{item.type}</span>
+                </div>
+                <h3 className="font-bold mb-2">{item.name}</h3>
+                <p className="text-muted-foreground text-sm">{item.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="scroll-reveal flex flex-wrap gap-3 justify-center">
+            {t.modules.lucidBlocksMobilityGear.unlockMilestones.map((m: string, i: number) => (
+              <span key={i} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm">
+                <Check className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />{m}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 广告位 6: 移动端横幅 320×50 */}
+      <AdBanner type="banner-320x50" adKey={process.env.NEXT_PUBLIC_AD_MOBILE_320X50} />
+
+      {/* Module 9: Farming and Growth */}
+      <section id="farming-growth" className="scroll-mt-24 px-4 py-20">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksFarmingAndGrowth.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksFarmingAndGrowth.intro}</p>
+          </div>
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            {t.modules.lucidBlocksFarmingAndGrowth.sections.map((s: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="flex items-center gap-2 mb-3">
+                  <TrendingUp className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                  <h3 className="font-bold">{s.name}</h3>
+                </div>
+                <p className="text-muted-foreground text-sm">{s.description}</p>
+              </div>
+            ))}
+          </div>
+          <div className="scroll-reveal flex flex-wrap gap-3 justify-center">
+            {t.modules.lucidBlocksFarmingAndGrowth.growthMilestones.map((m: string, i: number) => (
+              <span key={i} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm">
+                <Check className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />{m}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Module 10: Best Early Unlocks */}
+      <section id="best-early-unlocks" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksBestEarlyUnlocks.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksBestEarlyUnlocks.intro}</p>
+          </div>
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {t.modules.lucidBlocksBestEarlyUnlocks.priorities.map((p: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="flex items-center gap-2 mb-3">
+                  <Star className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                  <span className={`text-xs px-2 py-1 rounded-full border ${p.priority === "Essential" ? "bg-red-500/10 border-red-500/30 text-red-400" : p.priority === "Very High" ? "bg-orange-500/10 border-orange-500/30 text-orange-400" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}>{p.priority}</span>
+                </div>
+                <h3 className="font-bold mb-2">{p.name}</h3>
+                <p className="text-muted-foreground text-sm">{p.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Module 11: Achievement Tracker */}
+      <section id="achievement-tracker" className="scroll-mt-24 px-4 py-20">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksAchievementTracker.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksAchievementTracker.intro}</p>
+          </div>
+          <div className="scroll-reveal space-y-6">
+            {t.modules.lucidBlocksAchievementTracker.groups.map((group: any, gi: number) => (
+              <div key={gi} className="p-6 bg-white/5 border border-border rounded-xl">
+                <div className="flex items-center gap-2 mb-4">
+                  <ClipboardCheck className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                  <h3 className="font-bold text-lg">{group.name}</h3>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {group.achievements.map((a: any, ai: number) => (
+                    <div key={ai} className="p-3 bg-white/5 border border-border rounded-lg">
+                      <p className="font-semibold text-sm text-[hsl(var(--nav-theme-light))]">{a.title}</p>
+                      <p className="text-xs text-muted-foreground mt-1">{a.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Module 12: Singleplayer FAQ */}
+      <section id="singleplayer-faq" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksSingleplayerAndPlatformFAQ.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksSingleplayerAndPlatformFAQ.intro}</p>
+          </div>
+          <div className="scroll-reveal space-y-2">
+            {t.modules.lucidBlocksSingleplayerAndPlatformFAQ.faqs.map((faq: any, index: number) => (
+              <div key={index} className="border border-border rounded-xl overflow-hidden">
+                <button
+                  onClick={() => setFaqExpanded(faqExpanded === index ? null : index)}
+                  className="w-full flex items-center justify-between p-5 text-left hover:bg-white/5 transition-colors"
                 >
-                  <div className="flex items-start justify-between mb-3">
-                    <MessageCircle className="w-8 h-8 text-[hsl(var(--nav-theme-light))]" />
-                    <span className="px-3 py-1 bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]
-                                   rounded-full text-xs font-semibold text-[hsl(var(--nav-theme-light))]">
-                      Official
-                    </span>
-                  </div>
-                  <h3 className="text-lg font-bold mb-2 group-hover:text-[hsl(var(--nav-theme-light))] transition-colors">
-                    {link.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground mb-4">{link.subtitle}</p>
-                  <div className="flex items-center gap-2 text-sm text-[hsl(var(--nav-theme-light))]">
-                    Visit
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </a>
-              ))}
-            </div>
+                  <span className="font-semibold">{faq.question}</span>
+                  <ChevronDown className={`w-5 h-5 flex-shrink-0 transition-transform ${faqExpanded === index ? "rotate-180" : ""}`} />
+                </button>
+                {faqExpanded === index && (
+                  <div className="px-5 pb-5 text-muted-foreground text-sm">{faq.answer}</div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Module 13: Mods & BepInEx */}
-      <section id="mods-bepinex" className="scroll-mt-24 px-4 py-20">
+      {/* Module 13: Steam Deck and Controller */}
+      <section id="steam-deck-controller" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.modsBepInEx.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.modsBepInEx.subtitle}
-            </p>
-          </div>
-
-          {/* Installation Steps */}
-          <div className="scroll-reveal mb-8">
-            <div className="space-y-4">
-              {t.modules.modsBepInEx.steps.map((step: any, index: number) => (
-                <div key={index} className="flex gap-4 p-6 bg-white/5 border border-border rounded-xl">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full
-                                  bg-[hsl(var(--nav-theme)/0.2)]
-                                  border-2 border-[hsl(var(--nav-theme)/0.5)]
-                                  flex items-center justify-center">
-                    <span className="font-bold text-[hsl(var(--nav-theme-light))]">{step.step}</span>
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold mb-2">{step.title}</h3>
-                    <p className="text-sm text-muted-foreground">{step.text}</p>
-                  </div>
-                </div>
-              ))}
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <Gamepad2 className="w-8 h-8 text-[hsl(var(--nav-theme-light))]" />
+              <h2 className="text-4xl md:text-5xl font-bold">{t.modules.lucidBlocksSteamDeckAndController.title}</h2>
             </div>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksSteamDeckAndController.intro}</p>
           </div>
+          <div className="scroll-reveal space-y-2">
+            {t.modules.lucidBlocksSteamDeckAndController.faqs.map((faq: any, index: number) => (
+              <div key={index} className="border border-border rounded-xl overflow-hidden">
+                <button
+                  onClick={() => setDeckExpanded(deckExpanded === index ? null : index)}
+                  className="w-full flex items-center justify-between p-5 text-left hover:bg-white/5 transition-colors"
+                >
+                  <span className="font-semibold">{faq.question}</span>
+                  <ChevronDown className={`w-5 h-5 flex-shrink-0 transition-transform ${deckExpanded === index ? "rotate-180" : ""}`} />
+                </button>
+                {deckExpanded === index && (
+                  <div className="px-5 pb-5 text-muted-foreground text-sm">{faq.answer}</div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          {/* Install Paths */}
-          <div className="scroll-reveal mb-8">
-            <h3 className="text-2xl font-bold mb-6">Install Paths</h3>
-            <div className="space-y-4">
-              {t.modules.modsBepInEx.paths.map((path: any, index: number) => (
-                <div key={index} className="p-4 bg-white/5 border border-border rounded-xl flex items-center justify-between gap-4">
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-1">{path.label}</div>
-                    <div className="font-mono text-sm">{path.path}</div>
-                  </div>
-                  <button
-                    onClick={() => copyToClipboard(path.path)}
-                    className="flex-shrink-0 p-2 rounded-lg border border-border
-                               hover:bg-white/10 transition-colors"
-                  >
-                    {copiedPath === path.path ? (
-                      <Check className="w-4 h-4 text-green-400" />
-                    ) : (
-                      <Copy className="w-4 h-4" />
-                    )}
-                  </button>
+      {/* Module 14: Settings and Accessibility */}
+      <section id="settings-accessibility" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksSettingsAndAccessibility.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksSettingsAndAccessibility.intro}</p>
+          </div>
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4">
+            {t.modules.lucidBlocksSettingsAndAccessibility.settings.map((s: any, index: number) => (
+              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="flex items-center gap-3 mb-3">
+                  <Settings className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                  <h3 className="font-bold">{s.name}</h3>
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{s.type}</span>
                 </div>
-              ))}
-            </div>
+                <p className="text-muted-foreground text-sm">{s.description}</p>
+              </div>
+            ))}
           </div>
+        </div>
+      </section>
 
-          {/* Multiplayer Note */}
-          <div className="scroll-reveal">
-            <div className="p-6 bg-yellow-500/10 border border-yellow-500/30 rounded-xl">
-              <div className="flex items-start gap-3">
-                <AlertTriangle className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />
+      {/* Module 15: Updates and Patch Notes */}
+      <section id="updates-patch-notes" className="scroll-mt-24 px-4 py-20">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksUpdatesAndPatchNotes.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksUpdatesAndPatchNotes.intro}</p>
+          </div>
+          <div className="scroll-reveal relative pl-6 border-l-2 border-[hsl(var(--nav-theme)/0.3)] space-y-8">
+            {t.modules.lucidBlocksUpdatesAndPatchNotes.entries.map((entry: any, index: number) => (
+              <div key={index} className="relative">
+                <div className="absolute -left-[1.4rem] w-4 h-4 rounded-full bg-[hsl(var(--nav-theme))] border-2 border-background" />
+                <div className="p-5 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{entry.type}</span>
+                    <Clock className="w-4 h-4 text-muted-foreground" />
+                  </div>
+                  <h3 className="font-bold mb-1">{entry.title}</h3>
+                  <p className="text-muted-foreground text-sm">{entry.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Module 16: Crash Fix and Troubleshooting */}
+      <section id="crash-fix" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12 scroll-reveal">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">{t.modules.lucidBlocksCrashFixAndTroubleshooting.title}</h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksCrashFixAndTroubleshooting.intro}</p>
+          </div>
+          <div className="scroll-reveal space-y-4 mb-8">
+            {t.modules.lucidBlocksCrashFixAndTroubleshooting.steps.map((step: any, index: number) => (
+              <div key={index} className="flex gap-4 p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[hsl(var(--nav-theme)/0.2)] border-2 border-[hsl(var(--nav-theme)/0.5)] flex items-center justify-center">
+                  <span className="text-xl font-bold text-[hsl(var(--nav-theme-light))]">{index + 1}</span>
+                </div>
                 <div>
-                  <h4 className="font-bold mb-2 text-yellow-400">Multiplayer Note</h4>
-                  <p className="text-sm text-muted-foreground">{t.modules.modsBepInEx.multiplayerNote}</p>
+                  <h3 className="text-xl font-bold mb-2">{step.title}</h3>
+                  <p className="text-muted-foreground">{step.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="scroll-reveal p-6 bg-yellow-500/10 border border-yellow-500/30 rounded-xl">
+            <div className="flex items-start gap-3">
+              <AlertTriangle className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-bold text-yellow-400 mb-2">Still having issues?</h3>
+                <p className="text-sm text-muted-foreground mb-3">Report bugs with your logs through the official channels:</p>
+                <div className="flex flex-wrap gap-3">
+                  <a href="https://discord.com/invite/lucidblocks" target="_blank" rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                    <MessageCircle className="w-4 h-4" /> Discord <ExternalLink className="w-3 h-3" />
+                  </a>
+                  <a href="https://store.steampowered.com/app/3495730/Lucid_Blocks/" target="_blank" rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                    Steam Community <ExternalLink className="w-3 h-3" />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Module 14: Popular Mods */}
-      <section id="popular-mods" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.popularMods.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.popularMods.subtitle}
-            </p>
-          </div>
-
-          {/* Mod Cards */}
-          <div className="scroll-reveal">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {t.modules.popularMods.mods.map((mod: any, index: number) => (
-                <div key={index} className="p-6 bg-white/5 border border-border rounded-xl
-                                            hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                  <div className="flex items-start justify-between mb-4">
-                    <Star className="w-6 h-6 text-[hsl(var(--nav-theme-light))]" />
-                    <div className="flex flex-wrap gap-2">
-                      {mod.tags.map((tag: string, idx: number) => (
-                        <span key={idx} className="px-2 py-1 bg-[hsl(var(--nav-theme)/0.1)]
-                                                  border border-[hsl(var(--nav-theme)/0.3)]
-                                                  rounded text-xs font-semibold text-[hsl(var(--nav-theme-light))]">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  <h3 className="text-lg font-bold mb-2">{mod.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{mod.description}</p>
-                  {mod.controls && (
-                    <div className="space-y-1 mb-3">
-                      {mod.controls.map((control: any, idx: number) => (
-                        <div key={idx} className="flex items-center gap-2 text-sm">
-                          <kbd className="px-2 py-1 bg-white/10 rounded font-mono text-xs">{control.key}</kbd>
-                          <span className="text-muted-foreground">{control.action}</span>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  {mod.note && (
-                    <p className="text-xs text-yellow-400 mt-2">ℹ️ {mod.note}</p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Module 15: Controller Support */}
-      <section id="controller-support" className="scroll-mt-24 px-4 py-20">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.controllerSupport.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.controllerSupport.subtitle}
-            </p>
-          </div>
-
-          {/* Native vs Mod Comparison */}
-          <div className="scroll-reveal mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="p-6 bg-white/5 border border-border rounded-xl">
-                <Gamepad2 className="w-8 h-8 text-[hsl(var(--nav-theme-light))] mb-4" />
-                <h3 className="text-lg font-bold mb-2">{t.modules.controllerSupport.native.title}</h3>
-                <p className="text-sm text-muted-foreground">{t.modules.controllerSupport.native.description}</p>
-              </div>
-              <div className="p-6 bg-[hsl(var(--nav-theme)/0.05)] border border-[hsl(var(--nav-theme)/0.3)] rounded-xl">
-                <Star className="w-8 h-8 text-[hsl(var(--nav-theme-light))] mb-4" />
-                <h3 className="text-lg font-bold mb-2">{t.modules.controllerSupport.mod.title}</h3>
-                <p className="text-sm text-muted-foreground">{t.modules.controllerSupport.mod.description}</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Feature Checklist */}
-          <div className="scroll-reveal">
-            <h3 className="text-2xl font-bold mb-6">Features (Controller Mod)</h3>
-            <div className="p-6 bg-white/5 border border-border rounded-xl">
-              <ul className="space-y-3">
-                {t.modules.controllerSupport.features.map((feature: string, index: number) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
-                    <span className="text-sm">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Module 16: Player Count */}
-      <section id="player-count" className="scroll-mt-24 px-4 py-20 bg-white/[0.02]">
-        <div className="container mx-auto max-w-5xl">
-          <div className="text-center mb-12 scroll-reveal">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              {t.modules.playerCount.title}
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              {t.modules.playerCount.subtitle}
-            </p>
-          </div>
-
-          {/* Stat Tiles */}
-          <div className="scroll-reveal mb-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {Object.values(t.modules.playerCount.stats).map((stat: any, index: number) => (
-                <div key={index} className="p-8 bg-white/5 border border-border rounded-xl text-center
-                                            hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                  <TrendingUp className="w-8 h-8 text-[hsl(var(--nav-theme-light))] mx-auto mb-4" />
-                  <div className="text-4xl font-bold text-[hsl(var(--nav-theme-light))] mb-2">
-                    {stat.value}
-                  </div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Milestones Timeline */}
-          <div className="scroll-reveal">
-            <h3 className="text-2xl font-bold mb-6">Milestones</h3>
-            <div className="space-y-4">
-              {t.modules.playerCount.milestones.map((milestone: any, index: number) => (
-                <div key={index} className="flex gap-4 p-6 bg-white/5 border border-border rounded-xl">
-                  <div className="flex-shrink-0">
-                    <div className="w-3 h-3 rounded-full bg-[hsl(var(--nav-theme))] mt-2"></div>
-                  </div>
-                  <div>
-                    <div className="text-sm text-muted-foreground mb-1">{milestone.date}</div>
-                    <h4 className="font-bold mb-1">{milestone.title}</h4>
-                    <p className="text-sm text-muted-foreground">{milestone.detail}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Ad Banner 2 */}
-      <AdBanner type="banner-728x90" adKey={process.env.NEXT_PUBLIC_AD_BANNER_728X90} />
 
       {/* FAQ Section */}
       <Suspense fallback={<LoadingPlaceholder />}>

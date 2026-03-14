@@ -1,13 +1,13 @@
 {
   "seo": {
     "home": {
-      "title": "Burglin' Gnomes Wiki - Demo İndirme, İşbirliği Rehberi, Üretim & Modlar",
-      "description": "Eksiksiz Burglin' Gnomes kaynak merkezi! Steam gizli soygun oyunu için demo indirme bilgileri, başlangıç rehberleri, işbirliği stratejileri, üretim ipuçları, kontroller, modlar ve topluluk bağlantıları edinin.",
-      "keywords": "Burglin' Gnomes Wiki, Burglin' Gnomes, demo indirme, başlangıç rehberi, işbirliği rehberi, üretim, ekipman, modlar, BepInEx, Steam oyunu, gizli oyun",
-      "ogTitle": "Burglin' Gnomes Wiki - Demo İndirme, İşbirliği Rehberi, Üretim & Modlar",
-      "ogDescription": "Eksiksiz Burglin' Gnomes kaynak merkezi! Steam gizli soygun oyunu için demo indirme bilgileri, başlangıç rehberleri, işbirliği stratejileri, üretim ipuçları ve modlar edinin.",
-      "twitterTitle": "Burglin' Gnomes Wiki - Demo İndirme, İşbirliği Rehberi, Üretim & Modlar",
-      "twitterDescription": "Eksiksiz Burglin' Gnomes kaynak merkezi! Demo indirme bilgileri, başlangıç rehberleri, işbirliği stratejileri ve üretim ipuçları edinin."
+      "title": "Lucid Blocks Wiki - Demo İndirme, İşbirliği Rehberi, Üretim & Modlar",
+      "description": "Eksiksiz Lucid Blocks kaynak merkezi! Steam gizli soygun oyunu için demo indirme bilgileri, başlangıç rehberleri, işbirliği stratejileri, üretim ipuçları, kontroller, modlar ve topluluk bağlantıları edinin.",
+      "keywords": "Lucid Blocks Wiki, Lucid Blocks, demo indirme, başlangıç rehberi, işbirliği rehberi, üretim, ekipman, modlar, BepInEx, Steam oyunu, gizli oyun",
+      "ogTitle": "Lucid Blocks Wiki - Demo İndirme, İşbirliği Rehberi, Üretim & Modlar",
+      "ogDescription": "Eksiksiz Lucid Blocks kaynak merkezi! Steam gizli soygun oyunu için demo indirme bilgileri, başlangıç rehberleri, işbirliği stratejileri, üretim ipuçları ve modlar edinin.",
+      "twitterTitle": "Lucid Blocks Wiki - Demo İndirme, İşbirliği Rehberi, Üretim & Modlar",
+      "twitterDescription": "Eksiksiz Lucid Blocks kaynak merkezi! Demo indirme bilgileri, başlangıç rehberleri, işbirliği stratejileri ve üretim ipuçları edinin."
     }
   },
   "nav": {},
@@ -27,10 +27,10 @@
   },
   "hero": {
     "badge": "Ufak cüceler. Büyük evler. Arkadaşlarla gizli soygunlar.",
-    "title": "Burglin' Gnomes wiki",
-    "description": "Burglin' Gnomes için merkeziniz: soygunlar nasıl işliyor, Yüksek Cüce işleri, üretim & geliştirmeler, düşmanlar, kontroller ve her koşuda hayatta kalmanın en hızlı yolları.",
+    "title": "Lucid Blocks wiki",
+    "description": "Lucid Blocks için merkeziniz: soygunlar nasıl işliyor, Yüksek Cüce işleri, üretim & geliştirmeler, düşmanlar, kontroller ve her koşuda hayatta kalmanın en hızlı yolları.",
     "getFreeCodesCTA": "Demo İndir",
-    "playOnRobloxCTA": "Steam'de İstek Listesine Ekle",
+    "playOnSteamCTA": "Steam'de İstek Listesine Ekle",
     "stats": {
       "stat1": {
         "value": "15B",
@@ -51,11 +51,11 @@
     }
   },
   "gameFeature": {
-    "title": "Burglin' Gnomes Oynanışı",
+    "title": "Lucid Blocks Oynanışı",
     "description": "Ufak cücelerin kaotik 6 oyunculu işbirliği gizli görevlerinde büyük soygunlar yapmasını izleyin!"
   },
   "tools": {
-    "title": "Burglin' Gnomes",
+    "title": "Lucid Blocks",
     "titleHighlight": "Kaynaklar",
     "subtitle": "Soygunlarda ve işbirliği gizliliğinde ustalaşmak için ihtiyacınız olan her şey",
     "cards": [
@@ -143,7 +143,7 @@
   },
   "modules": {
     "demoDownload": {
-      "title": "Burglin' Gnomes Demo İndirme",
+      "title": "Lucid Blocks Demo İndirme",
       "subtitle": "Steam'de ücretsiz demoyu edinin",
       "downloadSize": "2,62 GiB",
       "diskSize": "4,88 GiB",
@@ -153,7 +153,7 @@
       "engine": "Unity",
       "primaryCTA": "Demo İndir",
       "secondaryCTA": "Teknik Bilgileri Görüntüle",
-      "installPath": "Steam\\steamapps\\common\\Burglin Gnomes Demo",
+      "installPath": "Steam\\steamapps\\common\\Lucid Blocks Demo",
       "sections": [
         {
           "heading": "Nereden indirilir",
@@ -172,7 +172,7 @@
       ]
     },
     "beginnerGuide": {
-      "title": "Burglin' Gnomes Başlangıç Rehberi",
+      "title": "Lucid Blocks Başlangıç Rehberi",
       "subtitle": "Temel döngüde ustalaşın ve yaygın hatalardan kaçının",
       "steps": [
         {
@@ -220,7 +220,7 @@
       ]
     },
     "coopGuide": {
-      "title": "Burglin' Gnomes İşbirliği Rehberi",
+      "title": "Lucid Blocks İşbirliği Rehberi",
       "subtitle": "Maksimum kaos için 6 oyuncuya kadar koordine olun",
       "maxPlayers": 6,
       "roles": [
@@ -254,7 +254,7 @@
       "communication": "Görevleri ve kurtarmaları koordine etmek için sesli sohbeti (V tuşu) kullanın. Şunu söyleyin: 'Görüldü', 'Rota', 'Kurtarmaya ihtiyacım var', 'Yakında çıkış yap'."
     },
     "tasksObjectives": {
-      "title": "Burglin' Gnomes Görevler & Amaçlar",
+      "title": "Lucid Blocks Görevler & Amaçlar",
       "subtitle": "Yüksek Cüce'nin istedikleri: görev örnekleri",
       "taskTypes": [
         {
@@ -285,7 +285,7 @@
       ]
     },
     "controlsKeybinds": {
-      "title": "Burglin' Gnomes Kontroller & Tuş Atamaları",
+      "title": "Lucid Blocks Kontroller & Tuş Atamaları",
       "subtitle": "Varsayılan klavye kontrolleri (ve bunları nerede değiştireceğiniz)",
       "keybinds": [
         {
@@ -364,7 +364,7 @@
       "changePath": "Başlık menüsünden: AYARLAR'ı açın, ardından klavye ayarlarını kontrol edin. Tuş atama satırlarını filtrelemek için arama alanını kullanın."
     },
     "contentSettings": {
-      "title": "Burglin' Gnomes İçerik Ayarları",
+      "title": "Lucid Blocks İçerik Ayarları",
       "subtitle": "Yetişkinlere yönelik içerik, çıplaklık geçişi ve Steam tercihleri",
       "descriptors": [
         "Bazı Çıplaklık veya Cinsel İçerik",
@@ -389,7 +389,7 @@
       ]
     },
     "craftingEquipment": {
-      "title": "Burglin' Gnomes Üretim & Ekipman",
+      "title": "Lucid Blocks Üretim & Ekipman",
       "subtitle": "Donanın: üretim örnekleri ve her aracın ne yaptığı",
       "equipment": [
         {
@@ -426,7 +426,7 @@
       ]
     },
     "lootItems": {
-      "title": "Burglin' Gnomes Ganimet & Eşyalar",
+      "title": "Lucid Blocks Ganimet & Eşyalar",
       "subtitle": "Ne çalınır: eşya türleri, risk ve taşıma ipuçları",
       "categories": [
         {
@@ -469,7 +469,7 @@
       ]
     },
     "enemiesHazards": {
-      "title": "Burglin' Gnomes Düşmanlar & Tehlikeler",
+      "title": "Lucid Blocks Düşmanlar & Tehlikeler",
       "subtitle": "Sizi neyin yakalayabileceğini bilin",
       "threats": [
         {
@@ -511,7 +511,7 @@
       ]
     },
     "stealthEscape": {
-      "title": "Burglin' Gnomes Gizlilik & Kaçış İpuçları",
+      "title": "Lucid Blocks Gizlilik & Kaçış İpuçları",
       "subtitle": "Daha fazla çalın, daha az ölün",
       "do": [
         "Gizli kalın ve nesnelerle etkileşim kurmadan önce siper alın",
@@ -541,7 +541,7 @@
       ]
     },
     "homeUpgrades": {
-      "title": "Burglin' Gnomes Ev Geliştirmeleri",
+      "title": "Lucid Blocks Ev Geliştirmeleri",
       "subtitle": "Üret, inşa et, yükselt",
       "branches": [
         {
@@ -599,33 +599,33 @@
       ]
     },
     "community": {
-      "title": "Burglin' Gnomes Topluluk & Discord",
+      "title": "Lucid Blocks Topluluk & Discord",
       "subtitle": "Kadrolar, güncellemeler, tartışmalar bulun",
       "links": [
         {
           "title": "Resmi Discord",
           "subtitle": "Duyurular • Geri Bildirim • LFG",
-          "url": "https://discord.gg/rbeW4bpsqY"
+          "url": "https://discord.com/invite/lucidblocks"
         },
         {
           "title": "Resmi X (Twitter)",
           "subtitle": "Güncellemeler & geliştirici gönderileri",
-          "url": "https://x.com/itsfobri"
+          "url": "https://x.com/lucidblocks"
         },
         {
           "title": "Steam Topluluk Merkezi",
           "subtitle": "Tartışmalar • Ekran Görüntüleri • Rehberler",
-          "url": "https://steamcommunity.com/app/3844970"
+          "url": "https://steamcommunity.com/app/3495730"
         },
         {
           "title": "Steam Mağaza Sayfası",
           "subtitle": "İstek Listesi • Demo • Resmi açıklama",
-          "url": "https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+          "url": "https://store.steampowered.com/app/3495730/Lucid_Blocks/"
         }
       ]
     },
     "modsBepInEx": {
-      "title": "Burglin' Gnomes Modlar & BepInEx Kurulumu",
+      "title": "Lucid Blocks Modlar & BepInEx Kurulumu",
       "subtitle": "Modları temiz bir şekilde kurun",
       "steps": [
         {
@@ -652,17 +652,17 @@
       "paths": [
         {
           "label": "Tipik Steam kurulumu",
-          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\"
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\"
         },
         {
           "label": "Eklenti klasörü",
-          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\BepInEx\\plugins\\"
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\BepInEx\\plugins\\"
         }
       ],
       "multiplayerNote": "Modlanmış işbirliği oynanış özellikleri için herkes BepInEx'i ve aynı oynanış modlarını kurmalıdır."
     },
     "popularMods": {
-      "title": "Burglin' Gnomes Popüler Modlar",
+      "title": "Lucid Blocks Popüler Modlar",
       "subtitle": "En iyi topluluk seçimleri",
       "mods": [
         {
@@ -729,7 +729,7 @@
       ]
     },
     "controllerSupport": {
-      "title": "Burglin' Gnomes Kontrol Cihazı Desteği",
+      "title": "Lucid Blocks Kontrol Cihazı Desteği",
       "subtitle": "Tam gamepad oyunu",
       "native": {
         "title": "Oyun İçi Ayarlar",
@@ -749,7 +749,7 @@
       ]
     },
     "playerCount": {
-      "title": "Burglin' Gnomes Oyuncu Sayısı & Trendi",
+      "title": "Lucid Blocks Oyuncu Sayısı & Trendi",
       "subtitle": "Canlı popülerlik anlık görüntüsü",
       "stats": {
         "now": {
@@ -782,43 +782,43 @@
   "faq": {
     "title": "Sıkça Sorulan",
     "titleHighlight": "Sorular",
-    "subtitle": "Burglin' Gnomes hakkında bilmeniz gereken her şey",
+    "subtitle": "Lucid Blocks hakkında bilmeniz gereken her şey",
     "questions": [
       {
-        "question": "Burglin' Gnomes demosunu nasıl indirebilirim?",
+        "question": "Lucid Blocks demosunu nasıl indirebilirim?",
         "answer": "Steam mağaza sayfasını ziyaret edin ve 'Demo İndir'e tıklayın. Demo ücretsizdir ve indirmek için 2,62 GiB, disk alanı için 4,88 GiB gerektirir."
       },
       {
-        "question": "Burglin' Gnomes'u tek başıma mı oynayabilirim yoksa arkadaşlara mı ihtiyacım var?",
-        "answer": "Burglin' Gnomes hem tek oyunculu hem de 6 oyuncuya kadar işbirliğini destekler. Tek başına oynamak daha zordur ancak mümkündür."
+        "question": "Lucid Blocks'u tek başıma mı oynayabilirim yoksa arkadaşlara mı ihtiyacım var?",
+        "answer": "Lucid Blocks hem tek oyunculu hem de 6 oyuncuya kadar işbirliğini destekler. Tek başına oynamak daha zordur ancak mümkündür."
       },
       {
-        "question": "Burglin' Gnomes'da Yüksek Cüce görevleri nelerdir?",
+        "question": "Lucid Blocks'da Yüksek Cüce görevleri nelerdir?",
         "answer": "Yüksek Cüce, 'TV'yi kır', 'tuvaleti su baskını yap' veya 'belirli eşyaları çal' gibi hedefler atayan patronunuzdur. Ekstra ödüller için bunları tamamlayın."
       },
       {
-        "question": "Burglin' Gnomes için modları nasıl kurarım?",
+        "question": "Lucid Blocks için modları nasıl kurarım?",
         "answer": "BepInEx 5'i kurun, oyunu bir kez başlatın, ardından mod DLL'lerini BepInEx/plugins/ klasörüne yerleştirin. Çok oyunculu mod için tüm oyuncuların aynı modlara ihtiyacı vardır."
       },
       {
-        "question": "Burglin' Gnomes kontrol cihazlarını destekliyor mu?",
+        "question": "Lucid Blocks kontrol cihazlarını destekliyor mu?",
         "answer": "Evet! Temel kontrol cihazı desteği için oyun içi ayarları kullanın veya tam UI gezinmesi için Nexus Mods'tan Kontrol Cihazı Modunu kurun."
       },
       {
-        "question": "Burglin' Gnomes için oyuncu sayısı nedir?",
-        "answer": "Şubat 2026 itibarıyla, Burglin' Gnomes ortalama 6.000'den fazla eş zamanlı oyuncuya sahip ve 8 Şubat 2026'da 15.272 zirveye ulaştı."
+        "question": "Lucid Blocks için oyuncu sayısı nedir?",
+        "answer": "Şubat 2026 itibarıyla, Lucid Blocks ortalama 6.000'den fazla eş zamanlı oyuncuya sahip ve 8 Şubat 2026'da 15.272 zirveye ulaştı."
       }
     ]
   },
   "cta": {
     "title": "Soygun Yapmaya Hazır mısınız?",
-    "description": "İşbirliği grupları, güncellemeler ve mod tartışmaları için Discord'da Burglin' Gnomes topluluğuna katılın!",
+    "description": "İşbirliği grupları, güncellemeler ve mod tartışmaları için Discord'da Lucid Blocks topluluğuna katılın!",
     "joinCommunity": "Discord'a Katıl",
     "joinGame": "Steam'de Demo Al"
   },
   "footer": {
-    "title": "Burglin' Gnomes Wiki",
-    "description": "Burglin' Gnomes gizli soygunları, işbirliği stratejileri, modlar ve topluluk rehberleri için eksiksiz kaynak merkeziniz.",
+    "title": "Lucid Blocks Wiki",
+    "description": "Lucid Blocks gizli soygunları, işbirliği stratejileri, modlar ve topluluk rehberleri için eksiksiz kaynak merkeziniz.",
     "resources": "Kaynaklar",
     "community": "Topluluk",
     "legal": "Yasal",
@@ -830,7 +830,7 @@
     "privacy": "Gizlilik Politikası",
     "terms": "Hizmet Şartları",
     "copyrightNotice": "Telif Hakkı",
-    "copyright": "© 2026 Burglin' Gnomes Wiki. Burglin' Gnomes geliştiricileriyle bağlantılı değildir.",
+    "copyright": "© 2026 Lucid Blocks Wiki. Lucid Blocks geliştiricileriyle bağlantılı değildir.",
     "disclaimer": "Resmi olmayan hayran yapımı kaynak web sitesi."
   }
 }

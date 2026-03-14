@@ -39,7 +39,7 @@
     "title": "Lucid Blocks Wiki",
     "description": "Explore dreamlike biomes, fuse items with Apotheosis, build freely, and survive strange creatures in this surreal open-world sandbox on Steam.",
     "getFreeCodesCTA": "Explore Crafting Guide",
-    "playOnRobloxCTA": "Play on Steam",
+    "playOnSteamCTA": "Play on Steam",
     "stats": {
       "stat1": {
         "value": "1,325",
@@ -66,724 +66,690 @@
   "tools": {
     "title": "Lucid Blocks",
     "titleHighlight": "Resources",
-    "subtitle": "Everything you need to master heists and co-op stealth",
+    "subtitle": "Everything you need to explore, craft, and survive in Lucid Blocks",
     "cards": [
-      {
-        "icon": "Download",
-        "title": "Demo Download",
-        "description": "Get the free Steam demo"
-      },
       {
         "icon": "BookOpen",
         "title": "Beginner Guide",
-        "description": "Core loop and common pitfalls"
+        "description": "First steps, exploration, and early progression"
       },
       {
-        "icon": "Users",
-        "title": "Co-op Guide",
-        "description": "6-player roles and rescue tactics"
-      },
-      {
-        "icon": "ClipboardCheck",
-        "title": "Tasks & Objectives",
-        "description": "What High-Gnome wants from you"
-      },
-      {
-        "icon": "Keyboard",
-        "title": "Controls & Keybinds",
-        "description": "Default keys and how to change them"
-      },
-      {
-        "icon": "Shield",
-        "title": "Content Settings",
-        "description": "Mature content and toggle options"
+        "icon": "Sparkles",
+        "title": "Apotheosis Crafting",
+        "description": "Freeform fusion system and early recipes"
       },
       {
         "icon": "Hammer",
-        "title": "Crafting & Equipment",
-        "description": "Gear up with stolen materials"
+        "title": "Tools and Weapons",
+        "description": "Frost Pick, Azrael, Hookshot, and more"
       },
       {
         "icon": "Package",
-        "title": "Loot & Items",
-        "description": "What to steal and carry tips"
-      },
-      {
-        "icon": "AlertTriangle",
-        "title": "Enemies & Hazards",
-        "description": "Threats and how to deal with them"
-      },
-      {
-        "icon": "Eye",
-        "title": "Stealth & Escape",
-        "description": "Stay hidden and extract safely"
+        "title": "Storage and Inventory",
+        "description": "Cache Cubes, Cabinets, and Qualia storage"
       },
       {
         "icon": "Home",
-        "title": "Home Upgrades",
-        "description": "Upgrade your floating island base"
+        "title": "Qualia and Base Building",
+        "description": "Personal Qualia and home base setup"
       },
       {
-        "icon": "MessageCircle",
-        "title": "Community & Discord",
-        "description": "Official links and group finding"
+        "icon": "Eye",
+        "title": "World Regions",
+        "description": "Fog Meadow, Essence Morass, and more"
       },
       {
-        "icon": "Settings",
-        "title": "Mods & BepInEx",
-        "description": "Install framework and mod setup"
+        "icon": "AlertTriangle",
+        "title": "Creatures and Enemies",
+        "description": "Manikins, spiders, and how to survive"
       },
       {
-        "icon": "Star",
-        "title": "Popular Mods",
-        "description": "Top community picks and features"
-      },
-      {
-        "icon": "Gamepad2",
-        "title": "Controller Support",
-        "description": "Full gamepad play with UI cursor"
+        "icon": "ArrowRight",
+        "title": "Mobility Gear",
+        "description": "Hookshot, Glider Glove, Bee Glider"
       },
       {
         "icon": "TrendingUp",
-        "title": "Player Count & Trend",
-        "description": "Live stats and peak tracking"
+        "title": "Farming and Growth",
+        "description": "Seed progression and material farming"
+      },
+      {
+        "icon": "Star",
+        "title": "Best Early Unlocks",
+        "description": "Priority upgrades for the first hour"
+      },
+      {
+        "icon": "ClipboardCheck",
+        "title": "Achievement Tracker",
+        "description": "All 19 Steam achievements and conditions"
+      },
+      {
+        "icon": "MessageCircle",
+        "title": "Singleplayer FAQ",
+        "description": "Platform, price, co-op, and language questions"
+      },
+      {
+        "icon": "Gamepad2",
+        "title": "Steam Deck and Controller",
+        "description": "Proton 9.0.4 setup and controller tips"
+      },
+      {
+        "icon": "Settings",
+        "title": "Settings and Accessibility",
+        "description": "Hide hands, Vulkan, and display options"
+      },
+      {
+        "icon": "Clock",
+        "title": "Updates and Patch Notes",
+        "description": "Recent fixes and roadmap notes"
+      },
+      {
+        "icon": "Shield",
+        "title": "Crash Fix",
+        "description": "Vulkan check, logs path, and bug reporting"
       }
     ]
   },
   "modules": {
-    "demoDownload": {
-      "title": "Lucid Blocks Demo Download",
-      "subtitle": "Get the free demo on Steam",
-      "downloadSize": "2.62 GiB",
-      "diskSize": "4.88 GiB",
-      "releaseDate": "January 30, 2026",
-      "price": "Free",
-      "platform": "PC (Steam) / Windows",
-      "engine": "Unity",
-      "primaryCTA": "Download Demo",
-      "secondaryCTA": "View Tech Info",
-      "installPath": "Steam\\steamapps\\common\\Lucid Blocks Demo",
-      "sections": [
-        {
-          "heading": "Where to download",
-          "items": [
-            "Open the official Steam store page and use the 'Download Demo' section.",
-            "If Steam asks you to sign in, sign in first and try again."
-          ]
-        },
-        {
-          "heading": "Install & launch quick checks",
-          "items": [
-            "Default install location: Steam Library folder → steamapps → common → (game folder).",
-            "If it won't launch: verify the game files in Steam, then restart Steam."
-          ]
-        }
-      ]
-    },
-    "beginnerGuide": {
+    "lucidBlocksBeginnerGuide": {
       "title": "Lucid Blocks Beginner Guide",
-      "subtitle": "Master the core loop and avoid common mistakes",
+      "displayType": "steps",
+      "intro": "Start by learning how exploration, fusion, and progression connect. Lucid Blocks rewards experimentation, so early progress comes from gathering unusual materials, testing combinations, and unlocking your personal Qualia.",
       "steps": [
         {
-          "number": 1,
-          "title": "Enter the House",
-          "description": "Drop into a human house from your floating island base. Spawn outside and sneak in through unlocked doors or windows."
+          "title": "Explore Before You Commit",
+          "description": "Walk outward, mine common blocks, and keep any strange drops you find. Early progress is less about fixed quests and more about discovering what materials can become."
         },
         {
-          "number": 2,
-          "title": "Complete Tasks",
-          "description": "Finish High-Gnome tasks before time runs out. Check objectives via Tab key and prioritize risky tasks first."
+          "title": "Unlock Your Personal Qualia Early",
+          "description": "Your personal Qualia is one of the most important early milestones. It gives you a reliable place to regroup and build around."
         },
         {
-          "number": 3,
-          "title": "Steal Items",
-          "description": "Grab valuables and materials for crafting. Avoid making noise or getting spotted by the homeowner."
+          "title": "Use Osmium for Fast Early Progress",
+          "description": "Osmium is one of the most useful early materials. A popular early route is combining Osmium with sticks to make a Frost Pick for fast mining."
         },
         {
-          "number": 4,
-          "title": "Escape via Tornado",
-          "description": "When the timer ends, a tornado spawns in the yard—reach it to extract safely. Start moving early!"
-        },
-        {
-          "number": 5,
-          "title": "Upgrade & Repeat",
-          "description": "Use rewards and materials to craft gear back home, then start your next heist with better equipment."
+          "title": "Record Good Fusions",
+          "description": "Keep track of successful combinations in your journal. Lucid Blocks has many possible fusion paths, so writing down useful results saves a lot of time."
         }
-      ],
-      "pitfalls": [
-        {
-          "title": "Getting Caught",
-          "description": "Homeowner will chase you. Stay hidden, use distractions, and break line of sight to escape.",
-          "icon": "AlertTriangle"
-        },
-        {
-          "title": "Running Out of Time",
-          "description": "Tornado timer is strict. Start heading to extraction early instead of over-looting.",
-          "icon": "Clock"
-        },
-        {
-          "title": "Ignoring Teammates",
-          "description": "Rescue trapped allies from fridge/oven traps quickly—call out immediately for saves.",
-          "icon": "Users"
-        }
-      ]
-    },
-    "coopGuide": {
-      "title": "Lucid Blocks Co-op Guide",
-      "subtitle": "Coordinate with up to 6 players for maximum chaos",
-      "maxPlayers": 6,
-      "roles": [
-        {
-          "name": "Scout",
-          "description": "Check for threats, mark safe paths, and guide team movement",
-          "icon": "Eye"
-        },
-        {
-          "name": "Carrier",
-          "description": "Focus on heavy items with backpack upgrades and secure task progress",
-          "icon": "Package"
-        },
-        {
-          "name": "Distraction",
-          "description": "Lure homeowner/pets away from team to create safe windows",
-          "icon": "Users"
-        },
-        {
-          "name": "Rescuer",
-          "description": "Free trapped teammates from fridge/oven before they die",
-          "icon": "Shield"
-        }
-      ],
-      "threats": [
-        "Homeowner (chases and traps you)",
-        "Cats & Mice (patrol routes)",
-        "Robot Vacuum (instant danger)",
-        "Time Limit (tornado extraction)"
-      ],
-      "communication": "Use voice chat (V key) to coordinate tasks and rescues. Call out: 'Spotted', 'Route', 'Need rescue', 'Extract soon'."
-    },
-    "tasksObjectives": {
-      "title": "Lucid Blocks Tasks & Objectives",
-      "subtitle": "What the High-Gnome wants: task examples",
-      "taskTypes": [
-        {
-          "type": "Steal Items",
-          "examples": [
-            "Grab specific items marked by High-Gnome objectives"
-          ]
-        },
-        {
-          "type": "Reach Locations",
-          "examples": [
-            "Navigate to specified areas inside the house"
-          ]
-        },
-        {
-          "type": "Cause Mischief",
-          "examples": [
-            "Break a TV",
-            "Flood a toilet",
-            "Create chaos"
-          ]
-        }
-      ],
-      "efficiency": [
-        "Do risky tasks first while the team is together",
-        "Assign one carrier for task items so they don't get lost during chases",
-        "Start moving toward extraction before time expires"
-      ]
-    },
-    "controlsKeybinds": {
-      "title": "Lucid Blocks Controls & Keybinds",
-      "subtitle": "Default keyboard controls (and where to change them)",
-      "keybinds": [
-        {
-          "action": "Move Left",
-          "key": "A"
-        },
-        {
-          "action": "Move Right",
-          "key": "D"
-        },
-        {
-          "action": "Move Forward",
-          "key": "W"
-        },
-        {
-          "action": "Move Back",
-          "key": "S"
-        },
-        {
-          "action": "Crouch",
-          "key": "Left Ctrl"
-        },
-        {
-          "action": "Attack",
-          "key": "Left Click"
-        },
-        {
-          "action": "Run",
-          "key": "Left Shift"
-        },
-        {
-          "action": "Drop Item",
-          "key": "G"
-        },
-        {
-          "action": "Interact",
-          "key": "E"
-        },
-        {
-          "action": "Jump",
-          "key": "Space"
-        },
-        {
-          "action": "Push-to-Talk",
-          "key": "V"
-        },
-        {
-          "action": "Push",
-          "key": "Right Click"
-        },
-        {
-          "action": "Ragdoll",
-          "key": "Q"
-        },
-        {
-          "action": "Equipment Slot 1",
-          "key": "1"
-        },
-        {
-          "action": "Equipment Slot 2",
-          "key": "2"
-        },
-        {
-          "action": "Equipment Slot 3",
-          "key": "3"
-        },
-        {
-          "action": "Equipment Slot 4",
-          "key": "4"
-        },
-        {
-          "action": "Inventory",
-          "key": "Tab"
-        }
-      ],
-      "changePath": "From title menu: open SETTINGS, then check keyboard settings. Use search field to filter keybind rows."
-    },
-    "contentSettings": {
-      "title": "Lucid Blocks Content Settings",
-      "subtitle": "Mature content, nudity toggle, and Steam preferences",
-      "descriptors": [
-        "Some Nudity or Sexual Content",
-        "General Mature Content"
-      ],
-      "details": [
-        {
-          "heading": "What the developers state",
-          "items": [
-            "A human may appear nude while doing activities like bathing.",
-            "Nudity is censored and can be fully turned off optionally.",
-            "Gnomes can be dismembered and die in brutal ways."
-          ]
-        },
-        {
-          "heading": "If Steam blocks the community page",
-          "items": [
-            "Steam may hide the community hub depending on your content preferences.",
-            "Use Steam's 'Update Content Preferences' to adjust what you allow Steam to show."
-          ]
-        }
-      ]
-    },
-    "craftingEquipment": {
-      "title": "Lucid Blocks Crafting & Equipment",
-      "subtitle": "Gear up: crafting examples and what each tool does",
-      "equipment": [
-        {
-          "item": "Backpack",
-          "benefit": "Expands inventory capacity for more loot per run"
-        },
-        {
-          "item": "Gnome Gloves",
-          "benefit": "Lets you open doors and interact with more objects"
-        },
-        {
-          "item": "Spring Shoes",
-          "benefit": "Prevents fall damage from high drops during escapes"
-        },
-        {
-          "item": "Weapon",
-          "benefit": "Helps you fight threats like mice when cornered"
-        }
-      ],
-      "sections": [
-        {
-          "heading": "How crafting connects to looting",
-          "items": [
-            "During a run, steal items and bring them back as crafting materials.",
-            "After extraction, rewards/materials support new crafts."
-          ]
-        },
-        {
-          "heading": "Base improvement",
-          "items": [
-            "Craft furniture and upgrade your floating-island home (full game feature)."
-          ]
-        }
-      ]
-    },
-    "lootItems": {
-      "title": "Lucid Blocks Loot & Items",
-      "subtitle": "What to steal: item types, risk, and carry tips",
-      "categories": [
-        {
-          "type": "Task Items",
-          "examples": [
-            "Items required by High-Gnome for objectives"
-          ]
-        },
-        {
-          "type": "Crafting Materials",
-          "examples": [
-            "Household items repurposed into gnome gear and upgrades"
-          ]
-        },
-        {
-          "type": "Mischief Targets",
-          "examples": [
-            "Objects involved in tasks like breaking or flooding"
-          ]
-        }
-      ],
-      "carryTips": [
-        "Prioritize task progress, then fill remaining capacity with crafting materials",
-        "If threats are nearby, move items in short safe hops rather than long exposed carries",
-        "Plan the route to the yard extraction before the timer ends"
-      ],
-      "riskLevels": [
-        {
-          "level": "Low",
-          "description": "Near entrances or safe corners"
-        },
-        {
-          "level": "Medium",
-          "description": "Deeper rooms or near roaming threats"
-        },
-        {
-          "level": "High",
-          "description": "Close to homeowner patrol or robot vacuum"
-        }
-      ]
-    },
-    "enemiesHazards": {
-      "title": "Lucid Blocks Enemies & Hazards",
-      "subtitle": "Know what can catch you",
-      "threats": [
-        {
-          "name": "The Homeowner",
-          "trigger": "Getting spotted while lucidblocksg or doing tasks",
-          "behavior": "He chases and tries to catch you",
-          "counter": "Stay stealthy, break sightlines, and keep moving as a team"
-        },
-        {
-          "name": "Cats",
-          "trigger": "Getting too close or crossing their path",
-          "behavior": "They become a direct threat while you're sneaking",
-          "counter": "Avoid their routes and move quietly past"
-        },
-        {
-          "name": "Mice",
-          "trigger": "Entering areas where mice roam",
-          "behavior": "They threaten fragile gnomes during runs",
-          "counter": "Stay alert in tight spaces and be ready to retreat"
-        },
-        {
-          "name": "Robot Vacuum",
-          "trigger": "Being in its cleaning path",
-          "behavior": "It can suck gnomes up",
-          "counter": "Listen for it, keep off its route, and reposition fast"
-        },
-        {
-          "name": "Fridge / Oven Trap",
-          "trigger": "Getting caught by the homeowner",
-          "behavior": "You can be locked inside; if teammates don't rescue in time, you die",
-          "counter": "Call out immediately; teammates prioritize the rescue route"
-        },
-        {
-          "name": "Time Limit",
-          "trigger": "The run timer reaching the limit",
-          "behavior": "Extraction tornado appears in yard; you must reach it to escape",
-          "counter": "Stop over-looting, regroup, and commit to extraction early"
-        }
-      ]
-    },
-    "stealthEscape": {
-      "title": "Lucid Blocks Stealth & Escape Tips",
-      "subtitle": "Steal more, die less",
-      "do": [
-        "Stay stealthy and take cover before interacting with objects",
-        "Use teamwork: call out threats and coordinate routes",
-        "Rescue teammates quickly when someone is trapped or down",
-        "Cut your losses and head for extraction when the timer is tight"
-      ],
-      "dont": [
-        "Get greedy when extraction is coming up",
-        "Split too far from the team when the homeowner is active",
-        "Ignore robot vacuum paths or animal patrols",
-        "Delay rescues when a teammate is locked in"
       ],
       "quickTips": [
+        "Apotheosis does not require a fixed recipe list.",
+        "Infinite world generation means moving higher or deeper can reveal completely different materials.",
+        "Movement tools and utility gear become a major quality-of-life boost once you start unlocking them.",
+        "Getting lost early is normal, but useful tools, storage, and movement options snowball fast once your first good fusions start working."
+      ]
+    },
+    "lucidBlocksApotheosisCrafting": {
+      "title": "Lucid Blocks Apotheosis Crafting",
+      "displayType": "cards",
+      "intro": "Apotheosis is the game's unrestricted fusion system. Instead of memorizing a traditional recipe book, you combine materials, watch the result, and build your own crafting knowledge over time.",
+      "cards": [
         {
-          "title": "The 3-Second Rule",
-          "text": "If you can't explain your next move in 3 seconds, you're about to get spotted."
+          "name": "Freeform Fusion",
+          "description": "Apotheosis lets you fuse together different items without needing to follow a fixed recipe list."
         },
         {
-          "title": "Rescue First",
-          "text": "A fast rescue keeps the run alive; looting can wait."
+          "name": "Multiple Useful Outcomes",
+          "description": "Different materials often push toward certain results. Community discoveries show that similar inputs can still lead to practical tools, storage, or combat upgrades."
         },
         {
-          "title": "Extraction Discipline",
-          "text": "Regroup early and commit to the tornado before panic starts."
+          "name": "Journal-First Crafting",
+          "description": "The best way to learn Apotheosis is to track your successful combinations. Your journal quickly becomes your own crafting reference."
+        },
+        {
+          "name": "Community-Tested Early Fusions",
+          "description": "Popular early examples include Osmium plus Stick for a Frost Pick, Stick plus Tungsten Appendage for Azrael, and Azrael plus Magnetite for the Tendril Rapier."
+        }
+      ],
+      "milestones": [
+        "Fuse an item",
+        "Fuse a vermin",
+        "Fuse a divine artifact"
+      ]
+    },
+    "lucidBlocksToolsAndWeapons": {
+      "title": "Lucid Blocks Tools and Weapons",
+      "displayType": "itemCards",
+      "intro": "Lucid Blocks mixes official utility gear with community-discovered early weapons. The best setup is usually a blend of fast mining, safe traversal, and one dependable combat option.",
+      "items": [
+        {
+          "name": "Frost Pick",
+          "type": "Mining Tool",
+          "description": "A fast and affordable early pick made from Osmium and Stick. Players use it to speed up early material gathering."
+        },
+        {
+          "name": "Azrael",
+          "type": "Starter Weapon",
+          "description": "A practical early weapon route crafted from Stick and Tungsten Appendage."
+        },
+        {
+          "name": "Tendril Rapier",
+          "type": "Upgraded Weapon",
+          "description": "A stronger follow-up made by combining Azrael with Magnetite. It is one of the most useful early-mid combat paths shared by players."
+        },
+        {
+          "name": "Hookshot",
+          "type": "Mobility Tool",
+          "description": "An official traversal item that greatly improves movement and vertical exploration."
+        },
+        {
+          "name": "Bee Glider",
+          "type": "Mobility Tool",
+          "description": "An official movement item that helps cover space more safely and efficiently."
+        },
+        {
+          "name": "Ball Wand",
+          "type": "Utility Weapon",
+          "description": "An official ranged utility item that expands your combat and puzzle options."
+        },
+        {
+          "name": "Scuba Diving Gear",
+          "type": "Traversal Gear",
+          "description": "An official utility item for reaching areas that would otherwise slow down exploration."
+        },
+        {
+          "name": "Explosives",
+          "type": "Utility Damage",
+          "description": "Officially highlighted as part of the core toolset and useful for breaking through threats or obstacles."
         }
       ]
     },
-    "homeUpgrades": {
-      "title": "Lucid Blocks Home Upgrades",
-      "subtitle": "Craft, build, upgrade",
-      "branches": [
+    "lucidBlocksStorageAndInventory": {
+      "title": "Lucid Blocks Storage and Inventory",
+      "displayType": "solutionCards",
+      "intro": "Inventory pressure starts early in Lucid Blocks, so building storage should be one of your first goals. Several real player-tested solutions already stand out.",
+      "solutions": [
         {
-          "branch": "Storage",
-          "summary": "Carry more and bring more back",
-          "items": [
-            "Backpack (inventory expansion)"
-          ]
+          "name": "Cache Cube",
+          "role": "Chest-Like Storage",
+          "description": "Cache Cubes are one of the earliest practical storage answers and are treated by players as the game's main chest-style container."
         },
         {
-          "branch": "Utility",
-          "summary": "Interact with the house more effectively",
-          "items": [
-            "Gnome Gloves (lets you open doors and more)"
-          ]
+          "name": "Cabinet",
+          "role": "Simple Base Storage",
+          "description": "Cabinets are another confirmed storage option. A shared early recipe uses 1 Cut Wood and 1 String."
         },
         {
-          "branch": "Mobility",
-          "summary": "Move safer through vertical spaces",
-          "items": [
-            "Spring Shoes (reduce fall damage)"
-          ]
+          "name": "Personal Qualia",
+          "role": "Long-Term Storage Hub",
+          "description": "Once unlocked, your personal Qualia becomes a natural place to organize materials, craft in peace, and expand your base setup."
         },
         {
-          "branch": "Defense",
-          "summary": "Deal with small threats when needed",
-          "items": [
-            "Weapons (for threats like mice)"
-          ]
-        },
-        {
-          "branch": "Home Base",
-          "summary": "Craft furniture and upgrade your floating-island home",
-          "items": [
-            "Functional furniture upgrades"
-          ]
+          "name": "Journal Tracking",
+          "role": "Inventory Efficiency",
+          "description": "Recording useful combinations in your journal reduces wasted materials and makes inventory management much easier."
         }
       ],
-      "priority": [
+      "managementTips": [
+        "Prioritize one dependable storage option before hoarding rare drops.",
+        "Build around your personal Qualia once it becomes available.",
+        "Keep crafting materials, combat tools, and movement gear separated so upgrades are easier to plan.",
+        "Use your journal as part of inventory management, not just crafting discovery."
+      ]
+    },
+    "lucidBlocksQualiaAndBaseBuilding": {
+      "title": "Lucid Blocks Qualia and Base Building",
+      "displayType": "cards",
+      "intro": "Qualia is one of the most important progression milestones in Lucid Blocks. It gives you a personal space to regroup, store materials, and gradually turn exploration progress into a real home base.",
+      "cards": [
         {
-          "rank": 1,
-          "title": "Storage first",
-          "reason": "More carry capacity improves every run's payoff"
+          "name": "Personal Qualia",
+          "description": "Unlocking a Qualia is an early milestone that gives you a more reliable place to return to while exploring the wider world."
         },
         {
-          "rank": 2,
-          "title": "Utility next",
-          "reason": "Better interactions reduce time spent in danger zones"
+          "name": "Storage-First Building",
+          "description": "Many players start using their Qualia as a storage hub before turning it into a larger base with organized crafting and building space."
         },
         {
-          "rank": 3,
-          "title": "Mobility for survival",
-          "reason": "Fall safety prevents avoidable deaths when escaping"
+          "name": "Creative Home Building",
+          "description": "Lucid Blocks supports creative building, and players are already using Qualia spaces to make houses and personalized layouts."
+        },
+        {
+          "name": "Progression Hub",
+          "description": "A strong base helps you separate exploration loot, crafting materials, seeds, tools, and mobility gear so your next upgrades are easier to plan."
+        }
+      ],
+      "highlights": [
+        "Enter a qualia",
+        "Store materials safely",
+        "Expand from utility to decoration",
+        "Use base space to support crafting and farming"
+      ]
+    },
+    "lucidBlocksWorldRegions": {
+      "title": "Lucid Blocks World Regions",
+      "displayType": "regionCards",
+      "intro": "Lucid Blocks uses infinite world generation, so players keep discovering new environments and structures. A few named places are already showing up in achievements and community discussions.",
+      "regions": [
+        {
+          "name": "Fog Meadow",
+          "type": "Community-Noted Area",
+          "description": "Fog Meadow is already known among players as a tense area associated with hidden threats and dangerous encounters."
+        },
+        {
+          "name": "Tiamana Leyline",
+          "type": "Discovery Landmark",
+          "description": "The tiamana leyline is important enough to have its own achievement milestone, making it one of the clearest named world discoveries so far."
+        },
+        {
+          "name": "Clonaqualia",
+          "type": "Build Space",
+          "description": "Players are already using Clonaqualia as a place to build houses, store materials, and experiment with more permanent layouts."
+        },
+        {
+          "name": "Essence Morass",
+          "type": "Farming Area",
+          "description": "Essence Morass is being shared by players as a useful farming location, especially for fighting slimes and gaining experience."
         }
       ]
     },
-    "community": {
-      "title": "Lucid Blocks Community & Discord",
-      "subtitle": "Find squads, updates, discussions",
-      "links": [
+    "lucidBlocksCreaturesAndEnemies": {
+      "title": "Lucid Blocks Creatures and Enemies",
+      "displayType": "creatureCards",
+      "intro": "Lucid Blocks mixes surreal creatures with real danger. Official descriptions and community posts point to a world full of strange life, hostile threats, and a few standout encounters players remember quickly.",
+      "creatures": [
         {
-          "title": "Official Discord",
-          "subtitle": "Announcements • Feedback • LFG",
-          "url": "https://discord.com/invite/lucidblocks"
+          "name": "Manikins",
+          "role": "Hostile Enemy",
+          "description": "Manikins are one of the officially named foes in the world and part of the game's surreal threat roster."
         },
         {
-          "title": "Official X (Twitter)",
-          "subtitle": "Updates & dev posts",
-          "url": "https://x.com/lucidblocks"
+          "name": "Squishy Gels",
+          "role": "Hostile Enemy",
+          "description": "Squishy gels are another officially named enemy type and help define the game's strange biological style."
         },
         {
-          "title": "Steam Community Hub",
-          "subtitle": "Discussions • Screenshots • Guides",
-          "url": "https://steamcommunity.com/app/3495730"
+          "name": "Higher-Dimensional Beings",
+          "role": "Hostile Enemy",
+          "description": "These beings are presented as part of the world's more abstract and unsettling enemy lineup."
         },
         {
-          "title": "Steam Store Page",
-          "subtitle": "Wishlist • Demo • Official description",
-          "url": "https://store.steampowered.com/app/3495730/Lucid_Blocks/"
+          "name": "Colossal Spiders",
+          "role": "Major Threat",
+          "description": "Spiders are one of the most immediately feared enemies in community discussions and are clearly a memorable danger."
+        },
+        {
+          "name": "Bubblebear",
+          "role": "Named Creature",
+          "description": "Bubblebear is notable enough to have its own achievement, which makes it one of the clearest named creature encounters in the game."
+        },
+        {
+          "name": "Cute Vermin",
+          "role": "Interactable Creature",
+          "description": "Vermin are not only part of fusion progression, they can also be renamed, giving them a more personal role than standard enemies."
+        },
+        {
+          "name": "Blasphemous Creature",
+          "role": "Elite Threat",
+          "description": "The blasphemous creature is tied to a dedicated combat achievement, marking it as a significant enemy encounter."
         }
       ]
     },
-    "modsBepInEx": {
-      "title": "Lucid Blocks Mods & BepInEx Setup",
-      "subtitle": "Install mods the clean way",
-      "steps": [
+    "lucidBlocksMobilityGear": {
+      "title": "Lucid Blocks Mobility Gear",
+      "displayType": "itemCards",
+      "intro": "Movement upgrades are one of the biggest quality-of-life jumps in Lucid Blocks. Once you unlock your first traversal tools, exploration becomes faster, safer, and much more rewarding.",
+      "items": [
         {
-          "step": 1,
-          "title": "Install BepInEx 5",
-          "text": "Download BepInEx 5 and extract it into the game root folder."
+          "name": "Hookshot",
+          "type": "Traversal Tool",
+          "description": "The hookshot is one of the clearest movement milestones in the game and has its own dedicated achievement."
         },
         {
-          "step": 2,
-          "title": "Launch once to generate folders",
-          "text": "Start the game to the main menu, then close it. This creates the BepInEx folder structure."
+          "name": "Glider Glove",
+          "type": "Air Mobility",
+          "description": "The glider glove opens up much smoother travel and is another major progression milestone with its own achievement."
         },
         {
-          "step": 3,
-          "title": "Install mods",
-          "text": "Place mod .dll files into the plugins folder."
+          "name": "Bee Glider",
+          "type": "Traversal Tool",
+          "description": "Bee gliders are officially highlighted as part of the game's movement toolkit for covering space more efficiently."
         },
         {
-          "step": 4,
-          "title": "Verify the install",
-          "text": "Re-launch the game and confirm the mod feature is available (camera toggle, UI cursor, etc.)."
+          "name": "Ball Wand",
+          "type": "Utility Gear",
+          "description": "Ball wands are one of the officially highlighted special tools and expand how you move through or interact with the world."
+        },
+        {
+          "name": "Scuba Diving Gear",
+          "type": "Exploration Gear",
+          "description": "Scuba diving gear is officially listed as part of the core utility set for reaching areas that would otherwise be harder to explore."
+        },
+        {
+          "name": "Explosives",
+          "type": "Utility Damage",
+          "description": "Explosives are both officially highlighted and linked to an achievement milestone, making them part of the game's core utility progression."
         }
       ],
-      "paths": [
-        {
-          "label": "Typical Steam install",
-          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\"
-        },
-        {
-          "label": "Plugins folder",
-          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\BepInEx\\plugins\\"
-        }
-      ],
-      "multiplayerNote": "For modded co-op gameplay features, everyone should install BepInEx and the same gameplay mods."
+      "unlockMilestones": [
+        "Command a hookshot",
+        "Fly with the glider glove",
+        "Brandish a projectile wand",
+        "Brandish an explosive"
+      ]
     },
-    "popularMods": {
-      "title": "Lucid Blocks Popular Mods",
-      "subtitle": "Top community picks",
-      "mods": [
+    "lucidBlocksFarmingAndGrowth": {
+      "title": "Lucid Blocks Farming and Growth",
+      "displayType": "mixedCards",
+      "intro": "Growth is part of real progression in Lucid Blocks. Farming is not only about planting and harvesting, but also about setting up repeatable material routes that keep your tools, weapons, and crafting options flowing.",
+      "sections": [
         {
-          "title": "Spawn Menu",
-          "tags": [
-            "Fun",
-            "Tools",
-            "Host-only"
-          ],
-          "description": "Adds an item spawn menu with a flying mode.",
-          "controls": [
+          "name": "Seed Progression",
+          "description": "Planting and fertilizing seeds is a real milestone in the game, and harvesting a fully-grown nut is part of the same growth path."
+        },
+        {
+          "name": "Material Farming",
+          "description": "A practical early farming loop is creating Mercury Capsules, which spawn small slimes that drop Tendrils and goo for repeatable crafting materials."
+        },
+        {
+          "name": "Tool Sustain",
+          "description": "Resource farming becomes much stronger once you can consistently gather Osmium, glass shards, plants, and slime materials for follow-up crafts."
+        },
+        {
+          "name": "Base Routine",
+          "description": "The best farming setup supports more than food. It should feed your storage, movement tools, weapon upgrades, and future fusion experiments."
+        }
+      ],
+      "growthMilestones": [
+        "Fertilize a seed",
+        "Harvest a fully-grown nut",
+        "Create repeatable material loops",
+        "Turn farming into long-term progression"
+      ]
+    },
+    "lucidBlocksBestEarlyUnlocks": {
+      "title": "Lucid Blocks Best Early Unlocks",
+      "displayType": "priorityCards",
+      "intro": "The strongest early unlocks are the ones that improve safety, storage, and movement. In Lucid Blocks, a few practical upgrades can make the entire rest of the game much smoother.",
+      "priorities": [
+        {
+          "name": "Personal Qualia",
+          "priority": "Essential",
+          "description": "As soon as you get access to your personal Qualia, your run becomes much more stable. It acts as a reliable hub for storage, building, and regrouping."
+        },
+        {
+          "name": "Frost Pick",
+          "priority": "Very High",
+          "description": "A fast and cheap early mining tool made from Osmium and Stick. It is one of the most useful upgrades for accelerating early resource collection."
+        },
+        {
+          "name": "Cache Cube",
+          "priority": "Very High",
+          "description": "Storage pressure starts early, so getting your first dependable chest-style container is a major quality-of-life upgrade."
+        },
+        {
+          "name": "Hookshot",
+          "priority": "High",
+          "description": "The hookshot is one of the clearest movement milestones in the game and quickly makes exploration faster and safer."
+        },
+        {
+          "name": "Glider Glove",
+          "priority": "High",
+          "description": "The glider glove adds another major mobility boost and makes long-distance movement far more efficient."
+        },
+        {
+          "name": "Projectile Wand or Bombs",
+          "priority": "High",
+          "description": "A ranged tool or explosive option gives you a safer answer to dangerous enemies and trial-style encounters."
+        }
+      ]
+    },
+    "lucidBlocksAchievementTracker": {
+      "title": "Lucid Blocks Achievement Tracker",
+      "displayType": "achievementGrid",
+      "intro": "Lucid Blocks currently has 19 Steam achievements, and they naturally split into exploration, crafting, mobility, combat, and growth progression.",
+      "groups": [
+        {
+          "name": "Exploration",
+          "achievements": [
             {
-              "key": "F",
-              "action": "Open spawn menu"
+              "title": "Angel α",
+              "description": "Enter a qualia."
             },
             {
-              "key": "V",
-              "action": "Enable flying"
-            }
-          ],
-          "note": "Host-only; others do not need to install it to join."
-        },
-        {
-          "title": "ThirdPerson View",
-          "tags": [
-            "Camera",
-            "QoL"
-          ],
-          "description": "Adds a third-person camera view.",
-          "controls": [
+              "title": "Angel γ",
+              "description": "Discover a tiamana leyline."
+            },
             {
-              "key": "F7",
-              "action": "Toggle first-person / third-person"
+              "title": "Angel δ",
+              "description": "Overcome a tiamana challenge."
+            },
+            {
+              "title": "Angel ε",
+              "description": "Hidden achievement."
             }
           ]
         },
         {
-          "title": "More Hats",
-          "tags": [
-            "Cosmetic"
-          ],
-          "description": "Adds additional hat color options for gnomes.",
-          "colors": [
-            "Blue",
-            "Green",
-            "Orange",
-            "Purple",
-            "Black",
-            "Red"
+          "name": "Crafting and Summoning",
+          "achievements": [
+            {
+              "title": "Apotheosis α",
+              "description": "Fuse an item."
+            },
+            {
+              "title": "Apotheosis β",
+              "description": "Fuse a vermin."
+            },
+            {
+              "title": "Apotheosis γ",
+              "description": "Fuse a divine artifact."
+            },
+            {
+              "title": "Archangel β",
+              "description": "Summon your faith."
+            }
           ]
         },
         {
-          "title": "DOOM on TV",
-          "tags": [
-            "Fun",
-            "Minigame"
-          ],
-          "description": "Play original DOOM on an in-game TV, with sound coming through the TV speaker.",
-          "highlights": [
-            "Works in multiplayer so other players can spectate on the same TV",
-            "Includes the shareware DOOM episode data (Episode 1)"
+          "name": "Mobility and Utility",
+          "achievements": [
+            {
+              "title": "Virtue α",
+              "description": "Fly with the glider glove."
+            },
+            {
+              "title": "Virtue β",
+              "description": "Command a hookshot."
+            },
+            {
+              "title": "Archangel α",
+              "description": "Brandish a projectile wand."
+            },
+            {
+              "title": "Archangel γ",
+              "description": "Brandish an explosive."
+            }
+          ]
+        },
+        {
+          "name": "Combat and Creatures",
+          "achievements": [
+            {
+              "title": "Bubblebear Massacre",
+              "description": "Defeat innocent bubblebears."
+            },
+            {
+              "title": "Archangel δ",
+              "description": "Eliminate a blasphemous creature."
+            },
+            {
+              "title": "Angel β",
+              "description": "Die."
+            },
+            {
+              "title": "Dominion γ",
+              "description": "Rename a cute vermin."
+            }
+          ]
+        },
+        {
+          "name": "Growth and Farming",
+          "achievements": [
+            {
+              "title": "Dominion α",
+              "description": "Fertilize a seed."
+            },
+            {
+              "title": "Dominion β",
+              "description": "Harvest a fully-grown nut."
+            },
+            {
+              "title": "Dominion δ",
+              "description": "Hidden achievement."
+            }
           ]
         }
       ]
     },
-    "controllerSupport": {
-      "title": "Lucid Blocks Controller Support",
-      "subtitle": "Full gamepad play",
-      "native": {
-        "title": "In-Game Settings",
-        "description": "Use the game's bindings/settings menus to adjust controls."
-      },
-      "mod": {
-        "title": "Controller Support Mod",
-        "description": "Adds complete gamepad/controller support and a UI cursor for menu navigation."
-      },
-      "features": [
-        "Full Gameplay Controls: movement, camera, combat, interactions, and abilities mapped to gamepad",
-        "UI Cursor Navigation: a white circle cursor appears in menus; press A to click and drag sliders",
-        "Inventory Navigation: hold Select to open inventory; use right stick to navigate while holding it",
-        "Scrollable Menus: right stick scrolls crafting recipes, settings, and other scrollable UI areas",
-        "Hotbar Cycling: D-pad left/right cycles through 4 hotbar slots",
-        "Seamless Input Switching: auto-detects keyboard/mouse vs controller"
+    "lucidBlocksSingleplayerAndPlatformFAQ": {
+      "title": "Lucid Blocks Singleplayer and Platform FAQ",
+      "displayType": "accordion",
+      "intro": "These are the core platform and access questions players keep asking before buying Lucid Blocks.",
+      "faqs": [
+        {
+          "question": "Is Lucid Blocks singleplayer?",
+          "answer": "Yes. Lucid Blocks is a singleplayer game."
+        },
+        {
+          "question": "Is multiplayer or co-op planned?",
+          "answer": "No. Multiplayer is not planned for release or future updates."
+        },
+        {
+          "question": "Where can I play Lucid Blocks?",
+          "answer": "It is currently available on Steam for Windows."
+        },
+        {
+          "question": "How much does Lucid Blocks cost?",
+          "answer": "$9.99 on Steam."
+        },
+        {
+          "question": "Does Lucid Blocks support controllers?",
+          "answer": "Yes, but controller play is not recommended because the menus are not designed around it."
+        },
+        {
+          "question": "Does Lucid Blocks work on Steam Deck?",
+          "answer": "Yes. Proton 9.0 or 9.0.4 is the commonly recommended setup for Steam Deck."
+        },
+        {
+          "question": "Does Lucid Blocks work on Linux?",
+          "answer": "Yes. Proton 9.0 is reported to work well for Linux and Steam Deck."
+        },
+        {
+          "question": "Will Mac or Android be supported?",
+          "answer": "They may be supported in the future, but they are not current launch platforms."
+        },
+        {
+          "question": "Does Lucid Blocks have translations?",
+          "answer": "No. There are currently no translations planned."
+        },
+        {
+          "question": "Will Lucid Blocks keep getting updates?",
+          "answer": "Yes. Some content updates are planned after release, but they are not intended to continue on an indefinite regular schedule."
+        }
       ]
     },
-    "playerCount": {
-      "title": "Lucid Blocks Player Count & Trend",
-      "subtitle": "Live popularity snapshot",
-      "stats": {
-        "now": {
-          "value": "6,047",
-          "label": "Players right now"
+    "lucidBlocksSteamDeckAndController": {
+      "title": "Lucid Blocks Steam Deck and Controller",
+      "displayType": "accordion",
+      "intro": "Lucid Blocks can run on Steam Deck, but the default setup may need adjustment. Keyboard and mouse remains the smoother option for menus and general play.",
+      "faqs": [
+        {
+          "question": "Does Lucid Blocks work on Steam Deck?",
+          "answer": "Yes. Proton 9.0 works well, and Proton 9.0.4 is a commonly shared fix for Steam Deck issues."
         },
-        "peak24h": {
-          "value": "13,859",
-          "label": "24-hour peak"
+        {
+          "question": "What should I do if Steam Deck controls are not working?",
+          "answer": "Force compatibility and switch the game to Proton 9.0.4. The default configuration may not accept controller input correctly."
         },
-        "allTimePeak": {
-          "value": "15,272",
-          "label": "All-time peak"
+        {
+          "question": "Does Lucid Blocks support controllers?",
+          "answer": "Yes, but controller play is not recommended because the game's menus are not designed around it."
+        },
+        {
+          "question": "Is Linux support possible?",
+          "answer": "Yes. Proton 9.0 is reported to work well for Linux and Steam Deck."
+        },
+        {
+          "question": "What is the best input setup?",
+          "answer": "Keyboard and mouse is the smoothest option for menu navigation and general moment-to-moment play."
         }
-      },
-      "milestones": [
+      ]
+    },
+    "lucidBlocksSettingsAndAccessibility": {
+      "title": "Lucid Blocks Settings and Accessibility",
+      "displayType": "settingCards",
+      "intro": "Lucid Blocks already has a few practical settings and compatibility notes that matter immediately when players first launch the game.",
+      "settings": [
         {
-          "date": "Jan 30, 2026",
-          "title": "Demo released on Steam",
-          "detail": "Public demo became available on PC (Steam)."
+          "name": "Display Settings",
+          "type": "Comfort Option",
+          "description": "Display Settings includes an option that lets players hide the on-screen hands."
         },
         {
-          "date": "Feb 8, 2026",
-          "title": "All-time peak reached",
-          "detail": "The demo hit its highest recorded concurrent players."
+          "name": "Graphics Compatibility",
+          "type": "System Requirement",
+          "description": "Vulkan support is required for the graphics to render properly. Systems without Vulkan can run into crashes and severe graphical glitches."
+        },
+        {
+          "name": "Input Preference",
+          "type": "Control Setup",
+          "description": "Controller support exists, but keyboard and mouse gives a smoother experience because menus are not built around controller use."
+        },
+        {
+          "name": "Language Support",
+          "type": "Localization",
+          "description": "The current setup is English-only, and no translations are planned right now."
+        }
+      ]
+    },
+    "lucidBlocksUpdatesAndPatchNotes": {
+      "title": "Lucid Blocks Updates and Patch Notes",
+      "displayType": "timeline",
+      "intro": "Lucid Blocks is already receiving quick post-launch fixes and small usability updates.",
+      "entries": [
+        {
+          "title": "Update 2.8.2",
+          "type": "UI Update",
+          "description": "Renamed \"awaken\" to \"exit\" in the main menu."
+        },
+        {
+          "title": "Small Patch for Start-Up Crashes",
+          "type": "Hotfix",
+          "description": "A dedicated patch was released for players whose game was crashing on launch."
+        },
+        {
+          "title": "Post-Launch Content Support",
+          "type": "Roadmap Note",
+          "description": "Some content updates are planned after release, but they are not intended to continue on an indefinite regular schedule."
+        }
+      ]
+    },
+    "lucidBlocksCrashFixAndTroubleshooting": {
+      "title": "Lucid Blocks Crash Fix and Troubleshooting",
+      "displayType": "steps",
+      "intro": "Most immediate launch and crash issues should be checked in a simple order: patch level, graphics support, platform compatibility, and logs.",
+      "steps": [
+        {
+          "title": "Install the Latest Crash Hotfix",
+          "description": "If the game is crashing on start, update first and test again with the latest start-up crash patch."
+        },
+        {
+          "title": "Check Vulkan Support",
+          "description": "Lucid Blocks requires Vulkan support. Systems without Vulkan can suffer from crashes or major rendering problems."
+        },
+        {
+          "title": "Use Proton 9.0.4 on Steam Deck",
+          "description": "If Steam Deck input or launch behavior is broken, force compatibility and switch to Proton 9.0.4."
+        },
+        {
+          "title": "Collect Crash Logs",
+          "description": "Open Windows Run, paste %APPDATA%, go to lucid blocks/logs, and gather the .txt files for troubleshooting."
+        },
+        {
+          "title": "Report the Issue Properly",
+          "description": "Share the logs and device details through the official Discord bug-reports forum or on the Steam community page."
         }
       ]
     }
@@ -794,28 +760,28 @@
     "subtitle": "Everything you need to know about Lucid Blocks",
     "questions": [
       {
-        "question": "How do I download the Lucid Blocks demo?",
-        "answer": "Visit the Steam store page and click 'Download Demo'. The demo is free and requires 2.62 GiB to download, 4.88 GiB disk space."
+        "question": "Is Lucid Blocks a singleplayer game?",
+        "answer": "Yes. Lucid Blocks is a singleplayer-only game with no multiplayer or co-op planned."
       },
       {
-        "question": "Can I play Lucid Blocks solo or do I need friends?",
-        "answer": "Lucid Blocks supports both solo play and co-op with up to 6 players. Solo is harder but possible."
+        "question": "What is the Apotheosis system in Lucid Blocks?",
+        "answer": "Apotheosis is Lucid Blocks' freeform fusion crafting system. Instead of following fixed recipes, you combine materials and discover your own crafting paths."
       },
       {
-        "question": "What are High-Gnome tasks in Lucid Blocks?",
-        "answer": "High-Gnome is your boss who assigns objectives like 'break the TV', 'flood the toilet', or 'steal specific items'. Complete them for extra rewards."
+        "question": "Where can I play Lucid Blocks?",
+        "answer": "Lucid Blocks is currently available on Steam for Windows. Linux and Steam Deck support is available through Proton 9.0."
       },
       {
-        "question": "How do I install mods for Lucid Blocks?",
-        "answer": "Install BepInEx 5, launch the game once, then place mod DLLs in the BepInEx/plugins/ folder. All players need the same mods for multiplayer."
+        "question": "How much does Lucid Blocks cost?",
+        "answer": "Lucid Blocks costs $9.99 on Steam."
       },
       {
         "question": "Does Lucid Blocks support controllers?",
-        "answer": "Yes! Use in-game settings for basic controller support, or install the Controller Mod from Nexus Mods for full UI navigation."
+        "answer": "Yes, but controller play is not recommended because the menus are not designed around it. Keyboard and mouse is the smoother option."
       },
       {
-        "question": "What is the player count for Lucid Blocks?",
-        "answer": "As of February 2026, Lucid Blocks averages 6,000+ concurrent players, with a peak of 15,272 on February 8, 2026."
+        "question": "Will Lucid Blocks receive updates?",
+        "answer": "Yes. Some content updates are planned after release, but they are not intended to continue on an indefinite regular schedule."
       }
     ]
   },
