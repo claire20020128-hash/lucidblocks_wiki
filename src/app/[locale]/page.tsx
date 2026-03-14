@@ -45,7 +45,7 @@ const LoadingPlaceholder = ({ height = 'h-64' }: { height?: string }) => (
 
 export default function HomePage() {
   const t = useMessages() as any
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.burglingnomes.wiki'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.lucidblocks.wiki'
 
   // Structured data
   const structuredData = {
@@ -55,14 +55,14 @@ export default function HomePage() {
         '@type': 'WebSite',
         '@id': `${siteUrl}/#website`,
         url: siteUrl,
-        name: "Burglin' Gnomes Wiki",
-        description: "Complete Burglin' Gnomes resource hub with guides, co-op strategies, crafting tips, mods, and community links.",
+        name: "Lucid Blocks Wiki",
+        description: "Complete Lucid Blocks Wiki covering crafting, biomes, creatures, items, achievements, lore, and survival tips for the surreal voxel sandbox on Steam.",
         image: {
           '@type': 'ImageObject',
           url: `${siteUrl}/images/hero.webp`,
-          width: 1200,
-          height: 630,
-          caption: "Burglin' Gnomes - Stealth Heist Game",
+          width: 1920,
+          height: 1080,
+          caption: "Lucid Blocks - Surreal Voxel Survival Sandbox",
         },
         potentialAction: {
           '@type': 'SearchAction',
@@ -73,10 +73,10 @@ export default function HomePage() {
       {
         '@type': 'Organization',
         '@id': `${siteUrl}/#organization`,
-        name: "Burglin' Gnomes Wiki",
-        alternateName: "Burglin' Gnomes",
+        name: "Lucid Blocks Wiki",
+        alternateName: "Lucid Blocks",
         url: siteUrl,
-        description: "Complete Burglin' Gnomes Wiki resource hub for guides, crafting, and strategies",
+        description: "Complete Lucid Blocks Wiki resource hub for crafting, biomes, creatures, items, achievements, and survival guides",
         logo: {
           '@type': 'ImageObject',
           url: `${siteUrl}/android-chrome-512x512.png`,
@@ -86,32 +86,32 @@ export default function HomePage() {
         image: {
           '@type': 'ImageObject',
           url: `${siteUrl}/images/hero.webp`,
-          width: 1200,
-          height: 630,
-          caption: "Burglin' Gnomes Wiki - Master Stealth Heists",
+          width: 1920,
+          height: 1080,
+          caption: "Lucid Blocks Wiki - Surreal Voxel Survival Sandbox",
         },
         sameAs: [
-          'https://store.steampowered.com/app/3844970/Burglin_Gnomes/',
-          'https://discord.gg/rbeW4bpsqY',
-          'https://x.com/itsfobri',
+          'https://store.steampowered.com/app/3495730/Lucid_Blocks/',
+          'https://discord.com/invite/lucidblocks',
+          'https://www.reddit.com/r/LucidBlocks/',
+          'https://www.youtube.com/@lucy_b_locks',
         ],
       },
       {
         '@type': 'VideoGame',
-        name: "Burglin' Gnomes",
-        gamePlatform: ['PC'],
+        name: "Lucid Blocks",
+        gamePlatform: ['PC', 'Steam'],
         applicationCategory: 'Game',
-        genre: ['Stealth', 'Co-op', 'Multiplayer'],
+        genre: ['Survival', 'Sandbox', 'Adventure', 'Psychedelic'],
         numberOfPlayers: {
           minValue: 1,
-          maxValue: 6,
+          maxValue: 1,
         },
         offers: {
           '@type': 'Offer',
-          price: '0',
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock',
-          url: 'https://store.steampowered.com/app/3844970/Burglin_Gnomes/',
+          url: 'https://store.steampowered.com/app/3495730/Lucid_Blocks/',
         },
       },
     ],
@@ -183,7 +183,7 @@ export default function HomePage() {
             {/* CTA Buttons - External links only */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <a
-                href="https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+                href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4
@@ -194,7 +194,7 @@ export default function HomePage() {
                 {t.hero.getFreeCodesCTA}
               </a>
               <a
-                href="https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+                href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4
@@ -222,8 +222,8 @@ export default function HomePage() {
         <div className="scroll-reveal container mx-auto">
           <div className="relative rounded-2xl overflow-hidden">
             <VideoFeature
-              videoId="AUWH7uHPgOY"
-              title="BURGLIN' GNOMES | GAMEPLAY HIGHLIGHT"
+              videoId="7C7fybRM_No"
+              title="LUCID BLOCKS | AVAILABLE NOW"
               posterImage="/images/hero.webp"
             />
           </div>
@@ -336,7 +336,7 @@ export default function HomePage() {
           {/* CTA Buttons */}
           <div className="scroll-reveal flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+              href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4
@@ -1204,7 +1204,7 @@ export default function HomePage() {
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href="https://discord.gg/rbeW4bpsqY"
+                    href="https://discord.com/invite/lucidblocks"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
@@ -1214,7 +1214,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <a
-                    href="https://x.com/itsfobri"
+                    href="https://x.com/lucidblocks"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
@@ -1224,7 +1224,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <a
-                    href="https://steamcommunity.com/app/3844970"
+                    href="https://steamcommunity.com/app/3495730"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
@@ -1234,7 +1234,7 @@ export default function HomePage() {
                 </li>
                 <li>
                   <a
-                    href="https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+                    href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"

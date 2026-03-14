@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllContent, CONTENT_TYPES, type ContentType } from '@/lib/content'
 import { routing, type Locale } from '@/i18n/routing'
 
-const BASE_URL = 'https://www.burglingnomes.wiki'
+const BASE_URL = 'https://www.lucidblocks.wiki'
 
 // 静态页面配置
 const staticPagesConfig: Record<string, { priority: number; changeFrequency: 'monthly' | 'yearly' }> = {
@@ -14,26 +14,26 @@ const staticPagesConfig: Record<string, { priority: number; changeFrequency: 'mo
 
 // 内容类型优先级配置
 const contentTypePriority: Record<string, number> = {
-	'codes': 0.9,
-	'tier-list': 0.9,
-	'units': 0.8,
-	'guide': 0.8,
-	'farming': 0.7,
-	'gameplay': 0.7,
-	'resources': 0.6,
-	'community': 0.5,
+	'guides': 0.9,
+	'crafting': 0.9,
+	'biomes': 0.8,
+	'creatures': 0.8,
+	'items': 0.8,
+	'achievements': 0.7,
+	'lore': 0.7,
+	'support': 0.6,
 }
 
 // 内容更新频率配置
 const contentTypeChangeFrequency: Record<string, 'daily' | 'weekly' | 'monthly'> = {
-	'codes': 'daily',
-	'tier-list': 'weekly',
-	'units': 'weekly',
-	'guide': 'weekly',
-	'farming': 'weekly',
-	'gameplay': 'monthly',
-	'resources': 'monthly',
-	'community': 'monthly',
+	'guides': 'weekly',
+	'crafting': 'weekly',
+	'biomes': 'weekly',
+	'creatures': 'weekly',
+	'items': 'weekly',
+	'achievements': 'monthly',
+	'lore': 'monthly',
+	'support': 'monthly',
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

@@ -60,10 +60,10 @@ export default function Navigation() {
 						className="flex items-center space-x-2 hover:opacity-80 transition"
 					>
 						<div className="w-10 h-10 bg-[hsl(var(--nav-theme))] rounded-lg flex items-center justify-center font-bold text-xl">
-							B
+							L
 						</div>
-						<span className="font-bold text-lg hidden sm:inline">Burglin' Gnomes</span>
-						<span className="font-bold text-lg sm:hidden">BG</span>
+						<span className="font-bold text-lg hidden sm:inline">Lucid Blocks</span>
+						<span className="font-bold text-lg sm:hidden">LB</span>
 					</Link>
 
 					{/* Desktop Navigation */}
@@ -128,9 +128,15 @@ export default function Navigation() {
 						</div>
 
 						{/* Play Button */}
-						<Button className="bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)] text-white hidden sm:flex">
-							{t('common.playNow')}
-						</Button>
+						<a
+							href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Button className="bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)] text-white hidden sm:flex">
+								{t('common.playNow')}
+							</Button>
+						</a>
 
 						{/* Mobile Menu Toggle */}
 						<button
@@ -163,9 +169,16 @@ export default function Navigation() {
 							<div className="flex items-center gap-3 px-4">
 								<ThemeToggle />
 							</div>
-							<Button className="bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)] text-white w-full">
-								{t('common.playNow')}
-							</Button>
+							<a
+								href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="w-full"
+							>
+								<Button className="bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)] text-white w-full">
+									{t('common.playNow')}
+								</Button>
+							</a>
 						</div>
 					</div>
 				)}

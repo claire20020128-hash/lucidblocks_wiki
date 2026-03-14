@@ -1,20 +1,29 @@
 {
   "seo": {
     "home": {
-      "title": "Burglin' Gnomes Wiki - Demo Download, Co-op Guide, Crafting & Mods",
-      "description": "Complete Burglin' Gnomes resource hub! Get demo download info, beginner guides, co-op strategies, crafting tips, controls, mods, and community links for the Steam stealth heist game.",
-      "keywords": "Burglin' Gnomes Wiki, Burglin' Gnomes, demo download, beginner guide, co-op guide, crafting, equipment, mods, BepInEx, Steam game, stealth game",
-      "ogTitle": "Burglin' Gnomes Wiki - Demo Download, Co-op Guide, Crafting & Mods",
-      "ogDescription": "Complete Burglin' Gnomes resource hub! Get demo download info, beginner guides, co-op strategies, crafting tips, and mods for the Steam stealth heist game.",
-      "twitterTitle": "Burglin' Gnomes Wiki - Demo Download, Co-op Guide, Crafting & Mods",
-      "twitterDescription": "Complete Burglin' Gnomes resource hub! Get demo download info, beginner guides, co-op strategies, and crafting tips."
+      "title": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
+      "description": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, endings, and survival tips for the surreal voxel sandbox adventure on Steam.",
+      "keywords": "Lucid Blocks, Lucid Blocks wiki, crafting, biomes, achievements, survival, Steam",
+      "ogTitle": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
+      "ogDescription": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, endings, and survival tips for the surreal voxel sandbox adventure on Steam.",
+      "twitterTitle": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
+      "twitterDescription": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, and survival tips for the surreal voxel sandbox on Steam."
     }
   },
-  "nav": {},
+  "nav": {
+    "guides": "Guides",
+    "crafting": "Crafting",
+    "biomes": "Biomes",
+    "creatures": "Creatures",
+    "items": "Items",
+    "achievements": "Achievements",
+    "lore": "Lore",
+    "support": "Support"
+  },
   "common": {
     "home": "Home",
     "more": "More",
-    "playNow": "Get Demo",
+    "playNow": "Play on Steam",
     "switchLanguage": "Switch Language",
     "switchTheme": "Switch Theme",
     "lightMode": "Light Mode",
@@ -26,36 +35,36 @@
     "readMore": "Read More"
   },
   "hero": {
-    "badge": "Tiny gnomes. Big homes. Stealth heists with friends.",
-    "title": "Burglin' Gnomes wiki",
-    "description": "Your hub for Burglin' Gnomes: how the heists work, High-Gnome jobs, crafting & upgrades, enemies, controls, and the fastest ways to survive each run.",
-    "getFreeCodesCTA": "Download Demo",
-    "playOnRobloxCTA": "Wishlist on Steam",
+    "badge": "Surreal Voxel Survival Sandbox",
+    "title": "Lucid Blocks Wiki",
+    "description": "Explore dreamlike biomes, fuse items with Apotheosis, build freely, and survive strange creatures in this surreal open-world sandbox on Steam.",
+    "getFreeCodesCTA": "Explore Crafting Guide",
+    "playOnRobloxCTA": "Play on Steam",
     "stats": {
       "stat1": {
-        "value": "15K",
-        "label": "Peak CCU (Demo)"
+        "value": "1,325",
+        "label": "Players Online"
       },
       "stat2": {
-        "value": "6",
-        "label": "Co-op Players"
+        "value": "1,986",
+        "label": "Peak CCU"
       },
       "stat3": {
-        "value": "2026-01-31",
-        "label": "Demo Release"
+        "value": "97%",
+        "label": "Positive Reviews"
       },
       "stat4": {
-        "value": "PC (Steam)",
-        "label": "Platform"
+        "value": "Mar 12, 2026",
+        "label": "Release Date"
       }
     }
   },
   "gameFeature": {
-    "title": "Burglin' Gnomes Gameplay",
-    "description": "Watch tiny gnomes pull off big heists in chaotic 6-player co-op stealth missions!"
+    "title": "Lucid Blocks Gameplay",
+    "description": "Explore surreal biomes, fuse items with Apotheosis, and survive strange creatures in this dreamlike voxel sandbox on Steam."
   },
   "tools": {
-    "title": "Burglin' Gnomes",
+    "title": "Lucid Blocks",
     "titleHighlight": "Resources",
     "subtitle": "Everything you need to master heists and co-op stealth",
     "cards": [
@@ -143,7 +152,7 @@
   },
   "modules": {
     "demoDownload": {
-      "title": "Burglin' Gnomes Demo Download",
+      "title": "Lucid Blocks Demo Download",
       "subtitle": "Get the free demo on Steam",
       "downloadSize": "2.62 GiB",
       "diskSize": "4.88 GiB",
@@ -153,7 +162,7 @@
       "engine": "Unity",
       "primaryCTA": "Download Demo",
       "secondaryCTA": "View Tech Info",
-      "installPath": "Steam\\steamapps\\common\\Burglin Gnomes Demo",
+      "installPath": "Steam\\steamapps\\common\\Lucid Blocks Demo",
       "sections": [
         {
           "heading": "Where to download",
@@ -172,7 +181,7 @@
       ]
     },
     "beginnerGuide": {
-      "title": "Burglin' Gnomes Beginner Guide",
+      "title": "Lucid Blocks Beginner Guide",
       "subtitle": "Master the core loop and avoid common mistakes",
       "steps": [
         {
@@ -220,7 +229,7 @@
       ]
     },
     "coopGuide": {
-      "title": "Burglin' Gnomes Co-op Guide",
+      "title": "Lucid Blocks Co-op Guide",
       "subtitle": "Coordinate with up to 6 players for maximum chaos",
       "maxPlayers": 6,
       "roles": [
@@ -254,20 +263,28 @@
       "communication": "Use voice chat (V key) to coordinate tasks and rescues. Call out: 'Spotted', 'Route', 'Need rescue', 'Extract soon'."
     },
     "tasksObjectives": {
-      "title": "Burglin' Gnomes Tasks & Objectives",
+      "title": "Lucid Blocks Tasks & Objectives",
       "subtitle": "What the High-Gnome wants: task examples",
       "taskTypes": [
         {
           "type": "Steal Items",
-          "examples": ["Grab specific items marked by High-Gnome objectives"]
+          "examples": [
+            "Grab specific items marked by High-Gnome objectives"
+          ]
         },
         {
           "type": "Reach Locations",
-          "examples": ["Navigate to specified areas inside the house"]
+          "examples": [
+            "Navigate to specified areas inside the house"
+          ]
         },
         {
           "type": "Cause Mischief",
-          "examples": ["Break a TV", "Flood a toilet", "Create chaos"]
+          "examples": [
+            "Break a TV",
+            "Flood a toilet",
+            "Create chaos"
+          ]
         }
       ],
       "efficiency": [
@@ -277,32 +294,86 @@
       ]
     },
     "controlsKeybinds": {
-      "title": "Burglin' Gnomes Controls & Keybinds",
+      "title": "Lucid Blocks Controls & Keybinds",
       "subtitle": "Default keyboard controls (and where to change them)",
       "keybinds": [
-        { "action": "Move Left", "key": "A" },
-        { "action": "Move Right", "key": "D" },
-        { "action": "Move Forward", "key": "W" },
-        { "action": "Move Back", "key": "S" },
-        { "action": "Crouch", "key": "Left Ctrl" },
-        { "action": "Attack", "key": "Left Click" },
-        { "action": "Run", "key": "Left Shift" },
-        { "action": "Drop Item", "key": "G" },
-        { "action": "Interact", "key": "E" },
-        { "action": "Jump", "key": "Space" },
-        { "action": "Push-to-Talk", "key": "V" },
-        { "action": "Push", "key": "Right Click" },
-        { "action": "Ragdoll", "key": "Q" },
-        { "action": "Equipment Slot 1", "key": "1" },
-        { "action": "Equipment Slot 2", "key": "2" },
-        { "action": "Equipment Slot 3", "key": "3" },
-        { "action": "Equipment Slot 4", "key": "4" },
-        { "action": "Inventory", "key": "Tab" }
+        {
+          "action": "Move Left",
+          "key": "A"
+        },
+        {
+          "action": "Move Right",
+          "key": "D"
+        },
+        {
+          "action": "Move Forward",
+          "key": "W"
+        },
+        {
+          "action": "Move Back",
+          "key": "S"
+        },
+        {
+          "action": "Crouch",
+          "key": "Left Ctrl"
+        },
+        {
+          "action": "Attack",
+          "key": "Left Click"
+        },
+        {
+          "action": "Run",
+          "key": "Left Shift"
+        },
+        {
+          "action": "Drop Item",
+          "key": "G"
+        },
+        {
+          "action": "Interact",
+          "key": "E"
+        },
+        {
+          "action": "Jump",
+          "key": "Space"
+        },
+        {
+          "action": "Push-to-Talk",
+          "key": "V"
+        },
+        {
+          "action": "Push",
+          "key": "Right Click"
+        },
+        {
+          "action": "Ragdoll",
+          "key": "Q"
+        },
+        {
+          "action": "Equipment Slot 1",
+          "key": "1"
+        },
+        {
+          "action": "Equipment Slot 2",
+          "key": "2"
+        },
+        {
+          "action": "Equipment Slot 3",
+          "key": "3"
+        },
+        {
+          "action": "Equipment Slot 4",
+          "key": "4"
+        },
+        {
+          "action": "Inventory",
+          "key": "Tab"
+        }
       ],
       "changePath": "From title menu: open SETTINGS, then check keyboard settings. Use search field to filter keybind rows."
     },
     "contentSettings": {
-      "title": "Burglin' Gnomes Content Settings",
+      "title": "Lucid Blocks Content Settings",
       "subtitle": "Mature content, nudity toggle, and Steam preferences",
       "descriptors": [
         "Some Nudity or Sexual Content",
@@ -327,7 +398,7 @@
       ]
     },
     "craftingEquipment": {
-      "title": "Burglin' Gnomes Crafting & Equipment",
+      "title": "Lucid Blocks Crafting & Equipment",
       "subtitle": "Gear up: crafting examples and what each tool does",
       "equipment": [
         {
@@ -364,20 +435,26 @@
       ]
     },
     "lootItems": {
-      "title": "Burglin' Gnomes Loot & Items",
+      "title": "Lucid Blocks Loot & Items",
       "subtitle": "What to steal: item types, risk, and carry tips",
       "categories": [
         {
           "type": "Task Items",
-          "examples": ["Items required by High-Gnome for objectives"]
+          "examples": [
+            "Items required by High-Gnome for objectives"
+          ]
         },
         {
           "type": "Crafting Materials",
-          "examples": ["Household items repurposed into gnome gear and upgrades"]
+          "examples": [
+            "Household items repurposed into gnome gear and upgrades"
+          ]
         },
         {
           "type": "Mischief Targets",
-          "examples": ["Objects involved in tasks like breaking or flooding"]
+          "examples": [
+            "Objects involved in tasks like breaking or flooding"
+          ]
         }
       ],
       "carryTips": [
@@ -386,18 +463,27 @@
         "Plan the route to the yard extraction before the timer ends"
       ],
       "riskLevels": [
-        { "level": "Low", "description": "Near entrances or safe corners" },
-        { "level": "Medium", "description": "Deeper rooms or near roaming threats" },
-        { "level": "High", "description": "Close to homeowner patrol or robot vacuum" }
+        {
+          "level": "Low",
+          "description": "Near entrances or safe corners"
+        },
+        {
+          "level": "Medium",
+          "description": "Deeper rooms or near roaming threats"
+        },
+        {
+          "level": "High",
+          "description": "Close to homeowner patrol or robot vacuum"
+        }
       ]
     },
     "enemiesHazards": {
-      "title": "Burglin' Gnomes Enemies & Hazards",
+      "title": "Lucid Blocks Enemies & Hazards",
       "subtitle": "Know what can catch you",
       "threats": [
         {
           "name": "The Homeowner",
-          "trigger": "Getting spotted while burgling or doing tasks",
+          "trigger": "Getting spotted while lucidblocksg or doing tasks",
           "behavior": "He chases and tries to catch you",
           "counter": "Stay stealthy, break sightlines, and keep moving as a team"
         },
@@ -434,7 +520,7 @@
       ]
     },
     "stealthEscape": {
-      "title": "Burglin' Gnomes Stealth & Escape Tips",
+      "title": "Lucid Blocks Stealth & Escape Tips",
       "subtitle": "Steal more, die less",
       "do": [
         "Stay stealthy and take cover before interacting with objects",
@@ -464,33 +550,43 @@
       ]
     },
     "homeUpgrades": {
-      "title": "Burglin' Gnomes Home Upgrades",
+      "title": "Lucid Blocks Home Upgrades",
       "subtitle": "Craft, build, upgrade",
       "branches": [
         {
           "branch": "Storage",
           "summary": "Carry more and bring more back",
-          "items": ["Backpack (inventory expansion)"]
+          "items": [
+            "Backpack (inventory expansion)"
+          ]
         },
         {
           "branch": "Utility",
           "summary": "Interact with the house more effectively",
-          "items": ["Gnome Gloves (lets you open doors and more)"]
+          "items": [
+            "Gnome Gloves (lets you open doors and more)"
+          ]
         },
         {
           "branch": "Mobility",
           "summary": "Move safer through vertical spaces",
-          "items": ["Spring Shoes (reduce fall damage)"]
+          "items": [
+            "Spring Shoes (reduce fall damage)"
+          ]
         },
         {
           "branch": "Defense",
           "summary": "Deal with small threats when needed",
-          "items": ["Weapons (for threats like mice)"]
+          "items": [
+            "Weapons (for threats like mice)"
+          ]
         },
         {
           "branch": "Home Base",
           "summary": "Craft furniture and upgrade your floating-island home",
-          "items": ["Functional furniture upgrades"]
+          "items": [
+            "Functional furniture upgrades"
+          ]
         }
       ],
       "priority": [
@@ -512,33 +608,33 @@
       ]
     },
     "community": {
-      "title": "Burglin' Gnomes Community & Discord",
+      "title": "Lucid Blocks Community & Discord",
       "subtitle": "Find squads, updates, discussions",
       "links": [
         {
           "title": "Official Discord",
           "subtitle": "Announcements • Feedback • LFG",
-          "url": "https://discord.gg/rbeW4bpsqY"
+          "url": "https://discord.com/invite/lucidblocks"
         },
         {
           "title": "Official X (Twitter)",
           "subtitle": "Updates & dev posts",
-          "url": "https://x.com/itsfobri"
+          "url": "https://x.com/lucidblocks"
         },
         {
           "title": "Steam Community Hub",
           "subtitle": "Discussions • Screenshots • Guides",
-          "url": "https://steamcommunity.com/app/3844970"
+          "url": "https://steamcommunity.com/app/3495730"
         },
         {
           "title": "Steam Store Page",
           "subtitle": "Wishlist • Demo • Official description",
-          "url": "https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+          "url": "https://store.steampowered.com/app/3495730/Lucid_Blocks/"
         }
       ]
     },
     "modsBepInEx": {
-      "title": "Burglin' Gnomes Mods & BepInEx Setup",
+      "title": "Lucid Blocks Mods & BepInEx Setup",
       "subtitle": "Install mods the clean way",
       "steps": [
         {
@@ -565,46 +661,74 @@
       "paths": [
         {
           "label": "Typical Steam install",
-          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\"
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\"
         },
         {
           "label": "Plugins folder",
-          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\BepInEx\\plugins\\"
+          "path": "Steam\\steamapps\\common\\Lucid Blocks Demo\\BepInEx\\plugins\\"
         }
       ],
       "multiplayerNote": "For modded co-op gameplay features, everyone should install BepInEx and the same gameplay mods."
     },
     "popularMods": {
-      "title": "Burglin' Gnomes Popular Mods",
+      "title": "Lucid Blocks Popular Mods",
       "subtitle": "Top community picks",
       "mods": [
         {
           "title": "Spawn Menu",
-          "tags": ["Fun", "Tools", "Host-only"],
+          "tags": [
+            "Fun",
+            "Tools",
+            "Host-only"
+          ],
           "description": "Adds an item spawn menu with a flying mode.",
           "controls": [
-            { "key": "F", "action": "Open spawn menu" },
-            { "key": "V", "action": "Enable flying" }
+            {
+              "key": "F",
+              "action": "Open spawn menu"
+            },
+            {
+              "key": "V",
+              "action": "Enable flying"
+            }
           ],
           "note": "Host-only; others do not need to install it to join."
         },
         {
           "title": "ThirdPerson View",
-          "tags": ["Camera", "QoL"],
+          "tags": [
+            "Camera",
+            "QoL"
+          ],
           "description": "Adds a third-person camera view.",
           "controls": [
-            { "key": "F7", "action": "Toggle first-person / third-person" }
+            {
+              "key": "F7",
+              "action": "Toggle first-person / third-person"
+            }
           ]
         },
         {
           "title": "More Hats",
-          "tags": ["Cosmetic"],
+          "tags": [
+            "Cosmetic"
+          ],
           "description": "Adds additional hat color options for gnomes.",
-          "colors": ["Blue", "Green", "Orange", "Purple", "Black", "Red"]
+          "colors": [
+            "Blue",
+            "Green",
+            "Orange",
+            "Purple",
+            "Black",
+            "Red"
+          ]
         },
         {
           "title": "DOOM on TV",
-          "tags": ["Fun", "Minigame"],
+          "tags": [
+            "Fun",
+            "Minigame"
+          ],
           "description": "Play original DOOM on an in-game TV, with sound coming through the TV speaker.",
           "highlights": [
             "Works in multiplayer so other players can spectate on the same TV",
@@ -614,7 +738,7 @@
       ]
     },
     "controllerSupport": {
-      "title": "Burglin' Gnomes Controller Support",
+      "title": "Lucid Blocks Controller Support",
       "subtitle": "Full gamepad play",
       "native": {
         "title": "In-Game Settings",
@@ -634,7 +758,7 @@
       ]
     },
     "playerCount": {
-      "title": "Burglin' Gnomes Player Count & Trend",
+      "title": "Lucid Blocks Player Count & Trend",
       "subtitle": "Live popularity snapshot",
       "stats": {
         "now": {
@@ -667,43 +791,43 @@
   "faq": {
     "title": "Frequently Asked",
     "titleHighlight": "Questions",
-    "subtitle": "Everything you need to know about Burglin' Gnomes",
+    "subtitle": "Everything you need to know about Lucid Blocks",
     "questions": [
       {
-        "question": "How do I download the Burglin' Gnomes demo?",
+        "question": "How do I download the Lucid Blocks demo?",
         "answer": "Visit the Steam store page and click 'Download Demo'. The demo is free and requires 2.62 GiB to download, 4.88 GiB disk space."
       },
       {
-        "question": "Can I play Burglin' Gnomes solo or do I need friends?",
-        "answer": "Burglin' Gnomes supports both solo play and co-op with up to 6 players. Solo is harder but possible."
+        "question": "Can I play Lucid Blocks solo or do I need friends?",
+        "answer": "Lucid Blocks supports both solo play and co-op with up to 6 players. Solo is harder but possible."
       },
       {
-        "question": "What are High-Gnome tasks in Burglin' Gnomes?",
+        "question": "What are High-Gnome tasks in Lucid Blocks?",
         "answer": "High-Gnome is your boss who assigns objectives like 'break the TV', 'flood the toilet', or 'steal specific items'. Complete them for extra rewards."
       },
       {
-        "question": "How do I install mods for Burglin' Gnomes?",
+        "question": "How do I install mods for Lucid Blocks?",
         "answer": "Install BepInEx 5, launch the game once, then place mod DLLs in the BepInEx/plugins/ folder. All players need the same mods for multiplayer."
       },
       {
-        "question": "Does Burglin' Gnomes support controllers?",
+        "question": "Does Lucid Blocks support controllers?",
         "answer": "Yes! Use in-game settings for basic controller support, or install the Controller Mod from Nexus Mods for full UI navigation."
       },
       {
-        "question": "What is the player count for Burglin' Gnomes?",
-        "answer": "As of February 2026, Burglin' Gnomes averages 6,000+ concurrent players, with a peak of 15,272 on February 8, 2026."
+        "question": "What is the player count for Lucid Blocks?",
+        "answer": "As of February 2026, Lucid Blocks averages 6,000+ concurrent players, with a peak of 15,272 on February 8, 2026."
       }
     ]
   },
   "cta": {
-    "title": "Ready to Start Heisting?",
-    "description": "Join the Burglin' Gnomes community on Discord for co-op groups, updates, and mod discussions!",
+    "title": "Ready to Explore Lucid Blocks?",
+    "description": "Join the Lucid Blocks community on Discord for guides, updates, and discussions!",
     "joinCommunity": "Join Discord",
-    "joinGame": "Get Demo on Steam"
+    "joinGame": "Play on Steam"
   },
   "footer": {
-    "title": "Burglin' Gnomes Wiki",
-    "description": "Your complete resource hub for Burglin' Gnomes stealth heists, co-op strategies, mods, and community guides.",
+    "title": "Lucid Blocks Wiki",
+    "description": "Your complete resource hub for Lucid Blocks crafting, biomes, creatures, achievements, and survival guides.",
     "resources": "Resources",
     "community": "Community",
     "legal": "Legal",
@@ -715,7 +839,7 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "copyrightNotice": "Copyright",
-    "copyright": "© 2026 Burglin' Gnomes Wiki. Not affiliated with the developers of Burglin' Gnomes.",
+    "copyright": "© 2026 Lucid Blocks Wiki. Not affiliated with the developers of Lucid Blocks.",
     "disclaimer": "Unofficial fan-made resource website."
   }
 }
