@@ -1,0 +1,39 @@
+{
+  "name": "Burglin' Gnomes Wiki - Guides, Jobs, Crafting & Tips",
+  "short_name": "Burglin' Gnomes",
+  "description": "Your hub for Burglin' Gnomes: how the heists work, High-Gnome jobs, crafting & upgrades, enemies, controls, and the fastest ways to survive each run.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#d93b49",
+  "background_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

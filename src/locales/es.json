@@ -1,0 +1,836 @@
+{
+  "seo": {
+    "home": {
+      "title": "Wiki de Duendes Ladrones - Descarga de Demo, Guía Co-op, Fabricación y Mods",
+      "description": "¡Centro de recursos completo de Duendes Ladrones! Obtén información de descarga de demo, guías para principiantes, estrategias co-op, consejos de fabricación, controles, mods y enlaces de la comunidad para el juego de sigilo y atracos de Steam.",
+      "keywords": "Wiki de Duendes Ladrones, Duendes Ladrones, descarga de demo, guía para principiantes, guía co-op, fabricación, equipo, mods, BepInEx, juego de Steam, juego de sigilo",
+      "ogTitle": "Wiki de Duendes Ladrones - Descarga de Demo, Guía Co-op, Fabricación y Mods",
+      "ogDescription": "¡Centro de recursos completo de Duendes Ladrones! Obtén información de descarga de demo, guías para principiantes, estrategias co-op, consejos de fabricación y mods para el juego de sigilo y atracos de Steam.",
+      "twitterTitle": "Wiki de Duendes Ladrones - Descarga de Demo, Guía Co-op, Fabricación y Mods",
+      "twitterDescription": "¡Centro de recursos completo de Duendes Ladrones! Obtén información de descarga de demo, guías para principiantes, estrategias co-op y consejos de fabricación."
+    }
+  },
+  "nav": {},
+  "common": {
+    "home": "Inicio",
+    "more": "Más",
+    "playNow": "Obtener Demo",
+    "switchLanguage": "Cambiar Idioma",
+    "switchTheme": "Cambiar Tema",
+    "lightMode": "Modo Claro",
+    "darkMode": "Modo Oscuro",
+    "notFound": "Página No Encontrada",
+    "notFoundDescription": "La página que estás buscando no existe.",
+    "backToHome": "Volver al Inicio",
+    "relatedArticles": "Artículos Relacionados",
+    "readMore": "Leer Más"
+  },
+  "hero": {
+    "badge": "Duendes diminutos. Casas grandes. Atracos sigilosos con amigos.",
+    "title": "Wiki de Duendes Ladrones",
+    "description": "Tu centro para Duendes Ladrones: cómo funcionan los atracos, trabajos de Alto-Duende, fabricación y mejoras, enemigos, controles y las formas más rápidas de sobrevivir a cada partida.",
+    "getFreeCodesCTA": "Descargar Demo",
+    "playOnRobloxCTA": "Añadir a la lista de deseos en Steam",
+    "stats": {
+      "stat1": {
+        "value": "15K",
+        "label": "Pico de CCU (Demo)"
+      },
+      "stat2": {
+        "value": "6",
+        "label": "Jugadores Co-op"
+      },
+      "stat3": {
+        "value": "31/01/2026",
+        "label": "Lanzamiento de la Demo"
+      },
+      "stat4": {
+        "value": "PC (Steam)",
+        "label": "Plataforma"
+      }
+    }
+  },
+  "gameFeature": {
+    "title": "Gameplay de Duendes Ladrones",
+    "description": "¡Mira a duendes diminutos realizar grandes atracos en caóticas misiones de sigilo co-op de 6 jugadores!"
+  },
+  "tools": {
+    "title": "Duendes Ladrones",
+    "titleHighlight": "Recursos",
+    "subtitle": "Todo lo que necesitas para dominar los atracos y el sigilo co-op",
+    "cards": [
+      {
+        "icon": "Descargar",
+        "title": "Descarga de Demo",
+        "description": "Obtén la demo gratuita de Steam"
+      },
+      {
+        "icon": "BookOpen",
+        "title": "Guía Para Principiantes",
+        "description": "Bucle central y trampas comunes"
+      },
+      {
+        "icon": "Users",
+        "title": "Guía Co-op",
+        "description": "Roles de 6 jugadores y tácticas de rescate"
+      },
+      {
+        "icon": "ClipboardCheck",
+        "title": "Tareas y Objetivos",
+        "description": "Lo que Alto-Duende quiere de ti"
+      },
+      {
+        "icon": "Keyboard",
+        "title": "Controles y Atajos de Teclado",
+        "description": "Teclas predeterminadas y cómo cambiarlas"
+      },
+      {
+        "icon": "Shield",
+        "title": "Ajustes de Contenido",
+        "description": "Contenido para adultos y opciones de alternancia"
+      },
+      {
+        "icon": "Hammer",
+        "title": "Fabricación y Equipo",
+        "description": "Equípate con materiales robados"
+      },
+      {
+        "icon": "Package",
+        "title": "Botín y Objetos",
+        "description": "Qué robar y consejos para transportar"
+      },
+      {
+        "icon": "AlertTriangle",
+        "title": "Enemigos y Peligros",
+        "description": "Amenazas y cómo lidiar con ellas"
+      },
+      {
+        "icon": "Eye",
+        "title": "Sigilo y Escape",
+        "description": "Mantente oculto y extrae de forma segura"
+      },
+      {
+        "icon": "Home",
+        "title": "Mejoras del Hogar",
+        "description": "Mejora tu base de isla flotante"
+      },
+      {
+        "icon": "MessageCircle",
+        "title": "Comunidad y Discord",
+        "description": "Enlaces oficiales y búsqueda de grupos"
+      },
+      {
+        "icon": "Settings",
+        "title": "Mods & BepInEx",
+        "description": "Instalar el framework y configuración de mods"
+      },
+      {
+        "icon": "Star",
+        "title": "Mods Populares",
+        "description": "Las mejores selecciones y características de la comunidad"
+      },
+      {
+        "icon": "Gamepad2",
+        "title": "Soporte de Mando",
+        "description": "Juego completo con mando y cursor de IU"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Conteo y Tendencia de Jugadores",
+        "description": "Estadísticas en vivo y seguimiento de picos"
+      }
+    ]
+  },
+  "modules": {
+    "demoDownload": {
+      "title": "Descarga de la Demo de Duendes Ladrones",
+      "subtitle": "Obtén la demo gratuita en Steam",
+      "downloadSize": "2.62 GiB",
+      "diskSize": "4.88 GiB",
+      "releaseDate": "30 de enero de 2026",
+      "price": "Gratis",
+      "platform": "PC (Steam) / Windows",
+      "engine": "Unity",
+      "primaryCTA": "Descargar Demo",
+      "secondaryCTA": "Ver Información Técnica",
+      "installPath": "Steam\\steamapps\\common\\Burglin Gnomes Demo",
+      "sections": [
+        {
+          "heading": "Dónde descargar",
+          "items": [
+            "Abre la página oficial de la tienda de Steam y usa la sección 'Descargar Demo'.",
+            "Si Steam te pide que inicies sesión, inicia sesión primero e inténtalo de nuevo."
+          ]
+        },
+        {
+          "heading": "Comprobaciones rápidas de instalación y lanzamiento",
+          "items": [
+            "Ubicación de instalación predeterminada: Carpeta de la biblioteca de Steam → steamapps → common → (carpeta del juego).",
+            "Si no se inicia: verifica los archivos del juego en Steam, luego reinicia Steam."
+          ]
+        }
+      ]
+    },
+    "beginnerGuide": {
+      "title": "Guía para Principiantes de Duendes Ladrones",
+      "subtitle": "Domina el bucle central y evita errores comunes",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Entra en la Casa",
+          "description": "Déjate caer en una casa humana desde tu base de isla flotante. Aparece afuera y entra sigilosamente por puertas o ventanas desbloqueadas."
+        },
+        {
+          "number": 2,
+          "title": "Completa las Tareas",
+          "description": "Termina las tareas de Alto-Duende antes de que se acabe el tiempo. Verifica los objetivos con la tecla Tab y prioriza primero las tareas riesgosas."
+        },
+        {
+          "number": 3,
+          "title": "Roba Objetos",
+          "description": "Agarra objetos de valor y materiales para la fabricación. Evita hacer ruido o ser descubierto por el dueño de casa."
+        },
+        {
+          "number": 4,
+          "title": "Escapa vía Tornado",
+          "description": "Cuando el tiempo termine, un tornado aparecerá en el patio: alcánzalo para extraer de forma segura. ¡Empieza a moverte temprano!"
+        },
+        {
+          "number": 5,
+          "title": "Mejora y Repite",
+          "description": "Usa recompensas y materiales para fabricar equipo de vuelta en casa, luego comienza tu próximo atraco con mejor equipo."
+        }
+      ],
+      "pitfalls": [
+        {
+          "title": "Si te Atrapan",
+          "description": "El dueño de casa te perseguirá. Mantente oculto, usa distracciones y rompe la línea de visión para escapar.",
+          "icon": "AlertTriangle"
+        },
+        {
+          "title": "Quedarse Sin Tiempo",
+          "description": "El temporizador del tornado es estricto. Comienza a dirigirte a la extracción temprano en lugar de saquear en exceso.",
+          "icon": "Clock"
+        },
+        {
+          "title": "Ignorar a los Compañeros de Equipo",
+          "description": "Rescata rápidamente a los aliados atrapados en trampas de nevera/horno: avisa de inmediato para los rescates.",
+          "icon": "Users"
+        }
+      ]
+    },
+    "coopGuide": {
+      "title": "Guía Co-op de Duendes Ladrones",
+      "subtitle": "Coordínate con hasta 6 jugadores para el máximo caos",
+      "maxPlayers": 6,
+      "roles": [
+        {
+          "name": "Explorador",
+          "description": "Verifica las amenazas, marca caminos seguros y guía el movimiento del equipo",
+          "icon": "Eye"
+        },
+        {
+          "name": "Transportista",
+          "description": "Concéntrate en objetos pesados con mejoras de mochila y asegura el progreso de la tarea",
+          "icon": "Package"
+        },
+        {
+          "name": "Distracción",
+          "description": "Atrae al dueño de casa/mascotas lejos del equipo para crear ventanas seguras",
+          "icon": "Users"
+        },
+        {
+          "name": "Rescatador",
+          "description": "Libera a los compañeros de equipo atrapados de la nevera/horno antes de que mueran",
+          "icon": "Shield"
+        }
+      ],
+      "threats": [
+        "Dueño de Casa (te persigue y te atrapa)",
+        "Gatos y Ratones (rutas de patrulla)",
+        "Robot Aspiradora (peligro instantáneo)",
+        "Límite de Tiempo (extracción por tornado)"
+      ],
+      "communication": "Usa el chat de voz (tecla V) para coordinar tareas y rescates. Avisa: '¡Visto!', 'Ruta', 'Necesito rescate', 'Extraer pronto'."
+    },
+    "tasksObjectives": {
+      "title": "Tareas y Objetivos de Duendes Ladrones",
+      "subtitle": "Lo que quiere el Alto-Duende: ejemplos de tareas",
+      "taskTypes": [
+        {
+          "type": "Robar Objetos",
+          "examples": [
+            "Agarra objetos específicos marcados por los objetivos de Alto-Duende"
+          ]
+        },
+        {
+          "type": "Alcanzar Ubicaciones",
+          "examples": [
+            "Navega a áreas específicas dentro de la casa"
+          ]
+        },
+        {
+          "type": "Causar Travesuras",
+          "examples": [
+            "Romper un televisor",
+            "Inundar un inodoro",
+            "Crear caos"
+          ]
+        }
+      ],
+      "efficiency": [
+        "Haz primero las tareas riesgosas mientras el equipo está junto",
+        "Asigna un transportista para los objetos de la tarea para que no se pierdan durante las persecuciones",
+        "Empieza a moverte hacia la extracción antes de que expire el tiempo"
+      ]
+    },
+    "controlsKeybinds": {
+      "title": "Controles y Atajos de Teclado de Duendes Ladrones",
+      "subtitle": "Controles predeterminados del teclado (y dónde cambiarlos)",
+      "keybinds": [
+        {
+          "action": "Moverse a la Izquierda",
+          "key": "A"
+        },
+        {
+          "action": "Moverse a la Derecha",
+          "key": "D"
+        },
+        {
+          "action": "Moverse Hacia Adelante",
+          "key": "W"
+        },
+        {
+          "action": "Moverse Hacia Atrás",
+          "key": "S"
+        },
+        {
+          "action": "Agacharse",
+          "key": "Ctrl Izquierdo"
+        },
+        {
+          "action": "Atacar",
+          "key": "Clic Izquierdo"
+        },
+        {
+          "action": "Correr",
+          "key": "Shift Izquierdo"
+        },
+        {
+          "action": "Soltar Objeto",
+          "key": "G"
+        },
+        {
+          "action": "Interactuar",
+          "key": "E"
+        },
+        {
+          "action": "Saltar",
+          "key": "Espacio"
+        },
+        {
+          "action": "Pulsar para Hablar",
+          "key": "V"
+        },
+        {
+          "action": "Empujar",
+          "key": "Clic Derecho"
+        },
+        {
+          "action": "Ragdoll",
+          "key": "Q"
+        },
+        {
+          "action": "Espacio de Equipo 1",
+          "key": "1"
+        },
+        {
+          "action": "Espacio de Equipo 2",
+          "key": "2"
+        },
+        {
+          "action": "Espacio de Equipo 3",
+          "key": "3"
+        },
+        {
+          "action": "Espacio de Equipo 4",
+          "key": "4"
+        },
+        {
+          "action": "Inventario",
+          "key": "Tab"
+        }
+      ],
+      "changePath": "Desde el menú de título: abre AJUSTES, luego verifica la configuración del teclado. Usa el campo de búsqueda para filtrar las filas de atajos de teclado."
+    },
+    "contentSettings": {
+      "title": "Ajustes de Contenido de Duendes Ladrones",
+      "subtitle": "Contenido para adultos, alternancia de desnudez y preferencias de Steam",
+      "descriptors": [
+        "Algo de Desnudez o Contenido Sexual",
+        "Contenido General Para Adultos"
+      ],
+      "details": [
+        {
+          "heading": "Lo que declaran los desarrolladores",
+          "items": [
+            "Un humano puede aparecer desnudo mientras realiza actividades como bañarse.",
+            "La desnudez está censurada y se puede desactivar completamente de forma opcional.",
+            "Los duendes pueden ser desmembrados y morir de formas brutales."
+          ]
+        },
+        {
+          "heading": "Si Steam bloquea la página de la comunidad",
+          "items": [
+            "Steam puede ocultar el centro de la comunidad según tus preferencias de contenido.",
+            "Usa la 'Actualización de las Preferencias de Contenido' de Steam para ajustar lo que permites que Steam muestre."
+          ]
+        }
+      ]
+    },
+    "craftingEquipment": {
+      "title": "Fabricación y Equipo de Duendes Ladrones",
+      "subtitle": "Equípate: ejemplos de fabricación y qué hace cada herramienta",
+      "equipment": [
+        {
+          "item": "Mochila",
+          "benefit": "Expande la capacidad del inventario para más botín por partida"
+        },
+        {
+          "item": "Guantes de Duende",
+          "benefit": "Te permite abrir puertas e interactuar con más objetos"
+        },
+        {
+          "item": "Zapatos de Resorte",
+          "benefit": "Previene el daño por caída de grandes alturas durante los escapes"
+        },
+        {
+          "item": "Arma",
+          "benefit": "Te ayuda a luchar contra amenazas como ratones cuando estás acorralado"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Cómo la fabricación se conecta con el saqueo",
+          "items": [
+            "Durante una partida, roba objetos y tráelos de vuelta como materiales de fabricación.",
+            "Después de la extracción, las recompensas/materiales apoyan nuevas fabricaciones."
+          ]
+        },
+        {
+          "heading": "Mejora de la base",
+          "items": [
+            "Fabrica muebles y mejora tu hogar en la isla flotante (característica del juego completo)."
+          ]
+        }
+      ]
+    },
+    "lootItems": {
+      "title": "Botín y Objetos de Duendes Ladrones",
+      "subtitle": "Qué robar: tipos de objetos, riesgo y consejos para transportar",
+      "categories": [
+        {
+          "type": "Objetos de Tarea",
+          "examples": [
+            "Objetos requeridos por Alto-Duende para los objetivos"
+          ]
+        },
+        {
+          "type": "Materiales de Fabricación",
+          "examples": [
+            "Artículos del hogar reutilizados en equipo y mejoras de duende"
+          ]
+        },
+        {
+          "type": "Objetivos de Travesuras",
+          "examples": [
+            "Objetos involucrados en tareas como romper o inundar"
+          ]
+        }
+      ],
+      "carryTips": [
+        "Prioriza el progreso de la tarea, luego llena la capacidad restante con materiales de fabricación",
+        "Si hay amenazas cerca, mueve los objetos en saltos cortos y seguros en lugar de transportes largos y expuestos",
+        "Planifica la ruta hacia la extracción del patio antes de que termine el tiempo"
+      ],
+      "riskLevels": [
+        {
+          "level": "Bajo",
+          "description": "Cerca de las entradas o esquinas seguras"
+        },
+        {
+          "level": "Medio",
+          "description": "Habitaciones más profundas o cerca de amenazas itinerantes"
+        },
+        {
+          "level": "Alto",
+          "description": "Cerca de la patrulla del dueño de casa o del robot aspiradora"
+        }
+      ]
+    },
+    "enemiesHazards": {
+      "title": "Enemigos y Peligros de Duendes Ladrones",
+      "subtitle": "Conoce qué te puede atrapar",
+      "threats": [
+        {
+          "name": "El Dueño de Casa",
+          "trigger": "Ser visto mientras robas o haces tareas",
+          "behavior": "Te persigue e intenta atraparte",
+          "counter": "Mantente sigiloso, rompe las líneas de visión y sigue moviéndote como equipo"
+        },
+        {
+          "name": "Gatos",
+          "trigger": "Acercarse demasiado o cruzar su camino",
+          "behavior": "Se convierten en una amenaza directa mientras te escabulles",
+          "counter": "Evita sus rutas y muévete silenciosamente al pasar"
+        },
+        {
+          "name": "Ratones",
+          "trigger": "Entrar en áreas donde deambulan los ratones",
+          "behavior": "Amenazan a los frágiles duendes durante las partidas",
+          "counter": "Mantente alerta en espacios reducidos y prepárate para retirarte"
+        },
+        {
+          "name": "Robot Aspiradora",
+          "trigger": "Estar en su ruta de limpieza",
+          "behavior": "Puede succionar a los duendes",
+          "counter": "Escúchalo, mantente fuera de su ruta y reposiciónate rápidamente"
+        },
+        {
+          "name": "Trampa de Nevera / Horno",
+          "trigger": "Ser atrapado por el dueño de casa",
+          "behavior": "Puedes quedar encerrado; si tus compañeros de equipo no rescatan a tiempo, mueres",
+          "counter": "Avisa de inmediato; los compañeros de equipo priorizan la ruta de rescate"
+        },
+        {
+          "name": "Límite de Tiempo",
+          "trigger": "El temporizador de la partida alcanza el límite",
+          "behavior": "El tornado de extracción aparece en el patio; debes alcanzarlo para escapar",
+          "counter": "Deja de saquear en exceso, reagrupa y comprométete con la extracción temprano"
+        }
+      ]
+    },
+    "stealthEscape": {
+      "title": "Consejos de Sigilo y Escape de Duendes Ladrones",
+      "subtitle": "Roba más, muere menos",
+      "do": [
+        "Mantente sigiloso y cúbrete antes de interactuar con objetos",
+        "Usa el trabajo en equipo: avisa de las amenazas y coordina las rutas",
+        "Rescata rápidamente a los compañeros de equipo cuando alguien está atrapado o derribado",
+        "Reduce tus pérdidas y dirígete a la extracción cuando el temporizador esté ajustado"
+      ],
+      "dont": [
+        "Sé codicioso cuando se acerque la extracción",
+        "Sepárate demasiado del equipo cuando el dueño de casa esté activo",
+        "Ignora las rutas del robot aspiradora o las patrullas de animales",
+        "Retrasa los rescates cuando un compañero de equipo está encerrado"
+      ],
+      "quickTips": [
+        {
+          "title": "La Regla de los 3 Segundos",
+          "text": "Si no puedes explicar tu próximo movimiento en 3 segundos, estás a punto de ser visto."
+        },
+        {
+          "title": "Rescate Primero",
+          "text": "Un rescate rápido mantiene viva la partida; el saqueo puede esperar."
+        },
+        {
+          "title": "Disciplina de Extracción",
+          "text": "Reagrupa temprano y comprométete con el tornado antes de que comience el pánico."
+        }
+      ]
+    },
+    "homeUpgrades": {
+      "title": "Mejoras del Hogar de Duendes Ladrones",
+      "subtitle": "Fabrica, construye, mejora",
+      "branches": [
+        {
+          "branch": "Almacenamiento",
+          "summary": "Transporta más y trae más de vuelta",
+          "items": [
+            "Mochila (expansión de inventario)"
+          ]
+        },
+        {
+          "branch": "Utilidad",
+          "summary": "Interactúa con la casa de manera más efectiva",
+          "items": [
+            "Guantes de Duende (te permite abrir puertas y más)"
+          ]
+        },
+        {
+          "branch": "Movilidad",
+          "summary": "Muévete de forma más segura a través de espacios verticales",
+          "items": [
+            "Zapatos de Resorte (reducen el daño por caída)"
+          ]
+        },
+        {
+          "branch": "Defensa",
+          "summary": "Lidia con pequeñas amenazas cuando sea necesario",
+          "items": [
+            "Armas (para amenazas como los ratones)"
+          ]
+        },
+        {
+          "branch": "Base de Operaciones",
+          "summary": "Fabrica muebles y mejora tu hogar en la isla flotante",
+          "items": [
+            "Mejoras funcionales de muebles"
+          ]
+        }
+      ],
+      "priority": [
+        {
+          "rank": 1,
+          "title": "Almacenamiento primero",
+          "reason": "Más capacidad de transporte mejora el rendimiento de cada partida"
+        },
+        {
+          "rank": 2,
+          "title": "Utilidad a continuación",
+          "reason": "Mejores interacciones reducen el tiempo pasado en zonas de peligro"
+        },
+        {
+          "rank": 3,
+          "title": "Movilidad para la supervivencia",
+          "reason": "La seguridad contra caídas previene muertes evitables al escapar"
+        }
+      ]
+    },
+    "community": {
+      "title": "Comunidad y Discord de Duendes Ladrones",
+      "subtitle": "Encuentra escuadrones, actualizaciones, discusiones",
+      "links": [
+        {
+          "title": "Discord Oficial",
+          "subtitle": "Anuncios • Comentarios • LFG",
+          "url": "https://discord.gg/rbeW4bpsqY"
+        },
+        {
+          "title": "X (Twitter) Oficial",
+          "subtitle": "Actualizaciones y publicaciones de desarrolladores",
+          "url": "https://x.com/itsfobri"
+        },
+        {
+          "title": "Centro de la Comunidad de Steam",
+          "subtitle": "Discusiones • Capturas de pantalla • Guías",
+          "url": "https://steamcommunity.com/app/3844970"
+        },
+        {
+          "title": "Página de la Tienda de Steam",
+          "subtitle": "Lista de deseos • Demo • Descripción oficial",
+          "url": "https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+        }
+      ]
+    },
+    "modsBepInEx": {
+      "title": "Mods y Configuración de BepInEx de Duendes Ladrones",
+      "subtitle": "Instala mods de la manera limpia",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Instalar BepInEx 5",
+          "text": "Descarga BepInEx 5 y extráelo en la carpeta raíz del juego."
+        },
+        {
+          "step": 2,
+          "title": "Lanzar una vez para generar carpetas",
+          "text": "Inicia el juego hasta el menú principal, luego ciérralo. Esto crea la estructura de carpetas de BepInEx."
+        },
+        {
+          "step": 3,
+          "title": "Instalar mods",
+          "text": "Coloca los archivos .dll de los mods en la carpeta plugins."
+        },
+        {
+          "step": 4,
+          "title": "Verificar la instalación",
+          "text": "Vuelve a iniciar el juego y confirma que la función del mod esté disponible (alternancia de cámara, cursor de IU, etc.)."
+        }
+      ],
+      "paths": [
+        {
+          "label": "Instalación típica de Steam",
+          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\"
+        },
+        {
+          "label": "Carpeta Plugins",
+          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\BepInEx\\plugins\\"
+        }
+      ],
+      "multiplayerNote": "Para las funciones de juego co-op modificadas, todos deben instalar BepInEx y los mismos mods de juego."
+    },
+    "popularMods": {
+      "title": "Mods Populares de Duendes Ladrones",
+      "subtitle": "Las mejores selecciones de la comunidad",
+      "mods": [
+        {
+          "title": "Menú de Aparición",
+          "tags": [
+            "Diversión",
+            "Herramientas",
+            "Solo para el anfitrión"
+          ],
+          "description": "Añade un menú de aparición de objetos con un modo de vuelo.",
+          "controls": [
+            {
+              "key": "F",
+              "action": "Abrir menú de aparición"
+            },
+            {
+              "key": "V",
+              "action": "Activar vuelo"
+            }
+          ],
+          "note": "Solo para el anfitrión; otros no necesitan instalarlo para unirse."
+        },
+        {
+          "title": "Vista en Tercera Persona",
+          "tags": [
+            "Cámara",
+            "Calidad de vida"
+          ],
+          "description": "Añade una vista de cámara en tercera persona.",
+          "controls": [
+            {
+              "key": "F7",
+              "action": "Alternar primera persona / tercera persona"
+            }
+          ]
+        },
+        {
+          "title": "Más Sombreros",
+          "tags": [
+            "Cosmético"
+          ],
+          "description": "Añade opciones de color de sombrero adicionales para los duendes.",
+          "colors": [
+            "Azul",
+            "Verde",
+            "Naranja",
+            "Púrpura",
+            "Negro",
+            "Rojo"
+          ]
+        },
+        {
+          "title": "DOOM en la TV",
+          "tags": [
+            "Diversión",
+            "Minijuego"
+          ],
+          "description": "Juega al DOOM original en un televisor dentro del juego, con el sonido saliendo por el altavoz del televisor.",
+          "highlights": [
+            "Funciona en multijugador para que otros jugadores puedan observar en el mismo televisor",
+            "Incluye los datos del episodio shareware de DOOM (Episodio 1)"
+          ]
+        }
+      ]
+    },
+    "controllerSupport": {
+      "title": "Soporte de Mando de Duendes Ladrones",
+      "subtitle": "Juego completo con mando",
+      "native": {
+        "title": "Ajustes Dentro del Juego",
+        "description": "Usa los menús de atajos/ajustes del juego para ajustar los controles."
+      },
+      "mod": {
+        "title": "Mod de Soporte de Mando",
+        "description": "Añade soporte completo de gamepad/mando y un cursor de IU para la navegación por el menú."
+      },
+      "features": [
+        "Controles de Juego Completos: movimiento, cámara, combate, interacciones y habilidades asignadas al mando",
+        "Navegación con Cursor de IU: un cursor de círculo blanco aparece en los menús; presiona A para hacer clic y arrastrar los controles deslizantes",
+        "Navegación por el Inventario: mantén presionado Select para abrir el inventario; usa el joystick derecho para navegar mientras lo mantienes presionado",
+        "Menús Desplazables: el joystick derecho desplaza las recetas de fabricación, los ajustes y otras áreas de la IU desplazables",
+        "Ciclo de la Barra de Acceso Rápido: D-pad izquierda/derecha recorre los 4 espacios de la barra de acceso rápido",
+        "Cambio de Entrada Fluido: detecta automáticamente el teclado/ratón frente al mando"
+      ]
+    },
+    "playerCount": {
+      "title": "Conteo y Tendencia de Jugadores de Duendes Ladrones",
+      "subtitle": "Instantánea de popularidad en vivo",
+      "stats": {
+        "now": {
+          "value": "6,047",
+          "label": "Jugadores ahora mismo"
+        },
+        "peak24h": {
+          "value": "13,859",
+          "label": "Pico de 24 horas"
+        },
+        "allTimePeak": {
+          "value": "15,272",
+          "label": "Pico histórico"
+        }
+      },
+      "milestones": [
+        {
+          "date": "30 de enero de 2026",
+          "title": "Demo lanzada en Steam",
+          "detail": "La demo pública se puso a disposición en PC (Steam)."
+        },
+        {
+          "date": "8 de febrero de 2026",
+          "title": "Pico histórico alcanzado",
+          "detail": "La demo alcanzó su mayor número de jugadores concurrentes registrado."
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "titleHighlight": "Preguntas",
+    "subtitle": "Todo lo que necesitas saber sobre Duendes Ladrones",
+    "questions": [
+      {
+        "question": "¿Cómo descargo la demo de Duendes Ladrones?",
+        "answer": "Visita la página de la tienda de Steam y haz clic en 'Descargar Demo'. La demo es gratuita y requiere 2.62 GiB para descargar, 4.88 GiB de espacio en disco."
+      },
+      {
+        "question": "¿Puedo jugar Duendes Ladrones en solitario o necesito amigos?",
+        "answer": "Duendes Ladrones admite tanto el juego en solitario como el co-op con hasta 6 jugadores. El modo en solitario es más difícil pero posible."
+      },
+      {
+        "question": "¿Qué son las tareas de Alto-Duende en Duendes Ladrones?",
+        "answer": "Alto-Duende es tu jefe que asigna objetivos como 'romper el televisor', 'inundar el inodoro' o 'robar objetos específicos'. Complétalos para obtener recompensas adicionales."
+      },
+      {
+        "question": "¿Cómo instalo mods para Duendes Ladrones?",
+        "answer": "Instala BepInEx 5, inicia el juego una vez, luego coloca los DLLs de los mods en la carpeta BepInEx/plugins/. Todos los jugadores necesitan los mismos mods para el multijugador."
+      },
+      {
+        "question": "¿Duendes Ladrones es compatible con mandos?",
+        "answer": "¡Sí! Usa la configuración dentro del juego para el soporte básico del mando, o instala el Mod de Mando de Nexus Mods para la navegación completa por la IU."
+      },
+      {
+        "question": "¿Cuál es el conteo de jugadores de Duendes Ladrones?",
+        "answer": "A partir de febrero de 2026, Duendes Ladrones promedia más de 6,000 jugadores concurrentes, con un pico de 15,272 el 8 de febrero de 2026."
+      }
+    ]
+  },
+  "cta": {
+    "title": "¿Listo para Empezar a Robar?",
+    "description": "¡Únete a la comunidad de Duendes Ladrones en Discord para grupos co-op, actualizaciones y discusiones de mods!",
+    "joinCommunity": "Unirse a Discord",
+    "joinGame": "Obtener Demo en Steam"
+  },
+  "footer": {
+    "title": "Wiki de Duendes Ladrones",
+    "description": "Tu centro de recursos completo para atracos sigilosos, estrategias co-op, mods y guías de la comunidad de Duendes Ladrones.",
+    "resources": "Recursos",
+    "community": "Comunidad",
+    "legal": "Legal",
+    "discord": "Discord",
+    "twitter": "X / Twitter",
+    "steamCommunity": "Comunidad de Steam",
+    "steamStore": "Tienda de Steam",
+    "about": "Acerca de",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "copyrightNotice": "Derechos de Autor",
+    "copyright": "© 2026 Wiki de Duendes Ladrones. No afiliado con los desarrolladores de Duendes Ladrones.",
+    "disclaimer": "Sitio web de recursos no oficial hecho por fans."
+  }
+}

@@ -1,0 +1,721 @@
+{
+  "seo": {
+    "home": {
+      "title": "Burglin' Gnomes Wiki - Demo Download, Co-op Guide, Crafting & Mods",
+      "description": "Complete Burglin' Gnomes resource hub! Get demo download info, beginner guides, co-op strategies, crafting tips, controls, mods, and community links for the Steam stealth heist game.",
+      "keywords": "Burglin' Gnomes Wiki, Burglin' Gnomes, demo download, beginner guide, co-op guide, crafting, equipment, mods, BepInEx, Steam game, stealth game",
+      "ogTitle": "Burglin' Gnomes Wiki - Demo Download, Co-op Guide, Crafting & Mods",
+      "ogDescription": "Complete Burglin' Gnomes resource hub! Get demo download info, beginner guides, co-op strategies, crafting tips, and mods for the Steam stealth heist game.",
+      "twitterTitle": "Burglin' Gnomes Wiki - Demo Download, Co-op Guide, Crafting & Mods",
+      "twitterDescription": "Complete Burglin' Gnomes resource hub! Get demo download info, beginner guides, co-op strategies, and crafting tips."
+    }
+  },
+  "nav": {},
+  "common": {
+    "home": "Home",
+    "more": "More",
+    "playNow": "Get Demo",
+    "switchLanguage": "Switch Language",
+    "switchTheme": "Switch Theme",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "notFound": "Page Not Found",
+    "notFoundDescription": "The page you are looking for does not exist.",
+    "backToHome": "Back to Home",
+    "relatedArticles": "Related Articles",
+    "readMore": "Read More"
+  },
+  "hero": {
+    "badge": "Tiny gnomes. Big homes. Stealth heists with friends.",
+    "title": "Burglin' Gnomes wiki",
+    "description": "Your hub for Burglin' Gnomes: how the heists work, High-Gnome jobs, crafting & upgrades, enemies, controls, and the fastest ways to survive each run.",
+    "getFreeCodesCTA": "Download Demo",
+    "playOnRobloxCTA": "Wishlist on Steam",
+    "stats": {
+      "stat1": {
+        "value": "15K",
+        "label": "Peak CCU (Demo)"
+      },
+      "stat2": {
+        "value": "6",
+        "label": "Co-op Players"
+      },
+      "stat3": {
+        "value": "2026-01-31",
+        "label": "Demo Release"
+      },
+      "stat4": {
+        "value": "PC (Steam)",
+        "label": "Platform"
+      }
+    }
+  },
+  "gameFeature": {
+    "title": "Burglin' Gnomes Gameplay",
+    "description": "Watch tiny gnomes pull off big heists in chaotic 6-player co-op stealth missions!"
+  },
+  "tools": {
+    "title": "Burglin' Gnomes",
+    "titleHighlight": "Resources",
+    "subtitle": "Everything you need to master heists and co-op stealth",
+    "cards": [
+      {
+        "icon": "Download",
+        "title": "Demo Download",
+        "description": "Get the free Steam demo"
+      },
+      {
+        "icon": "BookOpen",
+        "title": "Beginner Guide",
+        "description": "Core loop and common pitfalls"
+      },
+      {
+        "icon": "Users",
+        "title": "Co-op Guide",
+        "description": "6-player roles and rescue tactics"
+      },
+      {
+        "icon": "ClipboardCheck",
+        "title": "Tasks & Objectives",
+        "description": "What High-Gnome wants from you"
+      },
+      {
+        "icon": "Keyboard",
+        "title": "Controls & Keybinds",
+        "description": "Default keys and how to change them"
+      },
+      {
+        "icon": "Shield",
+        "title": "Content Settings",
+        "description": "Mature content and toggle options"
+      },
+      {
+        "icon": "Hammer",
+        "title": "Crafting & Equipment",
+        "description": "Gear up with stolen materials"
+      },
+      {
+        "icon": "Package",
+        "title": "Loot & Items",
+        "description": "What to steal and carry tips"
+      },
+      {
+        "icon": "AlertTriangle",
+        "title": "Enemies & Hazards",
+        "description": "Threats and how to deal with them"
+      },
+      {
+        "icon": "Eye",
+        "title": "Stealth & Escape",
+        "description": "Stay hidden and extract safely"
+      },
+      {
+        "icon": "Home",
+        "title": "Home Upgrades",
+        "description": "Upgrade your floating island base"
+      },
+      {
+        "icon": "MessageCircle",
+        "title": "Community & Discord",
+        "description": "Official links and group finding"
+      },
+      {
+        "icon": "Settings",
+        "title": "Mods & BepInEx",
+        "description": "Install framework and mod setup"
+      },
+      {
+        "icon": "Star",
+        "title": "Popular Mods",
+        "description": "Top community picks and features"
+      },
+      {
+        "icon": "Gamepad2",
+        "title": "Controller Support",
+        "description": "Full gamepad play with UI cursor"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Player Count & Trend",
+        "description": "Live stats and peak tracking"
+      }
+    ]
+  },
+  "modules": {
+    "demoDownload": {
+      "title": "Burglin' Gnomes Demo Download",
+      "subtitle": "Get the free demo on Steam",
+      "downloadSize": "2.62 GiB",
+      "diskSize": "4.88 GiB",
+      "releaseDate": "January 30, 2026",
+      "price": "Free",
+      "platform": "PC (Steam) / Windows",
+      "engine": "Unity",
+      "primaryCTA": "Download Demo",
+      "secondaryCTA": "View Tech Info",
+      "installPath": "Steam\\steamapps\\common\\Burglin Gnomes Demo",
+      "sections": [
+        {
+          "heading": "Where to download",
+          "items": [
+            "Open the official Steam store page and use the 'Download Demo' section.",
+            "If Steam asks you to sign in, sign in first and try again."
+          ]
+        },
+        {
+          "heading": "Install & launch quick checks",
+          "items": [
+            "Default install location: Steam Library folder → steamapps → common → (game folder).",
+            "If it won't launch: verify the game files in Steam, then restart Steam."
+          ]
+        }
+      ]
+    },
+    "beginnerGuide": {
+      "title": "Burglin' Gnomes Beginner Guide",
+      "subtitle": "Master the core loop and avoid common mistakes",
+      "steps": [
+        {
+          "number": 1,
+          "title": "Enter the House",
+          "description": "Drop into a human house from your floating island base. Spawn outside and sneak in through unlocked doors or windows."
+        },
+        {
+          "number": 2,
+          "title": "Complete Tasks",
+          "description": "Finish High-Gnome tasks before time runs out. Check objectives via Tab key and prioritize risky tasks first."
+        },
+        {
+          "number": 3,
+          "title": "Steal Items",
+          "description": "Grab valuables and materials for crafting. Avoid making noise or getting spotted by the homeowner."
+        },
+        {
+          "number": 4,
+          "title": "Escape via Tornado",
+          "description": "When the timer ends, a tornado spawns in the yard—reach it to extract safely. Start moving early!"
+        },
+        {
+          "number": 5,
+          "title": "Upgrade & Repeat",
+          "description": "Use rewards and materials to craft gear back home, then start your next heist with better equipment."
+        }
+      ],
+      "pitfalls": [
+        {
+          "title": "Getting Caught",
+          "description": "Homeowner will chase you. Stay hidden, use distractions, and break line of sight to escape.",
+          "icon": "AlertTriangle"
+        },
+        {
+          "title": "Running Out of Time",
+          "description": "Tornado timer is strict. Start heading to extraction early instead of over-looting.",
+          "icon": "Clock"
+        },
+        {
+          "title": "Ignoring Teammates",
+          "description": "Rescue trapped allies from fridge/oven traps quickly—call out immediately for saves.",
+          "icon": "Users"
+        }
+      ]
+    },
+    "coopGuide": {
+      "title": "Burglin' Gnomes Co-op Guide",
+      "subtitle": "Coordinate with up to 6 players for maximum chaos",
+      "maxPlayers": 6,
+      "roles": [
+        {
+          "name": "Scout",
+          "description": "Check for threats, mark safe paths, and guide team movement",
+          "icon": "Eye"
+        },
+        {
+          "name": "Carrier",
+          "description": "Focus on heavy items with backpack upgrades and secure task progress",
+          "icon": "Package"
+        },
+        {
+          "name": "Distraction",
+          "description": "Lure homeowner/pets away from team to create safe windows",
+          "icon": "Users"
+        },
+        {
+          "name": "Rescuer",
+          "description": "Free trapped teammates from fridge/oven before they die",
+          "icon": "Shield"
+        }
+      ],
+      "threats": [
+        "Homeowner (chases and traps you)",
+        "Cats & Mice (patrol routes)",
+        "Robot Vacuum (instant danger)",
+        "Time Limit (tornado extraction)"
+      ],
+      "communication": "Use voice chat (V key) to coordinate tasks and rescues. Call out: 'Spotted', 'Route', 'Need rescue', 'Extract soon'."
+    },
+    "tasksObjectives": {
+      "title": "Burglin' Gnomes Tasks & Objectives",
+      "subtitle": "What the High-Gnome wants: task examples",
+      "taskTypes": [
+        {
+          "type": "Steal Items",
+          "examples": ["Grab specific items marked by High-Gnome objectives"]
+        },
+        {
+          "type": "Reach Locations",
+          "examples": ["Navigate to specified areas inside the house"]
+        },
+        {
+          "type": "Cause Mischief",
+          "examples": ["Break a TV", "Flood a toilet", "Create chaos"]
+        }
+      ],
+      "efficiency": [
+        "Do risky tasks first while the team is together",
+        "Assign one carrier for task items so they don't get lost during chases",
+        "Start moving toward extraction before time expires"
+      ]
+    },
+    "controlsKeybinds": {
+      "title": "Burglin' Gnomes Controls & Keybinds",
+      "subtitle": "Default keyboard controls (and where to change them)",
+      "keybinds": [
+        { "action": "Move Left", "key": "A" },
+        { "action": "Move Right", "key": "D" },
+        { "action": "Move Forward", "key": "W" },
+        { "action": "Move Back", "key": "S" },
+        { "action": "Crouch", "key": "Left Ctrl" },
+        { "action": "Attack", "key": "Left Click" },
+        { "action": "Run", "key": "Left Shift" },
+        { "action": "Drop Item", "key": "G" },
+        { "action": "Interact", "key": "E" },
+        { "action": "Jump", "key": "Space" },
+        { "action": "Push-to-Talk", "key": "V" },
+        { "action": "Push", "key": "Right Click" },
+        { "action": "Ragdoll", "key": "Q" },
+        { "action": "Equipment Slot 1", "key": "1" },
+        { "action": "Equipment Slot 2", "key": "2" },
+        { "action": "Equipment Slot 3", "key": "3" },
+        { "action": "Equipment Slot 4", "key": "4" },
+        { "action": "Inventory", "key": "Tab" }
+      ],
+      "changePath": "From title menu: open SETTINGS, then check keyboard settings. Use search field to filter keybind rows."
+    },
+    "contentSettings": {
+      "title": "Burglin' Gnomes Content Settings",
+      "subtitle": "Mature content, nudity toggle, and Steam preferences",
+      "descriptors": [
+        "Some Nudity or Sexual Content",
+        "General Mature Content"
+      ],
+      "details": [
+        {
+          "heading": "What the developers state",
+          "items": [
+            "A human may appear nude while doing activities like bathing.",
+            "Nudity is censored and can be fully turned off optionally.",
+            "Gnomes can be dismembered and die in brutal ways."
+          ]
+        },
+        {
+          "heading": "If Steam blocks the community page",
+          "items": [
+            "Steam may hide the community hub depending on your content preferences.",
+            "Use Steam's 'Update Content Preferences' to adjust what you allow Steam to show."
+          ]
+        }
+      ]
+    },
+    "craftingEquipment": {
+      "title": "Burglin' Gnomes Crafting & Equipment",
+      "subtitle": "Gear up: crafting examples and what each tool does",
+      "equipment": [
+        {
+          "item": "Backpack",
+          "benefit": "Expands inventory capacity for more loot per run"
+        },
+        {
+          "item": "Gnome Gloves",
+          "benefit": "Lets you open doors and interact with more objects"
+        },
+        {
+          "item": "Spring Shoes",
+          "benefit": "Prevents fall damage from high drops during escapes"
+        },
+        {
+          "item": "Weapon",
+          "benefit": "Helps you fight threats like mice when cornered"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "How crafting connects to looting",
+          "items": [
+            "During a run, steal items and bring them back as crafting materials.",
+            "After extraction, rewards/materials support new crafts."
+          ]
+        },
+        {
+          "heading": "Base improvement",
+          "items": [
+            "Craft furniture and upgrade your floating-island home (full game feature)."
+          ]
+        }
+      ]
+    },
+    "lootItems": {
+      "title": "Burglin' Gnomes Loot & Items",
+      "subtitle": "What to steal: item types, risk, and carry tips",
+      "categories": [
+        {
+          "type": "Task Items",
+          "examples": ["Items required by High-Gnome for objectives"]
+        },
+        {
+          "type": "Crafting Materials",
+          "examples": ["Household items repurposed into gnome gear and upgrades"]
+        },
+        {
+          "type": "Mischief Targets",
+          "examples": ["Objects involved in tasks like breaking or flooding"]
+        }
+      ],
+      "carryTips": [
+        "Prioritize task progress, then fill remaining capacity with crafting materials",
+        "If threats are nearby, move items in short safe hops rather than long exposed carries",
+        "Plan the route to the yard extraction before the timer ends"
+      ],
+      "riskLevels": [
+        { "level": "Low", "description": "Near entrances or safe corners" },
+        { "level": "Medium", "description": "Deeper rooms or near roaming threats" },
+        { "level": "High", "description": "Close to homeowner patrol or robot vacuum" }
+      ]
+    },
+    "enemiesHazards": {
+      "title": "Burglin' Gnomes Enemies & Hazards",
+      "subtitle": "Know what can catch you",
+      "threats": [
+        {
+          "name": "The Homeowner",
+          "trigger": "Getting spotted while burgling or doing tasks",
+          "behavior": "He chases and tries to catch you",
+          "counter": "Stay stealthy, break sightlines, and keep moving as a team"
+        },
+        {
+          "name": "Cats",
+          "trigger": "Getting too close or crossing their path",
+          "behavior": "They become a direct threat while you're sneaking",
+          "counter": "Avoid their routes and move quietly past"
+        },
+        {
+          "name": "Mice",
+          "trigger": "Entering areas where mice roam",
+          "behavior": "They threaten fragile gnomes during runs",
+          "counter": "Stay alert in tight spaces and be ready to retreat"
+        },
+        {
+          "name": "Robot Vacuum",
+          "trigger": "Being in its cleaning path",
+          "behavior": "It can suck gnomes up",
+          "counter": "Listen for it, keep off its route, and reposition fast"
+        },
+        {
+          "name": "Fridge / Oven Trap",
+          "trigger": "Getting caught by the homeowner",
+          "behavior": "You can be locked inside; if teammates don't rescue in time, you die",
+          "counter": "Call out immediately; teammates prioritize the rescue route"
+        },
+        {
+          "name": "Time Limit",
+          "trigger": "The run timer reaching the limit",
+          "behavior": "Extraction tornado appears in yard; you must reach it to escape",
+          "counter": "Stop over-looting, regroup, and commit to extraction early"
+        }
+      ]
+    },
+    "stealthEscape": {
+      "title": "Burglin' Gnomes Stealth & Escape Tips",
+      "subtitle": "Steal more, die less",
+      "do": [
+        "Stay stealthy and take cover before interacting with objects",
+        "Use teamwork: call out threats and coordinate routes",
+        "Rescue teammates quickly when someone is trapped or down",
+        "Cut your losses and head for extraction when the timer is tight"
+      ],
+      "dont": [
+        "Get greedy when extraction is coming up",
+        "Split too far from the team when the homeowner is active",
+        "Ignore robot vacuum paths or animal patrols",
+        "Delay rescues when a teammate is locked in"
+      ],
+      "quickTips": [
+        {
+          "title": "The 3-Second Rule",
+          "text": "If you can't explain your next move in 3 seconds, you're about to get spotted."
+        },
+        {
+          "title": "Rescue First",
+          "text": "A fast rescue keeps the run alive; looting can wait."
+        },
+        {
+          "title": "Extraction Discipline",
+          "text": "Regroup early and commit to the tornado before panic starts."
+        }
+      ]
+    },
+    "homeUpgrades": {
+      "title": "Burglin' Gnomes Home Upgrades",
+      "subtitle": "Craft, build, upgrade",
+      "branches": [
+        {
+          "branch": "Storage",
+          "summary": "Carry more and bring more back",
+          "items": ["Backpack (inventory expansion)"]
+        },
+        {
+          "branch": "Utility",
+          "summary": "Interact with the house more effectively",
+          "items": ["Gnome Gloves (lets you open doors and more)"]
+        },
+        {
+          "branch": "Mobility",
+          "summary": "Move safer through vertical spaces",
+          "items": ["Spring Shoes (reduce fall damage)"]
+        },
+        {
+          "branch": "Defense",
+          "summary": "Deal with small threats when needed",
+          "items": ["Weapons (for threats like mice)"]
+        },
+        {
+          "branch": "Home Base",
+          "summary": "Craft furniture and upgrade your floating-island home",
+          "items": ["Functional furniture upgrades"]
+        }
+      ],
+      "priority": [
+        {
+          "rank": 1,
+          "title": "Storage first",
+          "reason": "More carry capacity improves every run's payoff"
+        },
+        {
+          "rank": 2,
+          "title": "Utility next",
+          "reason": "Better interactions reduce time spent in danger zones"
+        },
+        {
+          "rank": 3,
+          "title": "Mobility for survival",
+          "reason": "Fall safety prevents avoidable deaths when escaping"
+        }
+      ]
+    },
+    "community": {
+      "title": "Burglin' Gnomes Community & Discord",
+      "subtitle": "Find squads, updates, discussions",
+      "links": [
+        {
+          "title": "Official Discord",
+          "subtitle": "Announcements • Feedback • LFG",
+          "url": "https://discord.gg/rbeW4bpsqY"
+        },
+        {
+          "title": "Official X (Twitter)",
+          "subtitle": "Updates & dev posts",
+          "url": "https://x.com/itsfobri"
+        },
+        {
+          "title": "Steam Community Hub",
+          "subtitle": "Discussions • Screenshots • Guides",
+          "url": "https://steamcommunity.com/app/3844970"
+        },
+        {
+          "title": "Steam Store Page",
+          "subtitle": "Wishlist • Demo • Official description",
+          "url": "https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+        }
+      ]
+    },
+    "modsBepInEx": {
+      "title": "Burglin' Gnomes Mods & BepInEx Setup",
+      "subtitle": "Install mods the clean way",
+      "steps": [
+        {
+          "step": 1,
+          "title": "Install BepInEx 5",
+          "text": "Download BepInEx 5 and extract it into the game root folder."
+        },
+        {
+          "step": 2,
+          "title": "Launch once to generate folders",
+          "text": "Start the game to the main menu, then close it. This creates the BepInEx folder structure."
+        },
+        {
+          "step": 3,
+          "title": "Install mods",
+          "text": "Place mod .dll files into the plugins folder."
+        },
+        {
+          "step": 4,
+          "title": "Verify the install",
+          "text": "Re-launch the game and confirm the mod feature is available (camera toggle, UI cursor, etc.)."
+        }
+      ],
+      "paths": [
+        {
+          "label": "Typical Steam install",
+          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\"
+        },
+        {
+          "label": "Plugins folder",
+          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\BepInEx\\plugins\\"
+        }
+      ],
+      "multiplayerNote": "For modded co-op gameplay features, everyone should install BepInEx and the same gameplay mods."
+    },
+    "popularMods": {
+      "title": "Burglin' Gnomes Popular Mods",
+      "subtitle": "Top community picks",
+      "mods": [
+        {
+          "title": "Spawn Menu",
+          "tags": ["Fun", "Tools", "Host-only"],
+          "description": "Adds an item spawn menu with a flying mode.",
+          "controls": [
+            { "key": "F", "action": "Open spawn menu" },
+            { "key": "V", "action": "Enable flying" }
+          ],
+          "note": "Host-only; others do not need to install it to join."
+        },
+        {
+          "title": "ThirdPerson View",
+          "tags": ["Camera", "QoL"],
+          "description": "Adds a third-person camera view.",
+          "controls": [
+            { "key": "F7", "action": "Toggle first-person / third-person" }
+          ]
+        },
+        {
+          "title": "More Hats",
+          "tags": ["Cosmetic"],
+          "description": "Adds additional hat color options for gnomes.",
+          "colors": ["Blue", "Green", "Orange", "Purple", "Black", "Red"]
+        },
+        {
+          "title": "DOOM on TV",
+          "tags": ["Fun", "Minigame"],
+          "description": "Play original DOOM on an in-game TV, with sound coming through the TV speaker.",
+          "highlights": [
+            "Works in multiplayer so other players can spectate on the same TV",
+            "Includes the shareware DOOM episode data (Episode 1)"
+          ]
+        }
+      ]
+    },
+    "controllerSupport": {
+      "title": "Burglin' Gnomes Controller Support",
+      "subtitle": "Full gamepad play",
+      "native": {
+        "title": "In-Game Settings",
+        "description": "Use the game's bindings/settings menus to adjust controls."
+      },
+      "mod": {
+        "title": "Controller Support Mod",
+        "description": "Adds complete gamepad/controller support and a UI cursor for menu navigation."
+      },
+      "features": [
+        "Full Gameplay Controls: movement, camera, combat, interactions, and abilities mapped to gamepad",
+        "UI Cursor Navigation: a white circle cursor appears in menus; press A to click and drag sliders",
+        "Inventory Navigation: hold Select to open inventory; use right stick to navigate while holding it",
+        "Scrollable Menus: right stick scrolls crafting recipes, settings, and other scrollable UI areas",
+        "Hotbar Cycling: D-pad left/right cycles through 4 hotbar slots",
+        "Seamless Input Switching: auto-detects keyboard/mouse vs controller"
+      ]
+    },
+    "playerCount": {
+      "title": "Burglin' Gnomes Player Count & Trend",
+      "subtitle": "Live popularity snapshot",
+      "stats": {
+        "now": {
+          "value": "6,047",
+          "label": "Players right now"
+        },
+        "peak24h": {
+          "value": "13,859",
+          "label": "24-hour peak"
+        },
+        "allTimePeak": {
+          "value": "15,272",
+          "label": "All-time peak"
+        }
+      },
+      "milestones": [
+        {
+          "date": "Jan 30, 2026",
+          "title": "Demo released on Steam",
+          "detail": "Public demo became available on PC (Steam)."
+        },
+        {
+          "date": "Feb 8, 2026",
+          "title": "All-time peak reached",
+          "detail": "The demo hit its highest recorded concurrent players."
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked",
+    "titleHighlight": "Questions",
+    "subtitle": "Everything you need to know about Burglin' Gnomes",
+    "questions": [
+      {
+        "question": "How do I download the Burglin' Gnomes demo?",
+        "answer": "Visit the Steam store page and click 'Download Demo'. The demo is free and requires 2.62 GiB to download, 4.88 GiB disk space."
+      },
+      {
+        "question": "Can I play Burglin' Gnomes solo or do I need friends?",
+        "answer": "Burglin' Gnomes supports both solo play and co-op with up to 6 players. Solo is harder but possible."
+      },
+      {
+        "question": "What are High-Gnome tasks in Burglin' Gnomes?",
+        "answer": "High-Gnome is your boss who assigns objectives like 'break the TV', 'flood the toilet', or 'steal specific items'. Complete them for extra rewards."
+      },
+      {
+        "question": "How do I install mods for Burglin' Gnomes?",
+        "answer": "Install BepInEx 5, launch the game once, then place mod DLLs in the BepInEx/plugins/ folder. All players need the same mods for multiplayer."
+      },
+      {
+        "question": "Does Burglin' Gnomes support controllers?",
+        "answer": "Yes! Use in-game settings for basic controller support, or install the Controller Mod from Nexus Mods for full UI navigation."
+      },
+      {
+        "question": "What is the player count for Burglin' Gnomes?",
+        "answer": "As of February 2026, Burglin' Gnomes averages 6,000+ concurrent players, with a peak of 15,272 on February 8, 2026."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Start Heisting?",
+    "description": "Join the Burglin' Gnomes community on Discord for co-op groups, updates, and mod discussions!",
+    "joinCommunity": "Join Discord",
+    "joinGame": "Get Demo on Steam"
+  },
+  "footer": {
+    "title": "Burglin' Gnomes Wiki",
+    "description": "Your complete resource hub for Burglin' Gnomes stealth heists, co-op strategies, mods, and community guides.",
+    "resources": "Resources",
+    "community": "Community",
+    "legal": "Legal",
+    "discord": "Discord",
+    "twitter": "X / Twitter",
+    "steamCommunity": "Steam Community",
+    "steamStore": "Steam Store",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyrightNotice": "Copyright",
+    "copyright": "© 2026 Burglin' Gnomes Wiki. Not affiliated with the developers of Burglin' Gnomes.",
+    "disclaimer": "Unofficial fan-made resource website."
+  }
+}

@@ -1,0 +1,836 @@
+{
+  "seo": {
+    "home": {
+      "title": "Burglin' Gnomes Wiki - デモダウンロード、協力プレイガイド、クラフト＆MOD",
+      "description": "Burglin' Gnomes の完全リソースハブ！Steam のステルス強盗ゲームのデモダウンロード情報、初心者向けガイド、協力プレイ戦略、クラフトのヒント、操作方法、MOD、コミュニティリンクを入手しましょう。",
+      "keywords": "Burglin' Gnomes Wiki, Burglin' Gnomes, デモダウンロード, 初心者向けガイド, 協力プレイガイド, クラフト, 装備, MOD, BepInEx, Steam ゲーム, ステルスゲーム",
+      "ogTitle": "Burglin' Gnomes Wiki - デモダウンロード、協力プレイガイド、クラフト＆MOD",
+      "ogDescription": "Burglin' Gnomes の完全リソースハブ！Steam のステルス強盗ゲームのデモダウンロード情報、初心者向けガイド、協力プレイ戦略、クラフトのヒント、MODを入手しましょう。",
+      "twitterTitle": "Burglin' Gnomes Wiki - デモダウンロード、協力プレイガイド、クラフト＆MOD",
+      "twitterDescription": "Burglin' Gnomes の完全リソースハブ！デモダウンロード情報、初心者向けガイド、協力プレイ戦略、クラフトのヒントを入手しましょう。"
+    }
+  },
+  "nav": {},
+  "common": {
+    "home": "ホーム",
+    "more": "もっと見る",
+    "playNow": "デモを入手",
+    "switchLanguage": "言語切り替え",
+    "switchTheme": "テーマ切り替え",
+    "lightMode": "ライトモード",
+    "darkMode": "ダークモード",
+    "notFound": "ページが見つかりません",
+    "notFoundDescription": "お探しのページは見つかりませんでした。",
+    "backToHome": "ホームに戻る",
+    "relatedArticles": "関連記事",
+    "readMore": "続きを読む"
+  },
+  "hero": {
+    "badge": "小さなノーム。大きな家。友達とのステルス強盗。",
+    "title": "Burglin' Gnomes wiki",
+    "description": "Burglin' Gnomes のハブ：強盗の仕組み、ハイノームの仕事、クラフトとアップグレード、敵、操作方法、各ランを生き残るための最速の方法。",
+    "getFreeCodesCTA": "デモをダウンロード",
+    "playOnRobloxCTA": "Steam でウィッシュリストに追加",
+    "stats": {
+      "stat1": {
+        "value": "1.5万",
+        "label": "ピーク CCU (デモ)"
+      },
+      "stat2": {
+        "value": "6",
+        "label": "協力プレイ人数"
+      },
+      "stat3": {
+        "value": "2026-01-31",
+        "label": "デモリリース"
+      },
+      "stat4": {
+        "value": "PC (Steam)",
+        "label": "プラットフォーム"
+      }
+    }
+  },
+  "gameFeature": {
+    "title": "Burglin' Gnomes ゲームプレイ",
+    "description": "小さなノームたちが、混沌とした6人協力プレイのステルスミッションで、大胆な強盗を成功させるのを見てみよう！"
+  },
+  "tools": {
+    "title": "Burglin' Gnomes",
+    "titleHighlight": "リソース",
+    "subtitle": "強盗と協力プレイのステルスをマスターするために必要なものすべて",
+    "cards": [
+      {
+        "icon": "ダウンロード",
+        "title": "デモダウンロード",
+        "description": "無料の Steam デモを入手"
+      },
+      {
+        "icon": "BookOpen",
+        "title": "初心者向けガイド",
+        "description": "コアループとよくある落とし穴"
+      },
+      {
+        "icon": "ユーザー",
+        "title": "協力プレイガイド",
+        "description": "6人プレイの役割と救出戦術"
+      },
+      {
+        "icon": "ClipboardCheck",
+        "title": "タスクと目標",
+        "description": "ハイノームがあなたに求めるもの"
+      },
+      {
+        "icon": "キーボード",
+        "title": "操作方法とキーバインド",
+        "description": "デフォルトキーと変更方法"
+      },
+      {
+        "icon": "シールド",
+        "title": "コンテンツ設定",
+        "description": "成人向けコンテンツと切り替えオプション"
+      },
+      {
+        "icon": "ハンマー",
+        "title": "クラフトと装備",
+        "description": "盗んだ材料で装備を整えよう"
+      },
+      {
+        "icon": "パッケージ",
+        "title": "戦利品とアイテム",
+        "description": "何を盗むか、持ち運びのヒント"
+      },
+      {
+        "icon": "AlertTriangle",
+        "title": "敵と危険",
+        "description": "脅威と対処方法"
+      },
+      {
+        "icon": "目",
+        "title": "ステルスと脱出",
+        "description": "隠れて安全に脱出しよう"
+      },
+      {
+        "icon": "ホーム",
+        "title": "ホームアップグレード",
+        "description": "浮遊島基地をアップグレード"
+      },
+      {
+        "icon": "MessageCircle",
+        "title": "コミュニティと Discord",
+        "description": "公式リンクとグループ検索"
+      },
+      {
+        "icon": "設定",
+        "title": "MOD と BepInEx",
+        "description": "フレームワークのインストールと MOD のセットアップ"
+      },
+      {
+        "icon": "星",
+        "title": "人気 MOD",
+        "description": "トップコミュニティのピックと機能"
+      },
+      {
+        "icon": "Gamepad2",
+        "title": "コントローラーサポート",
+        "description": "UI カーソルによるフルゲームパッドプレイ"
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "プレイヤー数とトレンド",
+        "description": "ライブ統計とピーク追跡"
+      }
+    ]
+  },
+  "modules": {
+    "demoDownload": {
+      "title": "Burglin' Gnomes デモダウンロード",
+      "subtitle": "Steam で無料デモを入手",
+      "downloadSize": "2.62 GiB",
+      "diskSize": "4.88 GiB",
+      "releaseDate": "2026年1月30日",
+      "price": "無料",
+      "platform": "PC (Steam) / Windows",
+      "engine": "Unity",
+      "primaryCTA": "デモをダウンロード",
+      "secondaryCTA": "技術情報を表示",
+      "installPath": "Steam\\steamapps\\common\\Burglin Gnomes Demo",
+      "sections": [
+        {
+          "heading": "ダウンロード場所",
+          "items": [
+            "公式 Steam ストアページを開き、「デモをダウンロード」セクションを使用してください。",
+            "Steam にサインインするように求められた場合は、最初にサインインしてからもう一度お試しください。"
+          ]
+        },
+        {
+          "heading": "インストールと起動のクイックチェック",
+          "items": [
+            "デフォルトのインストール場所：Steam ライブラリフォルダ → steamapps → common → (ゲームフォルダ)。",
+            "起動しない場合：Steam でゲームファイルを検証し、Steam を再起動します。"
+          ]
+        }
+      ]
+    },
+    "beginnerGuide": {
+      "title": "Burglin' Gnomes 初心者向けガイド",
+      "subtitle": "コアループをマスターし、よくある間違いを避ける",
+      "steps": [
+        {
+          "number": 1,
+          "title": "家に入る",
+          "description": "浮遊島基地から人間の家に飛び込む。外にスポーンし、ロックされていないドアまたは窓から忍び込む。"
+        },
+        {
+          "number": 2,
+          "title": "タスクを完了する",
+          "description": "時間がなくなる前にハイノームのタスクを完了する。Tab キーで目的を確認し、最初に危険なタスクを優先する。"
+        },
+        {
+          "number": 3,
+          "title": "アイテムを盗む",
+          "description": "貴重品とクラフトの材料を入手する。音を立てたり、家の所有者に見つからないようにする。"
+        },
+        {
+          "number": 4,
+          "title": "竜巻で脱出",
+          "description": "タイマーが終了すると、庭に竜巻が発生します。安全に脱出するためにそこに到達します。早めに移動を開始！"
+        },
+        {
+          "number": 5,
+          "title": "アップグレードして繰り返す",
+          "description": "報酬と材料を使って自宅で装備をクラフトし、より良い装備で次の強盗を開始する。"
+        }
+      ],
+      "pitfalls": [
+        {
+          "title": "捕まった場合",
+          "description": "家の所有者があなたを追いかける。隠れて気をそらし、視線を遮って逃げる。",
+          "icon": "AlertTriangle"
+        },
+        {
+          "title": "時間切れ",
+          "description": "竜巻タイマーは厳密です。過剰な略奪ではなく、早めに脱出に向かいましょう。",
+          "icon": "時計"
+        },
+        {
+          "title": "チームメイトを無視する",
+          "description": "冷蔵庫/オーブンのトラップから閉じ込められた味方を迅速に救出する。すぐに救助を求める。",
+          "icon": "ユーザー"
+        }
+      ]
+    },
+    "coopGuide": {
+      "title": "Burglin' Gnomes 協力プレイガイド",
+      "subtitle": "最大6人のプレイヤーと連携して、最大限の混沌を",
+      "maxPlayers": 6,
+      "roles": [
+        {
+          "name": "スカウト",
+          "description": "脅威をチェックし、安全な経路をマークし、チームの動きをガイドする",
+          "icon": "目"
+        },
+        {
+          "name": "キャリアー",
+          "description": "バックパックのアップグレードで重いアイテムに焦点を当て、タスクの進行を確保する",
+          "icon": "パッケージ"
+        },
+        {
+          "name": "気を散らす",
+          "description": "家の所有者/ペットをチームから遠ざけ、安全なウィンドウを作成する",
+          "icon": "ユーザー"
+        },
+        {
+          "name": "救助者",
+          "description": "死ぬ前に冷蔵庫/オーブンから閉じ込められたチームメイトを解放する",
+          "icon": "シールド"
+        }
+      ],
+      "threats": [
+        "家の所有者 (追いかけ、罠を仕掛ける)",
+        "猫とネズミ (パトロールルート)",
+        "ロボット掃除機 (即時の危険)",
+        "時間制限 (竜巻脱出)"
+      ],
+      "communication": "ボイスチャット (V キー) を使用して、タスクと救助を調整します。「発見」、「ルート」、「救助が必要」、「すぐに脱出」と呼びかける。"
+    },
+    "tasksObjectives": {
+      "title": "Burglin' Gnomes タスクと目標",
+      "subtitle": "ハイノームが望むもの：タスクの例",
+      "taskTypes": [
+        {
+          "type": "アイテムを盗む",
+          "examples": [
+            "ハイノームの目標によってマークされた特定のアイテムを入手する"
+          ]
+        },
+        {
+          "type": "場所に到達する",
+          "examples": [
+            "家の中の指定されたエリアに移動する"
+          ]
+        },
+        {
+          "type": "いたずらをする",
+          "examples": [
+            "テレビを壊す",
+            "トイレを溢れさせる",
+            "混沌を作り出す"
+          ]
+        }
+      ],
+      "efficiency": [
+        "チームが一緒になっている間に、最初に危険なタスクを実行する",
+        "タスクアイテムのために1人のキャリアーを割り当てて、追跡中に紛失しないようにする",
+        "時間が切れる前に脱出に向かって移動を開始する"
+      ]
+    },
+    "controlsKeybinds": {
+      "title": "Burglin' Gnomes 操作方法とキーバインド",
+      "subtitle": "デフォルトのキーボード操作 (および変更場所)",
+      "keybinds": [
+        {
+          "action": "左に移動",
+          "key": "A"
+        },
+        {
+          "action": "右に移動",
+          "key": "D"
+        },
+        {
+          "action": "前に移動",
+          "key": "W"
+        },
+        {
+          "action": "後ろに移動",
+          "key": "S"
+        },
+        {
+          "action": "しゃがむ",
+          "key": "左 Ctrl"
+        },
+        {
+          "action": "攻撃",
+          "key": "左クリック"
+        },
+        {
+          "action": "走る",
+          "key": "左 Shift"
+        },
+        {
+          "action": "アイテムをドロップ",
+          "key": "G"
+        },
+        {
+          "action": "インタラクト",
+          "key": "E"
+        },
+        {
+          "action": "ジャンプ",
+          "key": "スペース"
+        },
+        {
+          "action": "プッシュ・トゥ・トーク",
+          "key": "V"
+        },
+        {
+          "action": "押す",
+          "key": "右クリック"
+        },
+        {
+          "action": "ラグドール",
+          "key": "Q"
+        },
+        {
+          "action": "装備スロット 1",
+          "key": "1"
+        },
+        {
+          "action": "装備スロット 2",
+          "key": "2"
+        },
+        {
+          "action": "装備スロット 3",
+          "key": "3"
+        },
+        {
+          "action": "装備スロット 4",
+          "key": "4"
+        },
+        {
+          "action": "インベントリ",
+          "key": "タブ"
+        }
+      ],
+      "changePath": "タイトルメニューから：[設定]を開き、キーボード設定を確認します。検索フィールドを使用してキーバインドの行をフィルタリングします。"
+    },
+    "contentSettings": {
+      "title": "Burglin' Gnomes コンテンツ設定",
+      "subtitle": "成人向けコンテンツ、ヌードの切り替え、Steam の設定",
+      "descriptors": [
+        "一部のヌードまたは性的なコンテンツ",
+        "一般的な成人向けコンテンツ"
+      ],
+      "details": [
+        {
+          "heading": "開発者が述べていること",
+          "items": [
+            "人間が入浴などの活動をしているときにヌードで表示される場合があります。",
+            "ヌードは検閲されており、オプションで完全にオフにすることができます。",
+            "ノームはバラバラにされ、残忍な方法で死ぬ可能性があります。"
+          ]
+        },
+        {
+          "heading": "Steam がコミュニティページをブロックする場合",
+          "items": [
+            "Steam は、コンテンツの設定に応じてコミュニティハブを非表示にする場合があります。",
+            "Steam の「コンテンツ設定の更新」を使用して、Steam に表示を許可するものを調整します。"
+          ]
+        }
+      ]
+    },
+    "craftingEquipment": {
+      "title": "Burglin' Gnomes クラフトと装備",
+      "subtitle": "装備：クラフトの例と各ツールの機能",
+      "equipment": [
+        {
+          "item": "バックパック",
+          "benefit": "1回の実行でより多くの戦利品のためのインベントリ容量を拡張"
+        },
+        {
+          "item": "ノームグローブ",
+          "benefit": "ドアを開けたり、より多くのオブジェクトと対話したりできます"
+        },
+        {
+          "item": "スプリングシューズ",
+          "benefit": "脱出中の高い落下からの落下ダメージを防ぎます"
+        },
+        {
+          "item": "武器",
+          "benefit": "窮地に追い込まれたときに、ネズミのような脅威と戦うのに役立ちます"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "クラフトが略奪にどのように接続するか",
+          "items": [
+            "実行中にアイテムを盗み、クラフト材料として持ち帰ります。",
+            "抽出後、報酬/材料は新しいクラフトをサポートします。"
+          ]
+        },
+        {
+          "heading": "基地の改善",
+          "items": [
+            "家具をクラフトし、浮遊島ホームをアップグレードします (フルゲーム機能)。"
+          ]
+        }
+      ]
+    },
+    "lootItems": {
+      "title": "Burglin' Gnomes 戦利品とアイテム",
+      "subtitle": "何を盗むか：アイテムの種類、リスク、持ち運びのヒント",
+      "categories": [
+        {
+          "type": "タスクアイテム",
+          "examples": [
+            "ハイノームが目標のために必要とするアイテム"
+          ]
+        },
+        {
+          "type": "クラフト材料",
+          "examples": [
+            "ノームのギアとアップグレードに転用された家庭用品"
+          ]
+        },
+        {
+          "type": "いたずらのターゲット",
+          "examples": [
+            "破壊や浸水などのタスクに関与するオブジェクト"
+          ]
+        }
+      ],
+      "carryTips": [
+        "タスクの進行を優先し、残りの容量をクラフト材料で埋める",
+        "脅威が近くにある場合は、アイテムを長く露出した持ち運びではなく、短い安全なホップで移動する",
+        "タイマーが終了する前に、庭の抽出までのルートを計画する"
+      ],
+      "riskLevels": [
+        {
+          "level": "低い",
+          "description": "入り口の近くまたは安全な角"
+        },
+        {
+          "level": "中程度",
+          "description": "より深い部屋またはローミングの脅威の近く"
+        },
+        {
+          "level": "高い",
+          "description": "家の所有者のパトロールまたはロボット掃除機の近く"
+        }
+      ]
+    },
+    "enemiesHazards": {
+      "title": "Burglin' Gnomes 敵と危険",
+      "subtitle": "何があなたを捕まえることができるかを知る",
+      "threats": [
+        {
+          "name": "家の所有者",
+          "trigger": "泥棒を働いたり、タスクを実行したりしているところを見られること",
+          "behavior": "彼はあなたを追いかけ、捕まえようとします",
+          "counter": "ステルスを保ち、視線を遮り、チームとして移動し続けます"
+        },
+        {
+          "name": "猫",
+          "trigger": "近づきすぎたり、彼らの道を横切ったりすること",
+          "behavior": "彼らはあなたが忍び込んでいる間、直接的な脅威になります",
+          "counter": "彼らのルートを避け、静かに通り過ぎる"
+        },
+        {
+          "name": "ネズミ",
+          "trigger": "ネズミがうろついているエリアに入る",
+          "behavior": "彼らは実行中に脆弱なノームを脅かします",
+          "counter": "狭いスペースで警戒を怠らず、後退する準備をしてください"
+        },
+        {
+          "name": "ロボット掃除機",
+          "trigger": "その掃除経路にいること",
+          "behavior": "それはノームを吸い込むことができます",
+          "counter": "それに耳を傾け、そのルートから離れ、すばやく位置を変えてください"
+        },
+        {
+          "name": "冷蔵庫/オーブンのトラップ",
+          "trigger": "家の所有者に捕まること",
+          "behavior": "あなたは中に閉じ込められる可能性があります。チームメイトが時間内に救助しない場合、あなたは死にます",
+          "counter": "すぐに呼びかけてください。チームメイトは救助ルートを優先します"
+        },
+        {
+          "name": "時間制限",
+          "trigger": "実行タイマーが制限に達する",
+          "behavior": "抽出竜巻が庭に現れます。あなたはそれに到達して脱出する必要があります",
+          "counter": "過剰な略奪をやめ、再編成し、早期に抽出することを約束します"
+        }
+      ]
+    },
+    "stealthEscape": {
+      "title": "Burglin' Gnomes ステルスと脱出のヒント",
+      "subtitle": "より多く盗み、より少なく死ぬ",
+      "do": [
+        "ステルスを保ち、オブジェクトと対話する前に隠れる",
+        "チームワークを使用する：脅威を呼びかけ、ルートを調整する",
+        "誰かが閉じ込められたり倒れたりした場合は、チームメイトをすばやく救出する",
+        "損失を減らし、タイマーが厳しい場合は抽出に向かう"
+      ],
+      "dont": [
+        "抽出が近づいているときに貪欲になる",
+        "家の所有者が活動しているときにチームから遠く離れすぎる",
+        "ロボット掃除機の経路または動物のパトロールを無視する",
+        "チームメイトがロックされているときに救助を遅らせる"
+      ],
+      "quickTips": [
+        {
+          "title": "3秒ルール",
+          "text": "次の動きを3秒で説明できない場合は、発見されようとしています。"
+        },
+        {
+          "title": "最初に救助",
+          "text": "迅速な救助は実行を生き続けます。略奪は待つことができます。"
+        },
+        {
+          "title": "抽出の規律",
+          "text": "パニックが始まる前に、早期に再編成し、竜巻にコミットする。"
+        }
+      ]
+    },
+    "homeUpgrades": {
+      "title": "Burglin' Gnomes ホームアップグレード",
+      "subtitle": "クラフト、構築、アップグレード",
+      "branches": [
+        {
+          "branch": "ストレージ",
+          "summary": "より多く運び、より多く持ち帰る",
+          "items": [
+            "バックパック (インベントリ拡張)"
+          ]
+        },
+        {
+          "branch": "ユーティリティ",
+          "summary": "家との対話をより効果的に行う",
+          "items": [
+            "ノームグローブ (ドアなどを開けることができます)"
+          ]
+        },
+        {
+          "branch": "モビリティ",
+          "summary": "垂直空間をより安全に移動する",
+          "items": [
+            "スプリングシューズ (落下ダメージを軽減)"
+          ]
+        },
+        {
+          "branch": "防衛",
+          "summary": "必要なときに小さな脅威に対処する",
+          "items": [
+            "武器 (ネズミのような脅威のため)"
+          ]
+        },
+        {
+          "branch": "ホームベース",
+          "summary": "家具をクラフトし、浮遊島ホームをアップグレードする",
+          "items": [
+            "機能的な家具のアップグレード"
+          ]
+        }
+      ],
+      "priority": [
+        {
+          "rank": 1,
+          "title": "最初にストレージ",
+          "reason": "より多くの持ち運び能力は、すべての実行のペイオフを向上させます"
+        },
+        {
+          "rank": 2,
+          "title": "次にユーティリティ",
+          "reason": "より良いインタラクションは、危険地帯で費やす時間を短縮します"
+        },
+        {
+          "rank": 3,
+          "title": "生存のためのモビリティ",
+          "reason": "落下安全は、脱出時に回避可能な死を防ぎます"
+        }
+      ]
+    },
+    "community": {
+      "title": "Burglin' Gnomes コミュニティと Discord",
+      "subtitle": "分隊、アップデート、ディスカッションを見つける",
+      "links": [
+        {
+          "title": "公式 Discord",
+          "subtitle": "お知らせ • フィードバック • LFG",
+          "url": "https://discord.gg/rbeW4bpsqY"
+        },
+        {
+          "title": "公式 X (Twitter)",
+          "subtitle": "アップデートと開発投稿",
+          "url": "https://x.com/itsfobri"
+        },
+        {
+          "title": "Steam コミュニティハブ",
+          "subtitle": "ディスカッション • スクリーンショット • ガイド",
+          "url": "https://steamcommunity.com/app/3844970"
+        },
+        {
+          "title": "Steam ストアページ",
+          "subtitle": "ウィッシュリスト • デモ • 公式説明",
+          "url": "https://store.steampowered.com/app/3844970/Burglin_Gnomes/"
+        }
+      ]
+    },
+    "modsBepInEx": {
+      "title": "Burglin' Gnomes MOD と BepInEx のセットアップ",
+      "subtitle": "クリーンな方法で MOD をインストールする",
+      "steps": [
+        {
+          "step": 1,
+          "title": "BepInEx 5 をインストールする",
+          "text": "BepInEx 5 をダウンロードし、ゲームのルートフォルダに展開します。"
+        },
+        {
+          "step": 2,
+          "title": "フォルダを生成するために一度起動する",
+          "text": "ゲームをメインメニューまで起動し、閉じてください。これにより、BepInEx フォルダ構造が作成されます。"
+        },
+        {
+          "step": 3,
+          "title": "MOD をインストールする",
+          "text": "MOD の .dll ファイルを plugins フォルダに配置します。"
+        },
+        {
+          "step": 4,
+          "title": "インストールを確認する",
+          "text": "ゲームを再起動し、MOD 機能が利用可能であることを確認します (カメラの切り替え、UI カーソルなど)。"
+        }
+      ],
+      "paths": [
+        {
+          "label": "一般的な Steam インストール",
+          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\"
+        },
+        {
+          "label": "Plugins フォルダ",
+          "path": "Steam\\steamapps\\common\\Burglin Gnomes Demo\\BepInEx\\plugins\\"
+        }
+      ],
+      "multiplayerNote": "MOD された協力プレイ機能については、全員が BepInEx と同じゲームプレイ MOD をインストールする必要があります。"
+    },
+    "popularMods": {
+      "title": "Burglin' Gnomes 人気 MOD",
+      "subtitle": "トップコミュニティのピック",
+      "mods": [
+        {
+          "title": "スポーンメニュー",
+          "tags": [
+            "楽しい",
+            "ツール",
+            "ホストのみ"
+          ],
+          "description": "飛行モードを備えたアイテムスポーンメニューを追加します。",
+          "controls": [
+            {
+              "key": "F",
+              "action": "スポーンメニューを開く"
+            },
+            {
+              "key": "V",
+              "action": "飛行を有効にする"
+            }
+          ],
+          "note": "ホストのみ。他の人は参加するためにインストールする必要はありません。"
+        },
+        {
+          "title": "三人称視点",
+          "tags": [
+            "カメラ",
+            "QoL"
+          ],
+          "description": "三人称視点のカメラビューを追加します。",
+          "controls": [
+            {
+              "key": "F7",
+              "action": "一人称/三人称を切り替える"
+            }
+          ]
+        },
+        {
+          "title": "帽子をもっと",
+          "tags": [
+            "コスメティック"
+          ],
+          "description": "ノームのための追加の帽子の色のオプションを追加します。",
+          "colors": [
+            "青",
+            "緑",
+            "オレンジ",
+            "紫",
+            "黒",
+            "赤"
+          ]
+        },
+        {
+          "title": "テレビで DOOM",
+          "tags": [
+            "楽しい",
+            "ミニゲーム"
+          ],
+          "description": "ゲーム内のテレビでオリジナルの DOOM を再生し、サウンドはテレビのスピーカーから出力されます。",
+          "highlights": [
+            "マルチプレイヤーで動作するため、他のプレイヤーは同じテレビで観戦できます",
+            "シェアウェアの DOOM エピソードデータ (エピソード 1) が含まれています"
+          ]
+        }
+      ]
+    },
+    "controllerSupport": {
+      "title": "Burglin' Gnomes コントローラーサポート",
+      "subtitle": "フルゲームパッドプレイ",
+      "native": {
+        "title": "ゲーム内設定",
+        "description": "ゲームのバインディング/設定メニューを使用して、コントロールを調整します。"
+      },
+      "mod": {
+        "title": "コントローラーサポート MOD",
+        "description": "完全なゲームパッド/コントローラーサポートと、メニューナビゲーションのための UI カーソルを追加します。"
+      },
+      "features": [
+        "フルゲームプレイコントロール：移動、カメラ、戦闘、インタラクション、およびゲームパッドにマッピングされたアビリティ",
+        "UI カーソルナビゲーション：白い円形のカーソルがメニューに表示されます。A を押してクリックし、スライダーをドラッグします",
+        "インベントリナビゲーション：Select を押したままインベントリを開きます。押したまま右スティックを使用してナビゲートします",
+        "スクロール可能なメニュー：右スティックは、クラフトレシピ、設定、およびその他のスクロール可能な UI エリアをスクロールします",
+        "ホットバーの循環：D パッドの左/右は、4 つのホットバーのスロットを循環します",
+        "シームレスな入力切り替え：キーボード/マウスとコントローラーを自動検出します"
+      ]
+    },
+    "playerCount": {
+      "title": "Burglin' Gnomes プレイヤー数とトレンド",
+      "subtitle": "ライブの人気スナップショット",
+      "stats": {
+        "now": {
+          "value": "6,047",
+          "label": "現在のプレイヤー数"
+        },
+        "peak24h": {
+          "value": "13,859",
+          "label": "24時間のピーク"
+        },
+        "allTimePeak": {
+          "value": "15,272",
+          "label": "史上最高のピーク"
+        }
+      },
+      "milestones": [
+        {
+          "date": "2026年1月30日",
+          "title": "Steam でデモがリリースされました",
+          "detail": "パブリックデモが PC (Steam) で利用可能になりました。"
+        },
+        {
+          "date": "2026年2月8日",
+          "title": "史上最高のピークに達しました",
+          "detail": "デモは、記録された同時プレイヤーの最高数を記録しました。"
+        }
+      ]
+    }
+  },
+  "faq": {
+    "title": "よくある質問",
+    "titleHighlight": "Burglin' Gnomes について知っておくべきことすべて",
+    "subtitle": "Burglin' Gnomes のデモをダウンロードするにはどうすればよいですか？",
+    "questions": [
+      {
+        "question": "Steam ストアページにアクセスし、「デモをダウンロード」をクリックしてください。デモは無料で、ダウンロードには 2.62 GiB、ディスクスペースには 4.88 GiB が必要です。",
+        "answer": "Burglin' Gnomes はソロでプレイできますか？それとも友達が必要ですか？"
+      },
+      {
+        "question": "Burglin' Gnomes は、ソロプレイと最大 6 人までの協力プレイの両方をサポートしています。ソロは難しいですが可能です。",
+        "answer": "Burglin' Gnomes のハイノームタスクとは何ですか？"
+      },
+      {
+        "question": "ハイノームは、'テレビを壊す'、'トイレを溢れさせる'、または '特定のアイテムを盗む' などの目標を割り当てるあなたの上司です。追加の報酬のためにそれらを完了してください。",
+        "answer": "Burglin' Gnomes の MOD をインストールするにはどうすればよいですか？"
+      },
+      {
+        "question": "BepInEx 5 をインストールし、ゲームを一度起動し、MOD DLL を BepInEx/plugins/ フォルダに配置します。すべてのプレイヤーは、マルチプレイヤーのために同じ MOD が必要です。",
+        "answer": "Burglin' Gnomes はコントローラーをサポートしていますか？"
+      },
+      {
+        "question": "はい！基本的なコントローラーサポートにはゲーム内設定を使用するか、完全な UI ナビゲーションのために Nexus Mods からコントローラー MOD をインストールしてください。",
+        "answer": "Burglin' Gnomes のプレイヤー数は？"
+      },
+      {
+        "question": "2026 年 2 月の時点で、Burglin' Gnomes は平均 6,000 人以上の同時プレイヤーがおり、2026 年 2 月 8 日には 15,272 人のピークに達しました。",
+        "answer": "強盗を開始する準備はできましたか？"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Discord で Burglin' Gnomes コミュニティに参加して、協力グループ、アップデート、および MOD のディスカッションに参加しましょう！",
+    "description": "Discord に参加",
+    "joinCommunity": "Steam でデモを入手",
+    "joinGame": "Burglin' Gnomes Wiki"
+  },
+  "footer": {
+    "title": "Burglin' Gnomes のステルス強盗、協力戦略、MOD、およびコミュニティガイドのための完全なリソースハブ。",
+    "description": "リソース",
+    "resources": "コミュニティ",
+    "community": "リーガル",
+    "legal": "Discord",
+    "discord": "X / Twitter",
+    "twitter": "Steam コミュニティ",
+    "steamCommunity": "Steam ストア",
+    "steamStore": "概要",
+    "about": "プライバシーポリシー",
+    "privacy": "利用規約",
+    "terms": "著作権",
+    "copyrightNotice": "© 2026 Burglin' Gnomes Wiki. Burglin' Gnomes の開発者とは提携していません。",
+    "copyright": "非公式のファンメイドリソースウェブサイト。",
+    "disclaimer": "Unofficial fan-made resource website."
+  }
+}
