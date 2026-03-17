@@ -10,7 +10,14 @@
       "twitterDescription": "¡Centro de recursos completo de Duendes Ladrones! Obtén información de descarga de demo, guías para principiantes, estrategias co-op y consejos de fabricación."
     }
   },
-  "nav": {},
+  "nav": {
+    "guides": "Guías",
+    "crafting": "Fabricación",
+    "items": "Objetos",
+    "biomes": "Biomas",
+    "building": "Construcción",
+    "support": "Soporte"
+  },
   "common": {
     "home": "Inicio",
     "more": "Más",

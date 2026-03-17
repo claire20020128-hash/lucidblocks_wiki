@@ -10,7 +10,14 @@
       "twitterDescription": "Central de recursos completa de Lucid Blocks! Obtenha informações para download da demo, guias para iniciantes, estratégias co-op e dicas de criação."
     }
   },
-  "nav": {},
+  "nav": {
+    "guides": "Guias",
+    "crafting": "Criação",
+    "items": "Itens",
+    "biomes": "Biomas",
+    "building": "Construção",
+    "support": "Suporte"
+  },
   "common": {
     "home": "Início",
     "more": "Mais",

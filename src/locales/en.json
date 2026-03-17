@@ -13,11 +13,9 @@
   "nav": {
     "guides": "Guides",
     "crafting": "Crafting",
-    "biomes": "Biomes",
-    "creatures": "Creatures",
     "items": "Items",
-    "achievements": "Achievements",
-    "lore": "Lore",
+    "biomes": "Biomes",
+    "building": "Building",
     "support": "Support"
   },
   "common": {

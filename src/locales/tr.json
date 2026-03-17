@@ -10,7 +10,14 @@
       "twitterDescription": "Eksiksiz Lucid Blocks kaynak merkezi! Demo indirme bilgileri, başlangıç rehberleri, işbirliği stratejileri ve üretim ipuçları edinin."
     }
   },
-  "nav": {},
+  "nav": {
+    "guides": "Rehberler",
+    "crafting": "Üretim",
+    "items": "Eşyalar",
+    "biomes": "Biyomlar",
+    "building": "İnşa",
+    "support": "Destek"
+  },
   "common": {
     "home": "Ana Sayfa",
     "more": "Daha Fazla",

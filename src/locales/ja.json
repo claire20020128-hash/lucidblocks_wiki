@@ -10,7 +10,14 @@
       "twitterDescription": "Lucid Blocks の完全リソースハブ！デモダウンロード情報、初心者向けガイド、協力プレイ戦略、クラフトのヒントを入手しましょう。"
     }
   },
-  "nav": {},
+  "nav": {
+    "guides": "ガイド",
+    "crafting": "クラフト",
+    "items": "アイテム",
+    "biomes": "バイオーム",
+    "building": "建築",
+    "support": "サポート"
+  },
   "common": {
     "home": "ホーム",
     "more": "もっと見る",
