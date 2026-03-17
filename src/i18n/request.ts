@@ -37,7 +37,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
 	// 加载目标语言的翻译，并与英文深度合并（作为 fallback）
 	const localeMessages = messages[locale] || enMessages
-	const mergedMessages = deepMerge(enMessages, localeMessages)
+	const mergedMessages = deepMerge(enMessages, localeMessages, {
+		// 数组替换而不是合并（避免重复）
+		arrayMerge: (_destinationArray, sourceArray) => sourceArray,
+	})
 
 	return { locale, messages: mergedMessages }
 })
