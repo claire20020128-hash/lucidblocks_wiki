@@ -805,5 +805,127 @@
     "copyrightNotice": "Copyright",
     "copyright": "© 2026 Lucid Blocks Wiki. Not affiliated with the developers of Lucid Blocks.",
     "disclaimer": "Unofficial fan-made resource website."
+  },
+  "pages": {
+    "guides": {
+      "title": "Lucid Blocks Guides",
+      "description": "Complete gameplay guides from beginner basics to advanced Apotheosis strategies. Master survival and crafting.",
+      "metaTitle": "Lucid Blocks Guides - Beginner to Advanced Strategies",
+      "metaDescription": "Complete Lucid Blocks guides covering beginner tips, Apotheosis system, survival strategies, and expert tactics for mastering the surreal sandbox.",
+      "categoryLabel": "GAME GUIDES",
+      "whatIs": "What are Guides?",
+      "whatIsDescription": "Comprehensive guides covering gameplay mechanics, survival strategies, and the Apotheosis crafting system. Learn everything from first steps to advanced techniques.",
+      "why": "Why read guides?",
+      "whySteps": {
+        "step1Title": "Learn Core Mechanics",
+        "step1Description": "Understand the Apotheosis system and avoid common beginner mistakes",
+        "step2Title": "Fast Progression",
+        "step2Description": "Follow proven paths to survive and thrive in the surreal world",
+        "step3Title": "Master Strategies",
+        "step3Description": "Develop advanced tactics for exploration and crafting"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Guides"
+    },
+    "crafting": {
+      "title": "Lucid Blocks Crafting",
+      "description": "Master the Apotheosis fusion system with essence mechanics, recipes, and crafting strategies for powerful items.",
+      "metaTitle": "Lucid Blocks Crafting - Apotheosis System & Recipes",
+      "metaDescription": "Master Lucid Blocks Apotheosis crafting system. Learn essence mechanics, fusion recipes, and strategies for creating powerful tools and weapons.",
+      "categoryLabel": "CRAFTING SYSTEM",
+      "whatIs": "What is Crafting?",
+      "whatIsDescription": "The Apotheosis system is a unique essence-driven fusion mechanic where you combine up to six items to discover new recipes. No fixed crafting menus—experimentation is key.",
+      "why": "Why master crafting?",
+      "whySteps": {
+        "step1Title": "Unlock Powerful Items",
+        "step1Description": "Discover essential tools, weapons, and mobility gear through fusion",
+        "step2Title": "Understand Essences",
+        "step2Description": "Learn how item essences combine to create predictable results",
+        "step3Title": "Optimize Resources",
+        "step3Description": "Use dilution mechanics to maximize output from cheap materials"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Crafting Guides"
+    },
+    "items": {
+      "title": "Lucid Blocks Items",
+      "description": "Detailed item guides covering tools, weapons, mobility gear, and storage solutions with crafting recipes and usage tips.",
+      "metaTitle": "Lucid Blocks Items - Tools, Weapons & Gear Guide",
+      "metaDescription": "Complete item database for Lucid Blocks including tools, weapons, mobility gear, and storage. Learn how to craft and use every item effectively.",
+      "categoryLabel": "ITEMS & EQUIPMENT",
+      "whatIs": "What are Items?",
+      "whatIsDescription": "Comprehensive guides for tools, weapons, mobility gear, and functional items. Learn crafting recipes, usage strategies, and optimal combinations.",
+      "why": "Why check item guides?",
+      "whySteps": {
+        "step1Title": "Learn Crafting Recipes",
+        "step1Description": "Discover how to craft essential tools and weapons using Apotheosis",
+        "step2Title": "Optimize Equipment",
+        "step2Description": "Choose the best items for your playstyle and progression stage",
+        "step3Title": "Improve Survival",
+        "step3Description": "Equip mobility gear and weapons to navigate the dangerous world"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Items"
+    },
+    "biomes": {
+      "title": "Lucid Blocks Biomes",
+      "description": "Explore world regions, environmental features, resource locations, and survival tips for each biome.",
+      "metaTitle": "Lucid Blocks Biomes - World Regions & Exploration",
+      "metaDescription": "Explore Lucid Blocks biomes including Tiamana Leylines, Fog Meadow, and surreal regions. Find resources, avoid dangers, and navigate the infinite world.",
+      "categoryLabel": "WORLD REGIONS",
+      "whatIs": "What are Biomes?",
+      "whatIsDescription": "Guides to different world regions, environmental features, resource distribution, and danger zones. Learn what to expect and how to prepare for each area.",
+      "why": "Why explore biomes?",
+      "whySteps": {
+        "step1Title": "Find Resources",
+        "step1Description": "Locate rare materials and essences specific to each region",
+        "step2Title": "Avoid Dangers",
+        "step2Description": "Understand environmental hazards and hostile creatures",
+        "step3Title": "Plan Exploration",
+        "step3Description": "Prepare the right tools and gear for each biome type"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Biomes"
+    },
+    "building": {
+      "title": "Lucid Blocks Building",
+      "description": "Master Qualia personal dimensions, base building, storage management, and creative construction techniques.",
+      "metaTitle": "Lucid Blocks Building - Qualia & Base Construction",
+      "metaDescription": "Master Lucid Blocks building with Qualia personal dimensions, base construction, storage solutions, and creative building techniques.",
+      "categoryLabel": "BUILDING & BASES",
+      "whatIs": "What is Building?",
+      "whatIsDescription": "Guides to the Qualia personal dimension system, base construction, storage management, and creative building. Learn to create your safe haven in the surreal world.",
+      "why": "Why build bases?",
+      "whySteps": {
+        "step1Title": "Create Safe Spaces",
+        "step1Description": "Establish secure bases for storage and crafting operations",
+        "step2Title": "Manage Resources",
+        "step2Description": "Organize materials efficiently with storage solutions",
+        "step3Title": "Unlock Qualia",
+        "step3Description": "Access personal pocket dimensions for ultimate convenience"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Building Guides"
+    },
+    "support": {
+      "title": "Lucid Blocks Support",
+      "description": "Technical support, platform compatibility, performance optimization, and troubleshooting for common issues.",
+      "metaTitle": "Lucid Blocks Support - Technical Help & Fixes",
+      "metaDescription": "Get technical support for Lucid Blocks including Steam Deck setup, crash fixes, performance optimization, and platform compatibility guides.",
+      "categoryLabel": "TECHNICAL SUPPORT",
+      "whatIs": "What is Support?",
+      "whatIsDescription": "Technical guides covering platform compatibility, performance optimization, crash fixes, and common issues. Get help with Steam Deck, multiplayer questions, and settings.",
+      "why": "Why check support?",
+      "whySteps": {
+        "step1Title": "Fix Technical Issues",
+        "step1Description": "Resolve crashes, performance problems, and compatibility issues",
+        "step2Title": "Optimize Performance",
+        "step2Description": "Configure settings for best experience on your platform",
+        "step3Title": "Platform Compatibility",
+        "step3Description": "Learn about Steam Deck, controller support, and system requirements"
+      },
+      "featured": "Featured & Essential",
+      "all": "All Support Articles"
+    }
   }
 }

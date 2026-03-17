@@ -1,7 +1,7 @@
 {
-  "api_key": "sk-yLqZg8MPVFdZtepizamKefkyECaTS0ZJ6FAR5OwVXcO44WaA",
-  "api_base_url": "https://api.apimart.ai/v1",
-  "model": "deepseek-v3.2",
+  "api_key": "sk-OxJJtxGZLYFWUZkaQoGgo68MacGSEuZ5oPg4oKLElGJ98WvB",
+  "api_base_url": "https://api.apifast.tech/v1",
+  "model": "gemini-2.5-flash",
   "group": "default",
 
   "temperature": 0.1,
@@ -20,9 +20,18 @@
     "game_names": ["Lucid Blocks"],
     "character_names": [],
     "technical_terms": [
-      "Apotheosis", "Steam", "Steam Deck", "Vulkan",
-      "Fog Meadow", "Heaven", "Bubblebear", "Angel",
-      "Hookshot", "Bee Glider", "Psychedelic", "Surreal"
+      "Apotheosis",
+      "Steam",
+      "Steam Deck",
+      "Vulkan",
+      "Fog Meadow",
+      "Heaven",
+      "Bubblebear",
+      "Angel",
+      "Hookshot",
+      "Bee Glider",
+      "Psychedelic",
+      "Surreal"
     ]
   },
 

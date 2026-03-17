@@ -839,5 +839,127 @@
     "copyrightNotice": "© 2026 Lucid Blocks Wiki. Lucid Blocks の開発者とは提携していません。",
     "copyright": "非公式のファンメイドリソースウェブサイト。",
     "disclaimer": "Unofficial fan-made resource website."
+  },
+  "pages": {
+    "guides": {
+      "title": "Lucid Blocks ガイド",
+      "description": "初心者向けの基本から高度な Apotheosis 戦略までを網羅した完全なゲームプレイガイド。サバイバルとクラフトをマスターしましょう。",
+      "metaTitle": "Lucid Blocks ガイド - 初心者から上級者向けの戦略",
+      "metaDescription": "初心者のためのヒント、Apotheosis システム、サバイバル戦略、そしてシュールなサンドボックスをマスターするためのエキスパートな戦術を網羅した Lucid Blocks の完全ガイド。",
+      "categoryLabel": "ゲームガイド",
+      "whatIs": "ガイドとは？",
+      "whatIsDescription": "ゲームプレイの仕組み、サバイバル戦略、Apotheosis クラフトシステムを網羅した包括的なガイド。最初の一歩から高度なテクニックまで、すべてを学びましょう。",
+      "why": "なぜガイドを読むのか？",
+      "whySteps": {
+        "step1Title": "基本的な仕組みを学ぶ",
+        "step1Description": "Apotheosis システムを理解し、初心者が陥りやすい間違いを回避しましょう",
+        "step2Title": "迅速な進行",
+        "step2Description": "シュールな世界で生き残り、繁栄するための実証済みの道筋を辿りましょう",
+        "step3Title": "戦略をマスターする",
+        "step3Description": "探索とクラフトのための高度な戦術を身につけましょう"
+      },
+      "featured": "おすすめ＆必須",
+      "all": "すべてのガイド"
+    },
+    "crafting": {
+      "title": "Lucid Blocks クラフト",
+      "description": "エッセンスの仕組み、レシピ、強力なアイテムを作成するためのクラフト戦略を用いて、Apotheosis 融合システムをマスターしましょう。",
+      "metaTitle": "Lucid Blocks クラフト - Apotheosis システムとレシピ",
+      "metaDescription": "Lucid Blocks の Apotheosis クラフトシステムをマスターしましょう。エッセンスの仕組み、融合レシピ、強力なツールや武器を作成するための戦略を学びます。",
+      "categoryLabel": "クラフトシステム",
+      "whatIs": "クラフトとは？",
+      "whatIsDescription": "Apotheosis システムは、最大6つのアイテムを組み合わせて新しいレシピを発見する、独自のエッセンス主導の融合メカニズムです。固定されたクラフトメニューはなく、実験が鍵となります。",
+      "why": "なぜクラフトをマスターするのか？",
+      "whySteps": {
+        "step1Title": "強力なアイテムをアンロック",
+        "step1Description": "融合を通じて、不可欠なツール、武器、移動用装備を発見しましょう",
+        "step2Title": "エッセンスを理解する",
+        "step2Description": "アイテムのエッセンスがどのように組み合わさり、予測可能な結果を生み出すかを学びましょう",
+        "step3Title": "リソースの最適化",
+        "step3Description": "希釈メカニズムを使用して、安価な材料から出力を最大化しましょう"
+      },
+      "featured": "おすすめ＆必須",
+      "all": "すべてのクラフトガイド"
+    },
+    "items": {
+      "title": "Lucid Blocks アイテム",
+      "description": "ツール、武器、移動用装備、ストレージソリューションを網羅した詳細なアイテムガイド。クラフトレシピと使用のヒントも掲載。",
+      "metaTitle": "Lucid Blocks アイテム - ツール、武器、装備ガイド",
+      "metaDescription": "ツール、武器、移動用装備、ストレージを含む Lucid Blocks の完全なアイテムデータベース。すべてのアイテムを効果的に作成し、使用する方法を学びましょう。",
+      "categoryLabel": "アイテム＆装備",
+      "whatIs": "アイテムとは？",
+      "whatIsDescription": "ツール、武器、移動用装備、機能的なアイテムに関する包括的なガイド。クラフトレシピ、使用戦略、最適な組み合わせを学びましょう。",
+      "why": "なぜアイテムガイドをチェックするのか？",
+      "whySteps": {
+        "step1Title": "クラフトレシピを学ぶ",
+        "step1Description": "Apotheosis を使用して、不可欠なツールや武器を作成する方法を発見しましょう",
+        "step2Title": "装備の最適化",
+        "step2Description": "プレイスタイルや進行段階に合わせて最適なアイテムを選択しましょう",
+        "step3Title": "サバイバル能力の向上",
+        "step3Description": "移動用装備と武器を装備して、危険な世界を探索しましょう"
+      },
+      "featured": "おすすめ＆必須",
+      "all": "すべてのアイテム"
+    },
+    "biomes": {
+      "title": "Lucid Blocks バイオーム",
+      "description": "世界の各地域、環境の特徴、リソースの場所、各バイオームのサバイバルのヒントを探索しましょう。",
+      "metaTitle": "Lucid Blocks バイオーム - 世界の地域と探索",
+      "metaDescription": "Tiamana Leylines、Fog Meadow、シュールな地域を含む Lucid Blocks のバイオームを探索しましょう。リソースを見つけ、危険を回避し、無限の世界をナビゲートしましょう。",
+      "categoryLabel": "世界の地域",
+      "whatIs": "バイオームとは？",
+      "whatIsDescription": "さまざまな世界の地域、環境の特徴、リソースの分布、危険地帯に関するガイド。各エリアで何が待ち受けているか、どのように準備すべきかを学びましょう。",
+      "why": "なぜバイオームを探索するのか？",
+      "whySteps": {
+        "step1Title": "リソースを見つける",
+        "step1Description": "各地域特有の希少な材料やエッセンスを見つけましょう",
+        "step2Title": "危険を回避する",
+        "step2Description": "環境の危険や敵対的な生物を理解しましょう",
+        "step3Title": "探索の計画",
+        "step3Description": "各バイオームのタイプに合わせて、適切なツールと装備を準備しましょう"
+      },
+      "featured": "おすすめ＆必須",
+      "all": "すべてのバイオーム"
+    },
+    "building": {
+      "title": "Lucid Blocks 建築",
+      "description": "Qualia パーソナルディメンション、拠点建築、ストレージ管理、クリエイティブな建設テクニックをマスターしましょう。",
+      "metaTitle": "Lucid Blocks 建築 - Qualia と拠点建設",
+      "metaDescription": "Qualia パーソナルディメンション、拠点建設、ストレージソリューション、クリエイティブな建築テクニックを用いて、Lucid Blocks の建築をマスターしましょう。",
+      "categoryLabel": "建築＆拠点",
+      "whatIs": "建築とは？",
+      "whatIsDescription": "Qualia パーソナルディメンションシステム、拠点建設、ストレージ管理、クリエイティブな建築に関するガイド。シュールな世界に自分だけの安息の地を作る方法を学びましょう。",
+      "why": "なぜ拠点を建てるのか？",
+      "whySteps": {
+        "step1Title": "安全な場所を作る",
+        "step1Description": "ストレージやクラフト作業のための安全な拠点を確立しましょう",
+        "step2Title": "リソースの管理",
+        "step2Description": "ストレージソリューションを使用して材料を効率的に整理しましょう",
+        "step3Title": "Qualia をアンロック",
+        "step3Description": "究極の利便性のために、個人のポケットディメンションにアクセスしましょう"
+      },
+      "featured": "おすすめ＆必須",
+      "all": "すべての建築ガイド"
+    },
+    "support": {
+      "title": "Lucid Blocks サポート",
+      "description": "テクニカルサポート、プラットフォームの互換性、パフォーマンスの最適化、一般的な問題のトラブルシューティング。",
+      "metaTitle": "Lucid Blocks サポート - テクニカルヘルプと修正",
+      "metaDescription": "Steam Deck のセットアップ、クラッシュの修正、パフォーマンスの最適化、プラットフォームの互換性ガイドなど、Lucid Blocks のテクニカルサポートを受けられます。",
+      "categoryLabel": "テクニカルサポート",
+      "whatIs": "サポートとは？",
+      "whatIsDescription": "プラットフォームの互換性、パフォーマンスの最適化、クラッシュの修正、一般的な問題を網羅したテクニカルガイド。Steam Deck、マルチプレイヤーに関する質問、設定などのヘルプを利用できます。",
+      "why": "なぜサポートをチェックするのか？",
+      "whySteps": {
+        "step1Title": "テクニカルな問題を修正",
+        "step1Description": "クラッシュ、パフォーマンスの問題、互換性の問題を解決しましょう",
+        "step2Title": "パフォーマンスの最適化",
+        "step2Description": "お使いのプラットフォームで最高の体験を得るために設定を構成しましょう",
+        "step3Title": "プラットフォームの互換性",
+        "step3Description": "Steam Deck、コントローラーのサポート、システム要件について学びましょう"
+      },
+      "featured": "おすすめ＆必須",
+      "all": "すべてのサポート記事"
+    }
   }
 }
