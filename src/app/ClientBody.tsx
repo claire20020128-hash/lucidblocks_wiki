@@ -3,8 +3,14 @@
 import { useEffect } from 'react'
 import Navigation from '@/components/Navigation'
 import { ThemeProvider } from '@/components/ThemeProvider'
+import type { NavPreviewData } from '@/types/nav-preview'
 
-export default function ClientBody({ children }: { children: React.ReactNode }) {
+interface ClientBodyProps {
+	children: React.ReactNode
+	navPreviewData: NavPreviewData
+}
+
+export default function ClientBody({ children, navPreviewData }: ClientBodyProps) {
 	// Remove any extension-added classes during hydration
 	useEffect(() => {
 		// This runs only on the client after hydration
@@ -14,7 +20,7 @@ export default function ClientBody({ children }: { children: React.ReactNode }) 
 	return (
 		<ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
 			<div className="antialiased">
-				<Navigation />
+				<Navigation navPreviewData={navPreviewData} />
 				<main className="pt-20">{children}</main>
 			</div>
 		</ThemeProvider>

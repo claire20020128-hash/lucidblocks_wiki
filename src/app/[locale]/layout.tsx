@@ -4,6 +4,8 @@ import { getMessages, getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { buildLanguageAlternates } from '@/lib/i18n-utils'
+import { getNavPreviewData } from '@/lib/nav-preview'
+import type { Language } from '@/lib/content'
 import { Geist, Geist_Mono } from 'next/font/google'
 import Script from 'next/script'
 import ClientBody from '../ClientBody'
@@ -105,6 +107,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
 	// 获取翻译消息（不需要 setRequestLocale！）
 	const messages = await getMessages()
+	const navPreviewData = await getNavPreviewData(locale as Language)
 
 	return (
 		<html lang={locale} className={`${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
@@ -125,7 +128,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 			<body suppressHydrationWarning className="antialiased">
 				<Analytics />
 				<NextIntlClientProvider messages={messages}>
-					<ClientBody>{children}</ClientBody>
+					<ClientBody navPreviewData={navPreviewData}>{children}</ClientBody>
 				</NextIntlClientProvider>
 				{/* 社交栏广告 */}
 				<SocialBarAd adKey={process.env.NEXT_PUBLIC_AD_SOCIAL_BAR || ''} />
