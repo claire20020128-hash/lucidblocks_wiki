@@ -32,7 +32,28 @@ const MODULE_FIELDS: Record<string, { field: string; nameKey: string }> = {
   lucidBlocksCrashFixAndTroubleshooting: { field: 'steps', nameKey: 'title' },
 }
 
-const FILLER_WORDS = ['lucid', 'blocks', '2026', '2025', 'complete', 'guide', 'best', 'the', 'and', 'for', 'how', 'with', 'our', 'this', 'your', 'all', 'from', 'learn']
+// Extra semantic keywords per module to boost matching for h2 titles
+// These supplement the module title text when matching against articles
+const MODULE_EXTRA_KEYWORDS: Record<string, string[]> = {
+  lucidBlocksBeginnerGuide: ['guide', 'mastering', 'progression', 'crafting', 'starter'],
+  lucidBlocksApotheosisCrafting: ['apotheosis', 'fusion', 'essence'],
+  lucidBlocksToolsAndWeapons: ['crafting recipes', 'frost pick', 'osmium', 'azrael', 'faith wand'],
+  lucidBlocksStorageAndInventory: ['chest', 'cache cube', 'cabinet', 'storage'],
+  lucidBlocksQualiaAndBaseBuilding: ['qualia', 'clonaqualia', 'personal dimensions'],
+  lucidBlocksWorldRegions: ['tiamana', 'leyline', 'biomes', 'regions'],
+  lucidBlocksCreaturesAndEnemies: ['survival', 'combat', 'surreal creatures'],
+  lucidBlocksMobilityGear: ['bee glider', 'hookshot', 'glider', 'movement'],
+  lucidBlocksFarmingAndGrowth: ['seed', 'farming', 'growth', 'material', 'progression', 'crafting'],
+  lucidBlocksBestEarlyUnlocks: ['early', 'osmium', 'frost pick', 'starter', 'progression'],
+  lucidBlocksAchievementTracker: ['achievement', 'tiamana', 'leyline'],
+  lucidBlocksSingleplayerAndPlatformFAQ: ['multiplayer', 'platform', 'co op'],
+  lucidBlocksSteamDeckAndController: ['steam deck', 'controller', 'proton'],
+  lucidBlocksSettingsAndAccessibility: ['full screen', 'controls', 'display'],
+  lucidBlocksUpdatesAndPatchNotes: ['update', 'patch', 'fix'],
+  lucidBlocksCrashFixAndTroubleshooting: ['crash', 'vulkan', 'troubleshooting', 'full screen', 'controls', 'gameplay'],
+}
+
+const FILLER_WORDS = ['lucid', 'blocks', '2026', '2025', 'complete', 'the', 'and', 'for', 'how', 'with', 'our', 'this', 'your', 'all', 'from', 'learn', 'master']
 
 function normalize(text: string): string {
   return text
@@ -48,7 +69,7 @@ function getSignificantTokens(text: string): string[] {
     .filter(w => w.length > 2 && !FILLER_WORDS.includes(w))
 }
 
-function matchScore(queryText: string, article: ArticleWithType): number {
+function matchScore(queryText: string, article: ArticleWithType, extraKeywords?: string[]): number {
   const normalizedQuery = normalize(queryText)
   const normalizedTitle = normalize(article.frontmatter.title)
   const normalizedDesc = normalize(article.frontmatter.description || '')
@@ -56,12 +77,14 @@ function matchScore(queryText: string, article: ArticleWithType): number {
 
   let score = 0
 
-  // Exact phrase match in title
-  if (normalizedTitle.includes(normalizedQuery)) {
+  // Exact phrase match in title (stripped of "Lucid Blocks")
+  const strippedQuery = normalizedQuery.replace(/lucid blocks?\s*/g, '').trim()
+  const strippedTitle = normalizedTitle.replace(/lucid blocks?\s*/g, '').trim()
+  if (strippedQuery.length > 3 && strippedTitle.includes(strippedQuery)) {
     score += 100
   }
 
-  // Token overlap
+  // Token overlap from query text
   const queryTokens = getSignificantTokens(queryText)
   for (const token of queryTokens) {
     if (normalizedTitle.includes(token)) score += 20
@@ -69,22 +92,37 @@ function matchScore(queryText: string, article: ArticleWithType): number {
     if (normalizedSlug.includes(token)) score += 15
   }
 
+  // Extra keywords scoring (for module h2 titles)
+  if (extraKeywords) {
+    for (const kw of extraKeywords) {
+      const normalizedKw = normalize(kw)
+      if (normalizedTitle.includes(normalizedKw)) score += 15
+      if (normalizedDesc.includes(normalizedKw)) score += 5
+      if (normalizedSlug.includes(normalizedKw)) score += 10
+    }
+  }
+
   return score
 }
 
-function findBestMatch(queryText: string, articles: ArticleWithType[]): ArticleLink | null {
+function findBestMatch(
+  queryText: string,
+  articles: ArticleWithType[],
+  extraKeywords?: string[],
+  threshold = 20,
+): ArticleLink | null {
   let bestScore = 0
   let bestArticle: ArticleWithType | null = null
 
   for (const article of articles) {
-    const score = matchScore(queryText, article)
+    const score = matchScore(queryText, article, extraKeywords)
     if (score > bestScore) {
       bestScore = score
       bestArticle = article
     }
   }
 
-  if (bestScore >= 20 && bestArticle) {
+  if (bestScore >= threshold && bestArticle) {
     return {
       url: `/${bestArticle.contentType}/${bestArticle.slug}`,
       title: bestArticle.frontmatter.title,
@@ -114,10 +152,11 @@ export async function buildModuleLinkMap(locale: Language): Promise<ModuleLinkMa
     const moduleData = enMessages.modules?.[moduleKey]
     if (!moduleData) continue
 
-    // Match module h2 title
+    // Match module h2 title (use extra keywords + lower threshold for broader matching)
     const moduleTitle = moduleData.title as string
     if (moduleTitle) {
-      linkMap[moduleKey] = findBestMatch(moduleTitle, allArticles)
+      const extraKw = MODULE_EXTRA_KEYWORDS[moduleKey] || []
+      linkMap[moduleKey] = findBestMatch(moduleTitle, allArticles, extraKw, 15)
     }
 
     // Match sub-items

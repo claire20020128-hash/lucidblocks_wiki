@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
 import type { ContentItem } from '@/lib/content'
 
 interface ContentItemWithType extends ContentItem {
@@ -74,16 +73,6 @@ export function LatestGuides({ articles, locale, className = '' }: LatestGuidesP
           })}
         </div>
 
-        {/* 查看所有指南链接 */}
-        <div className="text-center mt-12 scroll-reveal">
-          <Link
-            href={`/${locale}/guides`}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-[hsl(var(--nav-theme))] text-white rounded-lg hover:bg-[hsl(var(--nav-theme-light))] transition-colors duration-300 font-medium"
-          >
-            View All Guides
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
       </div>
     </section>
   )
