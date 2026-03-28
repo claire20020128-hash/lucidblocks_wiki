@@ -145,7 +145,7 @@ export default function Navigation({ navPreviewData }: NavigationProps) {
 										}`}
 									>
 										<Icon className="w-4 h-4" />
-										{link.label}
+										<span className="text-xs">{link.label}</span>
 										<ChevronDown className={`w-3 h-3 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
 									</button>
 									{isOpen && (
